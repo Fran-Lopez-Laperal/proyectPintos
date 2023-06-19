@@ -1,4 +1,4 @@
-import "./index.css";
+import "./App.css";
 import { Routes, Route } from "react-router-dom";
 
 import { Footer } from "./components/Footer";
@@ -6,9 +6,11 @@ import { Footer } from "./components/Footer";
 function App() {
   return (
     <main className="">
-      <Routes>
-        <Route path="/" />
-      </Routes>
+      <article>
+        <Routes>
+          <Route path="/" />
+        </Routes>
+      </article>
       <Footer />
     </main>
   );
