@@ -9,7 +9,6 @@ function App() {
       <Routes>
         <Route path="/" />
       </Routes>
-      <h1>FUnciona?</h1>
       <Footer />
     </main>
   );
