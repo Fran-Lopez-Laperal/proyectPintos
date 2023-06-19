@@ -5,10 +5,11 @@ import { Footer } from "./components/Footer";
 
 function App() {
   return (
-    <main className="flex flex-col justify-start items-center min-h-screen">
+    <main className="">
       <Routes>
         <Route path="/" />
       </Routes>
+      <h1>FUnciona?</h1>
       <Footer />
     </main>
   );
