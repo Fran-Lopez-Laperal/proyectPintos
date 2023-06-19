@@ -70,7 +70,7 @@ export function Footer() {
       </div>
 
       <div>
-        <p className="flex justify-center text-2xl font-bold py-3 bg-red-200">Grupo Spintos 2023© Desenvolvido por Forte Solutions</p>
+        <p className="flex justify-center text-2xl font-bold py-3">Grupo Spintos 2023© Desenvolvido por Forte Solutions</p>
       </div>
     </footer>
   );
