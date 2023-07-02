@@ -1,10 +1,9 @@
-import "./App.css";
-import { Routes, Route } from "react-router-dom";
+import './App.css';
+import { Routes, Route } from 'react-router-dom';
 
-import { Footer } from "./components/Footer";
-import { NavDesktop } from "./components/NavDesktop";
-import { Home } from "./components/Home";
-
+import { Footer } from './components/Footer';
+import { NavDesktop } from './components/NavDesktop';
+import { Home } from './components/Home';
 
 function App() {
   return (
@@ -12,7 +11,7 @@ function App() {
       <article>
         <NavDesktop />
         <Routes>
-          <Route path="/" element={<Home/>}/>
+          <Route path="/" element={<Home />} />
         </Routes>
       </article>
       <Footer />
