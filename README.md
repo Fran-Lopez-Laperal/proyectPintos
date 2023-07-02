@@ -9,16 +9,16 @@ mediante diferentes vistas en las que se muestran caracteristicas e información
 
 ## PRINCIPALES TECNOLOGIAS UTILIZADAS
 
-* Este proyecto está desarrollado con React Vite 
+- Este proyecto está desarrollado con React Vite
 
-- React
-- Tailwind
-- Javascript
-- CSS
-- HTML
-- npm (Javier: Recomiendo usar pnpm)
+* React
+* Tailwind
+* Javascript
+* CSS
+* HTML
+* npm (Javier: Recomiendo usar pnpm)
 
-## RUTAS DISPONIBLES 
+## RUTAS DISPONIBLES
 
 [Ruta home]: http://localhost:3000/
 [Ruta historia]: http://localhost:3000/historia
@@ -32,7 +32,6 @@ mediante diferentes vistas en las que se muestran caracteristicas e información
 [Ruta noticias]: http://localhost:3000/noticias
 [Ruta contactos]: http://localhost:3000/contactos
 
-
 El proyecto sigue una estructura de archivos estándar para una aplicación React creada con [Create React App](https://create-react-app.dev).
 
 - `src/`
@@ -40,9 +39,6 @@ El proyecto sigue una estructura de archivos estándar para una aplicación Reac
 - `pages/`: Contiene las páginas correspondientes a cada ruta.
 - `App.js`: Componente raíz de la aplicación.
 - `index.js`: Punto de entrada de la aplicación.
-
-
-
 
 ## RECURSOS
 
@@ -55,24 +51,23 @@ El proyecto sigue una estructura de archivos estándar para una aplicación Reac
 ## FORMULARIOS (Creación de dashboard despues de un pequeño login)
 
 - Noticias:
-    - Titulo
-    - Texto
-    - Img principal (También sera usado como la miniatura de las cards)
-    - Img 1
-    - Img 2
+  - Titulo
+  - Texto
+  - Img principal (También sera usado como la miniatura de las cards)
+  - Img 1
+  - Img 2
 - Textos: (Todos los textos de la web tienen que poder modifarse y auto formatearse [recomiendo encarecidamente react- quill])
 - Promoción inmobiliaría:
-    - Formulario para debajo de iconos:
-        - Pisos del edificio
-        - Todas las casas disponibles
-        - Dirección
-        - Link a Propiso (Input de text)
-    - Formulario para la card de promoción inmobiliaría:
-        - Imagen principal
-        - Texto pequeño
-        - Dirección
-    - Subida de imagenes para collage:
-        - Capacidad de subida de 5 imagenes como aparece el diseño
-     
-## COMPONENTES
+  - Formulario para debajo de iconos:
+    - Pisos del edificio
+    - Todas las casas disponibles
+    - Dirección
+    - Link a Propiso (Input de text)
+  - Formulario para la card de promoción inmobiliaría:
+    - Imagen principal
+    - Texto pequeño
+    - Dirección
+  - Subida de imagenes para collage:
+    - Capacidad de subida de 5 imagenes como aparece el diseño
 
+## COMPONENTES
