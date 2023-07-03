@@ -21,15 +21,15 @@ function App() {
 
 
   }, [])
-  
-  
+
+
   return (
     <main className="">
       <article>
-      {showNav ?  <NavDesktop /> : <NavMovil/>}
-       
+        {showNav ? <NavDesktop /> : <NavMovil />}
+
         <Routes>
-          <Route path="/" element={<Home/>}/>
+          <Route path="/" element={<Home />} />
         </Routes>
       </article>
       <Footer />
