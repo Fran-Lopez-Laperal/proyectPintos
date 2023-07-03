@@ -4,12 +4,25 @@ import { Routes, Route } from 'react-router-dom';
 import { Footer } from './components/Footer';
 import { NavDesktop } from './components/NavDesktop';
 import { Home } from './components/Home';
+import { useEffect, useState } from 'react';
+import { NavResponsive } from './components/NavResponsive';
 
 function App() {
+  const [showNav, setshowNav] = useState(false)
+
+  useEffect(() => {
+    const responsiveMovil = () => window.innerWidth > 840 ? setshowNav(true) : setshowNav(false);
+
+    responsiveMovil()
+
+    window.addEventListener("resize", () => responsiveMovil())
+
+
+  }, [])
   return (
     <main className="">
       <article>
-        <NavDesktop />
+     {showNav ? <NavDesktop/> : <NavResponsive/>}
         <Routes>
           <Route path="/" element={<Home />} />
         </Routes>
