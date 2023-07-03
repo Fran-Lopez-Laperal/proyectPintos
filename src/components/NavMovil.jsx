@@ -65,7 +65,7 @@ export function NavMovil() {
                         </ul>
 
                         <ul className="m-3 font-bold" onClick={handleShowMenu}>
-                            Internacional
+                            Internacionalización
                         </ul>
 
                         <ul className="m-3 font-bold" onClick={handleShowMenu}>
