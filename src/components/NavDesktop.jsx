@@ -2,6 +2,9 @@ import { Link } from "react-router-dom"
 import logo from '../assets/logo.png'
 
 export function NavDesktop() {
+
+
+
     const links = [
         { to: '/', text: 'GRUPO PINTOS' },
         { to: '/', text: 'ÁREAS DE NEGOCIO' },
@@ -16,8 +19,8 @@ export function NavDesktop() {
 
 
     return (
-        <div className='w-full '>
-            <div className='flex bg-transparent w-full text-black h-20'>
+        <>
+            <section className='flex bg-transparent w-full text-black h-20'>
                 <img className='w-96' src={logo} alt={logo} />
                 <ul className='flex h-full w-full'>
 
@@ -33,7 +36,7 @@ export function NavDesktop() {
                     ))}
 
                 </ul>
-            </div>
-        </div>
+            </section>
+        </>
     )
 }

@@ -6,6 +6,9 @@ export default {
       width: {
         "20%": "20%",
       },
+      transitionDuration:{
+
+      }
     },
   },
   plugins: [],
