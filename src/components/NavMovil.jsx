@@ -32,7 +32,7 @@ export function NavMovil() {
                     <div className="w-10 h-1 bg-black m-2"></div>
                 </button>
     
-                    <nav className={`${openNav ? "h-screen transition-all duration-700" : "h-0"
+                    <nav className={`${openNav ? "h-screen transition-all duration-700  " : "h-0"
                         } overflow-hidden bg-white text-blue-800`}>
 
 
@@ -55,11 +55,11 @@ export function NavMovil() {
                             <li className={`${showSubLink2 ? "h-36 transition-all duration-700" : "h-0"
                                 } overflow-hidden m-2`}>
                                 <section className="flex flex-col m-1">
-                                    <Link className="border-b border-blue-200">Engenharia e Construção</Link>
-                                    <Link className="border-b border-blue-200">Betaõ</Link>
-                                    <Link className="border-b border-blue-200">Carpintaria</Link>
-                                    <Link className="border-b border-blue-200">Promoção Imboliriária</Link>
-                                    <Link className="border-b border-blue-200">Hotelaría</Link>
+                                    <Link className="border-b border-blue-200" onClick={handleShowMenu}>Engenharia e Construção</Link>
+                                    <Link className="border-b border-blue-200" onClick={handleShowMenu}>Betaõ</Link>
+                                    <Link className="border-b border-blue-200" onClick={handleShowMenu}>Carpintaria</Link>
+                                    <Link className="border-b border-blue-200" onClick={handleShowMenu}>Promoção Imboliriária</Link>
+                                    <Link className="border-b border-blue-200" onClick={handleShowMenu}>Hotelaría</Link>
                                 </section>
                             </li>
                         </ul>
