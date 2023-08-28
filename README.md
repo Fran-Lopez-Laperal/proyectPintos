@@ -86,5 +86,11 @@ El proyecto sigue una estructura de archivos estándar para una aplicación Reac
     - Dirección
   - Subida de imagenes para collage:
     - Capacidad de subida de 5 imagenes como aparece el diseño
+  - Timeline:
+    - Formulario para la inclusión de datos:
+        - Imagen principal
+        - Título
+        - Texto
+        - Año
 
 ## COMPONENTES
