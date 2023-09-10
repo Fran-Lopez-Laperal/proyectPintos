@@ -8,21 +8,19 @@ import { useEffect, useState } from 'react';
 import { NavResponsive } from './components/NavResponsive';
 
 function App() {
-  const [showNav, setshowNav] = useState(false)
+  const [showNav, setshowNav] = useState(false);
 
   useEffect(() => {
-    const responsiveMovil = () => window.innerWidth > 840 ? setshowNav(true) : setshowNav(false);
+    const responsiveMovil = () => (window.innerWidth > 840 ? setshowNav(true) : setshowNav(false));
 
-    responsiveMovil()
+    responsiveMovil();
 
-    window.addEventListener("resize", () => responsiveMovil())
-
-
-  }, [])
+    window.addEventListener('resize', () => responsiveMovil());
+  }, []);
   return (
     <main className="">
       <article>
-     {showNav ? <NavDesktop/> : <NavResponsive/>}
+        {showNav ? <NavDesktop /> : <NavResponsive />}
         <Routes>
           <Route path="/" element={<Home />} />
         </Routes>
