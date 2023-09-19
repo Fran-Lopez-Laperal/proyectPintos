@@ -25,7 +25,7 @@ export function NavResponsive() {
 
     return (
         <>
-            <section className="w-full bg-white fixed drop-shadow top-0">
+            <section className="w-full bg-white fixed drop-shadow top-0 z-999">
                 <button className="top-0" onClick={handleShowMenu}>
                     <div className="w-10 h-1 bg-black m-2"></div>
                     <div className="w-10 h-1 bg-black m-2"></div>
@@ -42,9 +42,9 @@ export function NavResponsive() {
                         <li className={`${showSubLink1 ? "h-24 transition-all duration-700" : "h-0"
                             } overflow-hidden m-2`}>
                             <section className="flex flex-col m-1">
-                                <Link className="border-b border-blue-200">Historia</Link>
-                                <Link className="border-b border-blue-200">Prémios</Link>
-                                <Link className="border-b border-blue-200">Responsabilidade</Link>
+                                <Link className="border-b border-blue-200" onClick={handleShowMenu}>Historia</Link>
+                                <Link className="border-b border-blue-200" onClick={handleShowMenu}>Prémios</Link>
+                                <Link className="border-b border-blue-200" onClick={handleShowMenu}>Responsabilidade</Link>
                             </section>
                         </li>
                     </ul>
