@@ -1,7 +1,56 @@
 export function AreaNegocio() {
     return (
-        <>
-            <h1>Aera Negocio</h1>
-        </>
+        <section>
+            <article>
+                <figure>
+                    <img src="" alt="" />
+                </figure>
+            </article>
+            <article className="bg-blue-200 w-auto p-8 flex flex-col items-center">
+                <h1 className="border-b-2 border-sky-600 text-2xl font-bold text-sky-600">PROMOÇAO IMOBILIÁRIA</h1>
+                <p className="mt-8">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil nam quis recusandae
+                    cum soluta accusantium beatae odio rerum, quod cumque. Exercitationem hic magni nostrum veritatis
+                    aliquam quisquam atque officia, voluptas esse in ex quidem quo tenetur provident quasi culpa nam
+                    quos animi doloribus at accusantium illo quas! Aperiam incidunt ipsa reprehenderit, reiciendis
+                    voluptate quidem nam molestiae quasi porro, fugiat sequi blanditiis aspernatur a, iste distinctio
+                    iure est enim voluptates obcaecati beatae harum. Iste, in alias numquam iure sapiente vero
+                    eligendi. In non dolor, animi magni, quos tempore quae repellendus illo nobis id ab autem
+                    similique repudiandae vero impedit iure commodi.</p>
+                <section className=" w-full">
+                    <button className="bg-blue-400 rounded float-right p-3 mt-3 text-white font-extrabold bg-gradient-to-t from-white to-blue-500 ">Bolsa imobiliária</button>
+                </section>
+            </article>
+
+            <article className=" flex flex-col items-center">
+
+                <figure className="border-b-8 border-blue-400 mt-7">
+                    <article className="h-64 w-96 bg-gray-400 mb-4">
+
+                    </article>
+                </figure>
+
+                <figure className="border-b-8 border-blue-400 mt-7">
+                    <article className="h-64 w-96 bg-gray-400 mb-4">
+
+                    </article>
+                </figure>
+
+                <figure className="border-b-8 border-blue-400 mt-7">
+                    <article className="h-64 w-96 bg-gray-400 mb-4">
+
+                    </article>
+                </figure>
+
+                <figure className="border-b-8 border-blue-400 mt-7">
+                    <article className="h-64 w-96 bg-gray-400 mb-4">
+
+                    </article>
+                </figure>
+
+
+            </article>
+
+
+        </section>
     )
 }
