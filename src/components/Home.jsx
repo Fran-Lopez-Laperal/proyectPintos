@@ -97,22 +97,22 @@ export function Home() {
           <Marquee className='mb-4 mt-5' pauseOnHover={true} speed={25} direction='right' gradientWidth={5}>
             <section className='nav-section flex'>
               <Link className='w-28 md:w-96  h-20 ml-1' target='_blank' rel="noreferrer" href='https://attisbyv.es/'>
-                <img className='w-32 md:w-96 w-full h-full' src={logo} alt={logo} />
+                <img className=' lg:w-64 w-full h-full' src={logo} alt={logo} />
               </Link>
               <Link className='w-28 md:w-96  h-20 ml-1' target='_blank' rel="noreferrer" href='https://attisbyv.es/'>
-                <img className='w-32 md:w-96 w-full h-full' src={logo} alt={logo} />
+                <img className=' lg:w-64 w-full h-full' src={logo} alt={logo} />
               </Link>
               <Link className='w-28 md:w-96  h-20 ml-1' target='_blank' rel="noreferrer" href='https://attisbyv.es/'>
-                <img className='w-32 md:w-96 w-full h-full' src={logo} alt={logo} />
+                <img className=' lg:w-64 w-full h-full' src={logo} alt={logo} />
               </Link>
               <Link className='w-28 md:w-96  h-20 ml-1' target='_blank' rel="noreferrer" href='https://attisbyv.es/'>
-                <img className='w-32 md:w-96 w-full h-full' src={logo} alt={logo} />
+                <img className=' lg:w-64 w-full h-full' src={logo} alt={logo} />
               </Link>
               <Link className='w-28 md:w-96  h-20 ml-1' target='_blank' rel="noreferrer" href='https://attisbyv.es/'>
-                <img className='w-32 md:w-96 w-full h-full' src={logo} alt={logo} />
+                <img className=' lg:w-64 w-full h-full' src={logo} alt={logo} />
               </Link>
               <Link className='w-28 md:w-96  h-20 ml-1' target='_blank' rel="noreferrer" href='https://attisbyv.es/'>
-                <img className='w-32 md:w-96 w-full h-full' src={logo} alt={logo} />
+                <img className=' lg:w-64 w-full h-full' src={logo} alt={logo} />
               </Link>
             </section>
           </Marquee>
@@ -120,19 +120,19 @@ export function Home() {
           <Marquee className='mb-4' pauseOnHover={true} speed={25} direction='left' gradientWidth={5}>
             <section className='nav-section flex'>
               <Link className='w-28 md:w-96  h-20 ml-1' target='_blank' rel="noreferrer" href='https://attisbyv.es/'>
-                <img className='w-32 md:w-96 w-full h-full' src={logo} alt={logo} />
+                <img className=' lg:w-64 w-full h-full' src={logo} alt={logo} />
               </Link>
               <Link className='w-28 md:w-96  h-20 ml-1' target='_blank' rel="noreferrer" href='https://attisbyv.es/'>
-                <img className='w-32 md:w-96 w-full h-full' src={logo} alt={logo} />
+                <img className=' lg:w-64 w-full h-full' src={logo} alt={logo} />
               </Link>
               <Link className='w-28 md:w-96  h-20 ml-1' target='_blank' rel="noreferrer" href='https://attisbyv.es/'>
-                <img className='w-32 md:w-96 w-full h-full' src={logo} alt={logo} />
+                <img className=' lg:w-64 w-full h-full' src={logo} alt={logo} />
               </Link>
               <Link className='w-28 md:w-96  h-20 ml-1' target='_blank' rel="noreferrer" href='https://attisbyv.es/'>
-                <img className='w-32 md:w-96 w-full h-full' src={logo} alt={logo} />
+                <img className=' lg:w-64 w-full h-full' src={logo} alt={logo} />
               </Link>
               <Link className='w-28 md:w-96  h-20 ml-1' target='_blank' rel="noreferrer" href='https://attisbyv.es/'>
-                <img className='w-32 md:w-96 w-full h-full' src={logo} alt={logo} />
+                <img className=' lg:w-64 w-full h-full' src={logo} alt={logo} />
               </Link>
             </section>
           </Marquee>
@@ -140,7 +140,7 @@ export function Home() {
       </section>
 
 
-      <section className='mt-20 sm:bg-blue-200 bg-gray-200 bg-blue-200 mb-20 flex flex-col sm:flex-row'>
+      <section className='mt-20 bg-blue-200 lg:bg-gray-100 mb-20 flex flex-col sm:flex-row'>
         <article className='w-full sm:w-1/2  hidden sm:block'>
           <img src={logo} alt="" className='w-full h-auto' />
         </article>
