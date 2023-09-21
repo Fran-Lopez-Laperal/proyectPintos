@@ -7,6 +7,8 @@ import { Home } from './components/Home';
 import { useEffect, useState } from 'react';
 import { NavResponsive } from './components/NavResponsive';
 import { AreaNegocio } from './components/AreaNegocio';
+import { Promoçao } from './components/promoçao';
+
 
 function App() {
   const [showNav, setshowNav] = useState(false);
@@ -25,6 +27,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/areaNegocio" element={<AreaNegocio />} />
+          <Route path="/promoçao" element={<Promoçao/>} />
         </Routes>
       </article>
       <Footer />
