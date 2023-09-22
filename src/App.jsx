@@ -7,6 +7,8 @@ import { Home } from './components/Home';
 import { useEffect, useState } from 'react';
 import { NavResponsive } from './components/NavResponsive';
 import { History } from './pages/history';
+import { AreaNegocio } from './components/AreaNegocio';
+import { Promoçao } from './components/promoçao';
 
 function App() {
   const [showNav, setshowNav] = useState(false);
@@ -19,12 +21,14 @@ function App() {
     window.addEventListener('resize', () => responsiveMovil());
   }, []);
   return (
-    <main className="">
+    <main className="mt-12">
       <article>
         {showNav ? <NavDesktop /> : <NavResponsive />}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/historia" element={<History />} />
+          <Route path="/areaNegocio" element={<AreaNegocio />} />
+          <Route path="/promoçao" element={<Promoçao />} />
         </Routes>
       </article>
       <Footer />
