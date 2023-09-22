@@ -6,6 +6,7 @@ import { NavDesktop } from './components/NavDesktop';
 import { Home } from './components/Home';
 import { useEffect, useState } from 'react';
 import { NavResponsive } from './components/NavResponsive';
+import { History } from './pages/history';
 
 function App() {
   const [showNav, setshowNav] = useState(false);
@@ -23,6 +24,7 @@ function App() {
         {showNav ? <NavDesktop /> : <NavResponsive />}
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/historia" element={<History />} />
         </Routes>
       </article>
       <Footer />
