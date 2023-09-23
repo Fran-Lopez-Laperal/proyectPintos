@@ -28,7 +28,7 @@ export function AreaNegocio() {
 
             </article>
 
-            <article className=" flex flex-col items-center">
+            <article className=" flex flex-col items-center mb-20">
 
                 <figure className="border-b-4 border-blue-400 mt-7">
                     <article className="h-64 w-96 bg-gray-400 mb-4">
@@ -36,19 +36,19 @@ export function AreaNegocio() {
                     </article>
                 </figure>
 
-                <figure className="border-b-8 border-blue-400 mt-7">
+                <figure className="border-b-4 border-blue-400 mt-7">
                     <article className="h-64 w-96 bg-gray-400 mb-4">
                         <img className='w-full h-full' src={imgCompany} alt={imgCompany} />
                     </article>
                 </figure>
 
-                <figure className="border-b-8 border-blue-400 mt-7">
+                <figure className="border-b-4 border-blue-400 mt-7">
                     <article className="h-64 w-96 bg-gray-400 mb-4">
                         <img className='w-full h-full' src={imgCompany} alt={imgCompany} />
                     </article>
                 </figure>
 
-                <figure className="border-b-8 border-blue-400 mt-7">
+                <figure className="border-b-4 border-blue-400 mt-7">
                     <article className="h-64 w-96 bg-gray-400 mb-4">
                         <img className='w-full h-full' src={imgCompany} alt={imgCompany} />
                     </article>

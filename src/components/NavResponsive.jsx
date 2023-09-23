@@ -25,7 +25,7 @@ export function NavResponsive() {
 
     return (
         <>
-            <section className="w-full bg-white fixed drop-shadow top-0 z-999">
+            <section className="w-full bg-white fixed drop-shadow top-0 z-50">
                 <button className="top-0" onClick={handleShowMenu}>
                     <div className="w-10 h-1 bg-black m-2"></div>
                     <div className="w-10 h-1 bg-black m-2"></div>
