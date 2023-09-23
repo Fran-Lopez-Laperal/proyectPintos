@@ -9,11 +9,20 @@ export function AreaNegocio() {
                     <img src={imgCompany} alt={imgCompany} />
                 </figure>
             </article>
-            <article className="bg-blue-200 w-auto p-8 lg:bg-gray-100 mt-32 flex justify-center">
+
+            <div className="flex justify-center items-center mt-[-30px] ">
+                <div className="text-lg uppercase relative rotate-45 border-[14px] rounded border-white">
+                    <span className="bg-corporative-gradient w-28 h-28  inset-0 flex justify-center items-center rounded border-xl">
+                        <h1 className="text-center text-white -rotate--45 font-extrabold">IMOBILIARIA</h1>
+                    </span>
+                </div>
+            </div>
+
+            <article className="bg-blue-200 w-auto p-8 lg:bg-gray-100 mt-8 flex justify-center">
                 <section className='flex flex-col items-center md:w-1/2'>
                     <h1 className="border-b-2 border-sky-600 text-2xl font-bold text-sky-600 text-2x1 md:hidden">PROMOÇÃO IMOBILIÁRIA</h1>
                     <h1 className="border-b-4 border-sky-600 text-2xl font-bold text-sky-600 text-4x1 hidden md:block lg:text-6xl w-full text-center">PROMOÇÃO</h1>
-                    <p className="mt-8 font-bold lg:text-xl ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil nam quis recusandae
+                    <p className="mt-8 font-bold lg:text-xl text-justify">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil nam quis recusandae
                         cum soluta accusantium beatae odio rerum, quod cumque. Exercitationem hic magni nostrum veritatis
                         aliquam quisquam atque officia, voluptas esse in ex quidem quo tenetur provident quasi culpa nam
                         quos animi doloribus at accusantium illo quas! Aperiam incidunt ipsa reprehenderit, reiciendis

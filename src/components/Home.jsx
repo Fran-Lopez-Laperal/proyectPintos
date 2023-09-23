@@ -9,41 +9,50 @@ export function Home() {
   return (
     <>
       <section>
-        <figure className='mt-12'>
+        <figure className='mt-12 lg:mt-0'>
           <img className='' src={imgCompany} alt={imgCompany} />
         </figure>
       </section>
+
+      <div className="flex justify-center items-center mt-[-40px] ">
+        <div className="text-lg uppercase relative rotate-45 border-[14px] rounded border-white">
+          <span className="bg-corporative-gradient w-28 h-28  inset-0 flex justify-center items-center rounded border-xl">
+            <h1 className="text-center text-white -rotate--45 font-extrabold">História</h1>
+          </span>
+        </div>
+      </div>
+
       <section>
-        <menu className="w-full p-1  mt-10">
+        <menu className="w-full p-1 mt-[-75px]">
           <ul className="lg:flex grid grid-cols-2 lg:justify-around">
 
-            <Link className="flex justify-center border border-blue-400 h-24 items-center lg:w-56 bg-blue-100 lg:m-0 m-0.5 lg:rounded-none rounded-br rounded-tr " to='/'>
-              <li className="" >
+            <Link className="flex justify-center  h-24 items-center lg:w-56 bg-sky-600 lg:m-0 m-0.5 lg:rounded-none rounded-br rounded-tr " to='/'>
+              <li className="text-white font-extrabold" >
                 TURISMO
               </li>
             </Link>
-            <Link className="flex justify-center border border-blue-400 h-24 items-center lg:w-56 bg-blue-100 lg:m-0 m-0.5 lg:rounded-none rounded-bl rounded-tl" to='/'>
-              <li className="" >
-                CARPINTARIA
-              </li>
-            </Link>
-            <Link className="flex justify-center border border-blue-400 h-24 items-center lg:w-56 bg-blue-100 lg:m-0 m-0.5 lg:rounded-none rounded-br rounded-tr" to='/'>
-              <li className="" >
-                CONSTRUÇAO
-              </li>
-            </Link>
-            <Link className="flex justify-center border border-blue-400 h-24 items-center lg:w-56 bg-blue-100 lg:m-0 m-0.5 lg:rounded-none rounded-bl rounded-tl" to='/'>
-              <li className="" >
+            <Link className="flex justify-center  h-24 items-center lg:w-56 bg-sky-600 lg:m-0 m-0.5 lg:rounded-none rounded-bl rounded-tl" to='/'>
+              <li className="text-white font-extrabold" >
                 BETÃO
               </li>
             </Link>
-            <Link className="flex justify-center border border-blue-400 h-24 items-center lg:w-56 bg-blue-100 lg:m-0 m-0.5 lg:rounded-none rounded-br rounded-tr" to='/'>
-              <li className="" >
+            <Link className="flex justify-center  h-24 items-center lg:w-56 bg-sky-600 lg:m-0 m-0.5 lg:rounded-none rounded-br rounded-tr" to='/'>
+              <li className="text-white font-extrabold" >
+                CONSTRUÇAO
+              </li>
+            </Link>
+            <Link className="flex justify-center  h-24 items-center lg:w-56 bg-sky-600 lg:m-0 m-0.5 lg:rounded-none rounded-bl rounded-tl" to='/'>
+              <li className=" text-white font-extrabold" >
+                CARPINTARIA
+              </li>
+            </Link>
+            <Link className="flex justify-center  h-24 items-center lg:w-56 bg-sky-600 lg:m-0 m-0.5 lg:rounded-none rounded-br rounded-tr" to='/'>
+              <li className="text-white font-extrabold" >
                 IMOBILIARIA
               </li>
             </Link>
-            <Link className="flex justify-center border border-blue-400 h-24 items-center lg:w-56 bg-blue-100 lg:m-0 m-0.5 lg:rounded-none rounded-bl rounded-tl" to='/'>
-              <li className="" >
+            <Link className="flex justify-center  h-24 items-center lg:w-56 bg-sky-600 lg:m-0 m-0.5 lg:rounded-none rounded-bl rounded-tl" to='/'>
+              <li className="text-white font-extrabold" >
                 INTERNACIONAL
               </li>
             </Link>
@@ -151,7 +160,7 @@ export function Home() {
             <p className='mt-5 font-bold'>Lorem ipsum dolor sit.</p>
             <p className='text-sky-700 font-extrabold text-3xl underline mt-5'>Adipisci rem consequatur</p>
           </header>
-          <section className='m-5'>
+          <section className='m-5 font-bold text-justify'>
             <p className='mt-10'>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis enim aspernatur nostrum,
               cum suscipit minima amet exercitationem? Ex numquam praesentium quod amet impedit, deserunt rem nemo vel aperiam.
@@ -191,6 +200,36 @@ export function Home() {
           </figure>
 
           <figure className="max-w-xs mx-auto bg-white shadow-md rounded-lg overflow-hidden">
+            <img
+              className="w-40 h-24 object-cover bg-gray-300"
+              src="IMAGEN"
+              alt="Imagen"
+            />
+            <footer className="px-4 py-2">
+              <p className="text-gray-700 text-base">
+                Frase uno.
+              </p>
+              <p className="text-gray-700 text-base">
+                Frase dos.
+              </p>
+            </footer>
+          </figure>
+          <figure className="hidden lg:block max-w-xs mx-auto bg-white shadow-md rounded-lg overflow-hidden">
+            <img
+              className="w-40 h-24 object-cover bg-gray-300"
+              src="IMAGEN"
+              alt="Imagen"
+            />
+            <footer className="px-4 py-2">
+              <p className="text-gray-700 text-base">
+                Frase uno.
+              </p>
+              <p className="text-gray-700 text-base">
+                Frase dos.
+              </p>
+            </footer>
+          </figure>
+          <figure className="hidden lg:block max-w-xs mx-auto bg-white shadow-md rounded-lg overflow-hidden">
             <img
               className="w-40 h-24 object-cover bg-gray-300"
               src="IMAGEN"
