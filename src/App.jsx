@@ -21,7 +21,7 @@ function App() {
     window.addEventListener('resize', () => responsiveMovil());
   }, []);
   return (
-    <main className="mt-12">
+    <main className="mt-12 lg:mt-0">
       <article>
         {showNav ? <NavDesktop /> : <NavResponsive />}
         <Routes>
