@@ -15,34 +15,34 @@ export function Home() {
       </section>
       <section>
         <menu className="w-full p-1  mt-10">
-          <ul className="lg:flex grid grid-cols-2">
+          <ul className="lg:flex grid grid-cols-2 lg:justify-around">
 
-            <Link className="flex justify-center border border-blue-400 h-24 items-center lg:w-full bg-blue-100 lg:m-0 m-0.5 rounded-br rounded-tr " to='/'>
+            <Link className="flex justify-center border border-blue-400 h-24 items-center lg:w-56 bg-blue-100 lg:m-0 m-0.5 lg:rounded-none rounded-br rounded-tr " to='/'>
               <li className="" >
                 TURISMO
               </li>
             </Link>
-            <Link className="flex justify-center border border-blue-400 h-24 items-center lg:w-full bg-blue-100 lg:m-0 m-0.5 rounded-bl rounded-tl" to='/'>
+            <Link className="flex justify-center border border-blue-400 h-24 items-center lg:w-56 bg-blue-100 lg:m-0 m-0.5 lg:rounded-none rounded-bl rounded-tl" to='/'>
               <li className="" >
                 CARPINTARIA
               </li>
             </Link>
-            <Link className="flex justify-center border border-blue-400 h-24 items-center lg:w-full bg-blue-100 lg:m-0 m-0.5 rounded-br rounded-tr" to='/'>
+            <Link className="flex justify-center border border-blue-400 h-24 items-center lg:w-56 bg-blue-100 lg:m-0 m-0.5 lg:rounded-none rounded-br rounded-tr" to='/'>
               <li className="" >
                 CONSTRUÇAO
               </li>
             </Link>
-            <Link className="flex justify-center border border-blue-400 h-24 items-center lg:w-full bg-blue-100 lg:m-0 m-0.5 rounded-bl rounded-tl" to='/'>
+            <Link className="flex justify-center border border-blue-400 h-24 items-center lg:w-56 bg-blue-100 lg:m-0 m-0.5 lg:rounded-none rounded-bl rounded-tl" to='/'>
               <li className="" >
                 BETÃO
               </li>
             </Link>
-            <Link className="flex justify-center border border-blue-400 h-24 items-center lg:w-full bg-blue-100 lg:m-0 m-0.5 rounded-br rounded-tr" to='/'>
+            <Link className="flex justify-center border border-blue-400 h-24 items-center lg:w-56 bg-blue-100 lg:m-0 m-0.5 lg:rounded-none rounded-br rounded-tr" to='/'>
               <li className="" >
                 IMOBILIARIA
               </li>
             </Link>
-            <Link className="flex justify-center border border-blue-400 h-24 items-center lg:w-full bg-blue-100 lg:m-0 m-0.5 rounded-bl rounded-tl" to='/'>
+            <Link className="flex justify-center border border-blue-400 h-24 items-center lg:w-56 bg-blue-100 lg:m-0 m-0.5 lg:rounded-none rounded-bl rounded-tl" to='/'>
               <li className="" >
                 INTERNACIONAL
               </li>
@@ -54,34 +54,36 @@ export function Home() {
 
       <section className='bg-blue-50 '>
 
-        <article className='flex justify-center items-center h-20 relative'>
-          <p className='text-base relative z-10 bg-blue-50 p-2'>A inovação nos torna diferenes</p>
+        <article className='flex justify-center items-center h-20 relative  lg:flex lg:justify-center '>
+          <p className='text-base relative z-10 bg-blue-50 p-2 lg:text-5xl '>A inovação nos torna diferenes</p>
           <p className='absolute left-1 right-1 h-0.5 bg-gray-500 z-0'></p>
         </article>
+      </section>
 
-        <article className='bg-blue-200 h-auto border font-bold text-sky-700 '>
-          <section className='mt-5 mb-8'>
+      <section>
+        <article className='bg-blue-200 h-auto border font-bold text-sky-700 mt-10 lg:p-5'>
+          <section className='mt-5 mb-8  lg:mb-10 lg:mt-10'>
             <header className='flex flex-col items-center'>
-              <p className='font-extrabold text-3xl'>30</p>
-              <p className='underline text-lg'>ANOS DE EXPERIENCIA</p>
+              <p className='font-extrabold text-3xl lg:text-5xl'>30</p>
+              <p className='underline text-lg lg:text-3xl'>ANOS DE EXPERIENCIA</p>
             </header>
 
             <section className='lg:flex justify-around  grid grid-cols-2 mt-5'>
               <article className='flex flex-col items-center mt-3 '>
-                <p>120</p>
-                <p className='underline'>COLABORADORES</p>
+                <p className='lg:text-4xl'>120</p>
+                <p className='underline lg:text-2xl'>COLABORADORES</p>
               </article>
               <article className='flex flex-col items-center  mt-3'>
-                <p>+500</p>
-                <p className='underline '>OBRAS CONCLUÍDAS</p>
+                <p className='lg:text-4xl'>+500</p>
+                <p className='underline lg:text-2xl'>OBRAS CONCLUÍDAS</p>
               </article>
               <article className='flex flex-col items-center  mt-3'>
-                <p>12</p>
-                <p className='underline'>EMPRESAS</p>
+                <p className='lg:text-4xl'> 12</p>
+                <p className='underline lg:text-2xl'>EMPRESAS</p>
               </article>
               <article className='flex flex-col items-center  mt-3'>
-                <p>15</p>
-                <p className='underline'>PROJETOS EM CURSO</p>
+                <p className='lg:text-4xl'>15</p>
+                <p className='underline lg:text-2xl'>PROJETOS EM CURSO</p>
               </article>
             </section>
           </section>
@@ -89,9 +91,9 @@ export function Home() {
         </article>
       </section>
 
-      <section className='mt-20 '>
+      <section className='mt-20 lg:mb-32'>
         <header>
-          <p className='text-sky-700 font-extrabold text-3xl flex justify-center'>EMPRESAS DO GRUPO</p>
+          <p className='text-sky-700 font-extrabold text-3xl flex justify-center lg:text-[64px] lg:mb-24'>EMPRESAS DO GRUPO</p>
         </header>
         <article>
           <Marquee className='mb-4 mt-5' pauseOnHover={true} speed={25} direction='right' gradientWidth={5}>
