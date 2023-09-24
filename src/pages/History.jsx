@@ -4,12 +4,14 @@ import historyHeader from '../assets/headersImages/historyHeader.jpeg';
 export function History() {
   return (
     <main className="flex flex-col">
-      <HeaderPages text={'História'} textSize="text-6xl" image={historyHeader} />
+      <HeaderPages text={'História'} textSize="text-2xl lg:text-6xl" image={historyHeader} />
 
-      <section className="flex flex-col justify-center items-center bg-[#F1F6F9] w-full mx-auto">
-        <div className="mx-80">
-          <h2 className="text-corporative-color text-center text-6xl uppercase w-full border-b-4 border-corporative-color pb-3 font-bold">o grupo</h2>
-          <p className="pt-6 text-justify text-xl font-extrabold">
+      <section className="flex flex-col justify-center items-center bg-corporative-color3 w-full mx-auto">
+        <div className="m-10 lg:mx-80">
+          <h2 className="text-corporative-color text-center text-4xl uppercase w-full border-b-4 border-corporative-color pb-3 font-bold lg:text-6xl">
+            o grupo
+          </h2>
+          <p className="pt-6 text-justify text-lg font-extrabold lg:text-2xl">
             O Grupo SPintos, fundado em 1993, tem a sua origem na área da construção civil, agregando na sua matriz um vasto conjunto de empresas com
             sólida experiência e conhecimento nos diferentes sectores em que atua. Sob a liderança dos irmãos Fernando, Rui, Vasco e Berto Pinto, o
             Grupo SPintos alicerça os seus valores no desenvolvimento sustentado, na qualidade e na segurança dos projetos que desenvolve.Com um
@@ -24,9 +26,9 @@ export function History() {
         </div>
       </section>
 
-      <section className="flex flex-col justify-center items-center bg-[#F1F6F9] w-full mx-auto pt-36 ">
-        <div className="w-full h-[400px] px-36 bg-red-200 flex flex-col items-center">
-          <h2 className=" text-corporative-color text-center text-6xl uppercase pb-3 font-bold">empresas do grupo</h2>
+      <section className="flex flex-col justify-center items-center w-full mx-auto lg:pt-36 ">
+        <div className="m-10 flex flex-col items-center lg:px-36">
+          <h2 className="text-corporative-color text-center text-4xl uppercase w-full  pb-3 font-bold lg:text-6xl">empresas do grupo</h2>
           <p className="bg-blue-300 w-full h-full text-xl font-extrabold m-10 text-center">componente logos</p>
         </div>
       </section>

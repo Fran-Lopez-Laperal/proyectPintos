@@ -8,7 +8,7 @@ export function Contact() {
   return (
     <section>
       <header>
-        <div className="flex justify-center items-center bg-contactHeader-color text-white text-4xl w-full h-44 font-medium lg:h-[810px] lg:text-[100px]">
+        <div className="flex justify-center items-center bg-contactHeader-color text-white text-4xl w-full h-44 font-medium lg:h-[850px] lg:text-[100px]">
           CONTACTOS
         </div>
       </header>
@@ -24,7 +24,7 @@ export function Contact() {
         <ContactInfo imgSrc={Phone} altText="phone-logo" infoText="+ 351 22 415 7710" infoText2="Chamada para a rede fixa nacional" />
       </main>
 
-      <footer className="mb-52">
+      <footer className="mb-16 lg:mb-52">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12006.774960091525!2d-8.2706642!3d41.2066501!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2491a26cfeda19%3A0xfec37cbb21b5677c!2sAEP%20-%20Business%20Association%20De%20Penafiel!5e0!3m2!1ses!2ses!4v1695555765385!5m2!1ses!2ses"
           width="100%"
