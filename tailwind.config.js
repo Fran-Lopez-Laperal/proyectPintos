@@ -6,6 +6,9 @@ export default {
       width: {
         '20%': '20%',
       },
+      fontFamily: {
+        dancing: 'Dancing Script',
+      },
       colors: {
         // 'corporative-color': '#13679F',
         'corporative-color': '#092172',
