@@ -13,6 +13,8 @@ import { NavDesktop } from './components/NavDesktop';
 import { NavResponsive } from './components/NavResponsive';
 import { Footer } from './components/Footer';
 
+import { Noticia } from './components/Noticia';
+
 function App() {
   const [showNav, setshowNav] = useState(false);
 
@@ -33,6 +35,7 @@ function App() {
           <Route path="/areaNegocio" element={<AreaNegocio />} />
           <Route path="/promoçao" element={<Promoçao />} />
           <Route path="/contacto" element={<Contact />} />
+          <Route path="/noticia" element={<Noticia/>} />
         </Routes>
       </article>
       <Footer />
