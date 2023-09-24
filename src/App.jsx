@@ -1,16 +1,19 @@
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
 
-import { Footer } from './components/Footer';
-import { NavDesktop } from './components/NavDesktop';
-import { Home } from './components/Home';
 import { useEffect, useState } from 'react';
-import { NavResponsive } from './components/NavResponsive';
+
+import { Home } from './components/Home';
+
 import { History } from './pages/History';
+import { AreaNegocio } from './pages/AreaNegocio';
+import { Promoçao } from './pages/Promoçao';
 import { Contact } from './pages/Contact';
 
-import { AreaNegocio } from './components/AreaNegocio';
-import { Promoçao } from './components/promoçao';
+import { NavDesktop } from './components/NavDesktop';
+import { NavResponsive } from './components/NavResponsive';
+import { Footer } from './components/Footer';
+import { Pruebas } from './components/Pruebas';
 
 function App() {
   const [showNav, setshowNav] = useState(false);
@@ -32,6 +35,7 @@ function App() {
           <Route path="/areaNegocio" element={<AreaNegocio />} />
           <Route path="/promoçao" element={<Promoçao />} />
           <Route path="/contacto" element={<Contact />} />
+          <Route path="/pruebas" element={<Pruebas />} />
         </Routes>
       </article>
       <Footer />

@@ -6,7 +6,7 @@ import logowa from '../assets/react.svg';
 export function Footer() {
   return (
     <footer className="flex flex-col text-xl">
-      <div className="bg-bg-corporative-color text-white p-4 lg:px-48">
+      <div className="bg-corporative-color2 text-white p-4 lg:px-48">
         <section className="lg:flex justify-between">
           <article className="mb-6 lg:w-20%">
             <h2 className="text-2xl font-semibold border-b-4 mb-3 lg:border-b">ENDEREÇO</h2>

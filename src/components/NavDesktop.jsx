@@ -3,7 +3,7 @@ import logo from '../assets/logo.png';
 
 export function NavDesktop() {
   const links = [
-    { to: '/', text: 'GRUPO PINTOS' },
+    { to: '/', text: 'GRUPO SPINTOS' },
     { to: '/areaNegocio', text: 'ÁREAS DE NEGOCIO' },
     { to: '/historia', text: 'HISTORIA' },
     { to: '/', text: 'NOTÍCIAS' },

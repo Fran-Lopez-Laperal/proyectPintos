@@ -8,7 +8,7 @@ export function Contact() {
   return (
     <section>
       <header>
-        <div className="flex justify-center items-center bg-bg-corporative-color2 text-white text-4xl w-full h-44 font-medium lg:h-[810px] lg:text-[100px]">
+        <div className="flex justify-center items-center bg-contactHeader-color text-white text-4xl w-full h-44 font-medium lg:h-[810px] lg:text-[100px]">
           CONTACTOS
         </div>
       </header>
