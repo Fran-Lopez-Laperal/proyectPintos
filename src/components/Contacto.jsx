@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import maps from '../assets/maps.png'
 
 
@@ -35,7 +36,10 @@ export function Contacto() {
 
             </section>
             <section className='mb-20'>
-                <img src={maps} alt={maps} />
+                <Link to="https://maps.app.goo.gl/wUAKdxiH2z1RE2rh6">
+                    <img src={maps} alt={maps} />
+                </Link>
+
             </section>
         </>
     )
