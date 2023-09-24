@@ -7,12 +7,15 @@ export default {
         '20%': '20%',
       },
       colors: {
-        'corporative-color': '#13679F',
-        'bg-corporative-color': '#1272AB',
-        'bg-corporative-color2': '#113c9280',
+        // 'corporative-color': '#13679F',
+        'corporative-color': '#092172',
+        'corporative-color2': '#1272AB',
+        'corporative-color3': '#C9E5FD',
+        'corporative-color4': '#7D7773',
+        'contactHeader-color': '#113c9280',
       },
       backgroundImage: {
-        'corporative-gradient': 'linear-gradient(135deg, #1267A0, #FFFFFF)',
+        'corporative-gradient': 'linear-gradient(135deg, #1272AB, #FFFFFF)',
       },
       rotate: {
         '--45': '-45deg',
