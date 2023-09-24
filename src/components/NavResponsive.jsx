@@ -33,7 +33,7 @@ export function NavResponsive() {
 
             <li className={`${showSubLink1 ? 'h-24 transition-all duration-700' : 'h-0'} overflow-hidden m-2`}>
               <section className="flex flex-col m-1">
-                <Link className="border-b border-blue-200" onClick={handleShowMenu}>
+                <Link to="/historia" className="border-b border-blue-200" onClick={handleShowMenu}>
                   Historia
                 </Link>
                 <Link className="border-b border-blue-200" onClick={handleShowMenu}>
@@ -51,35 +51,35 @@ export function NavResponsive() {
 
             <li className={`${showSubLink2 ? 'h-36 transition-all duration-700' : 'h-0'} overflow-hidden m-2`}>
               <section className="flex flex-col m-1">
-                <Link className="border-b border-blue-200" onClick={handleShowMenu}>
+                <Link to="/engenharia" className="border-b border-blue-200" onClick={handleShowMenu}>
                   Engenharia e Construção
                 </Link>
-                <Link className="border-b border-blue-200" onClick={handleShowMenu}>
+                <Link to="/betao" className="border-b border-blue-200" onClick={handleShowMenu}>
                   Betaõ
                 </Link>
-                <Link className="border-b border-blue-200" onClick={handleShowMenu}>
+                <Link to="/carpinteria" className="border-b border-blue-200" onClick={handleShowMenu}>
                   Carpintaria
                 </Link>
-                <Link className="border-b border-blue-200" onClick={handleShowMenu}>
+                <Link to="/promoção" className="border-b border-blue-200" onClick={handleShowMenu}>
                   Promoção Imboliriária
                 </Link>
-                <Link className="border-b border-blue-200" onClick={handleShowMenu}>
-                  Hotelaría
+                <Link to="/turismo" className="border-b border-blue-200" onClick={handleShowMenu}>
+                  Turismo
                 </Link>
               </section>
             </li>
           </ul>
 
           <ul className="m-3 font-bold" onClick={handleShowMenu}>
-            Internacionalización
+            <Link to="/internacionalizacion">Internacionalización</Link>
           </ul>
 
           <ul className="m-3 font-bold" onClick={handleShowMenu}>
-            Notícias
+            <Link to="/noticias">Notícias</Link>
           </ul>
 
           <ul className="m-3 font-bold" onClick={handleShowMenu}>
-            Contactos
+            <Link to="/contacto">Contactos</Link>
           </ul>
 
           <section className="flex space-x-4 font-bold justify-center items-center">
