@@ -1,141 +1,54 @@
-import { Link } from 'react-router-dom';
-import Marquee from 'react-fast-marquee';
+import { HeaderPages } from '../components/HeaderPages';
+import { HomeLinks } from '../components/HomeLinks';
+import { Logos } from '../components/Logos';
+
+import logo from '../assets/logo.png';
+import logo2 from '../assets/logo2.png';
 
 import companyHeader from '../assets/headersImages/companyHeader.jpeg';
-import logo from '../assets/logo.png';
+
+const StatCard = ({ number, text }) => {
+  return (
+    <article className="flex flex-col items-center mt-3">
+      <p className="font-extrabold text-lg lg:text-4xl">{number}</p>
+      <p className="px-1 border-b-[1px] border-corporative-color lg:text-2xl">{text}</p>
+    </article>
+  );
+};
 
 export function Home() {
   return (
-    <>
-      <section>
-        <figure className="mt-12 lg:mt-0">
-          <img className="" src={companyHeader} alt={companyHeader} />
-        </figure>
+    <main className="flex flex-col">
+      <HeaderPages image={companyHeader} logo={logo2} />
+      <HomeLinks />
+
+      <section className="m-4 flex justify-center items-center h-20 relative mt-[-50px] lg:flex lg:justify-center ">
+        <p className="text-xl relative z-10 bg-white p-2 font-dancing lg:text-5xl ">A inovação nos torna diferenes</p>
+        <p className="absolute left-1 right-1 h-0.5 bg-corporative-color z-0"></p>
       </section>
 
-      <div className="flex justify-center items-center mt-[-40px] ">
-        <div className="text-lg uppercase relative rotate-45 border-[14px] rounded border-white">
-          <span className="bg-corporative-gradient w-28 h-28  inset-0 flex justify-center items-center rounded border-xl">
-            <h1 className="text-center text-white -rotate--45 font-extrabold">História</h1>
-          </span>
-        </div>
-      </div>
+      <section className="my-4 mb-20 bg-blue-200 h-auto border font-bold text-sky-700">
+        <section className="py-4 my-4">
+          <header className=" flex flex-col items-center">
+            <p className="font-extrabold text-3xl lg:text-5xl">30</p>
+            <p className="text-xs lg:text-3xl">ANOS DE EXPERIENCIA</p>
+            <p className="h-[1px] bg-corporative-color text-transparent">aaaaaaaaaaaaaaaaaa</p>
+          </header>
 
-      <section>
-        <menu className="w-full p-1 mt-[-75px]">
-          <ul className="lg:flex grid grid-cols-2 lg:justify-around">
-            <Link className="flex justify-center  h-24 items-center lg:w-56 bg-sky-600 lg:m-0 m-0.5 lg:rounded-none rounded-br rounded-tr " to="/">
-              <li className="text-white font-extrabold">TURISMO</li>
-            </Link>
-            <Link className="flex justify-center  h-24 items-center lg:w-56 bg-sky-600 lg:m-0 m-0.5 lg:rounded-none rounded-bl rounded-tl" to="/">
-              <li className="text-white font-extrabold">BETÃO</li>
-            </Link>
-            <Link className="flex justify-center  h-24 items-center lg:w-56 bg-sky-600 lg:m-0 m-0.5 lg:rounded-none rounded-br rounded-tr" to="/">
-              <li className="text-white font-extrabold">CONSTRUÇAO</li>
-            </Link>
-            <Link className="flex justify-center  h-24 items-center lg:w-56 bg-sky-600 lg:m-0 m-0.5 lg:rounded-none rounded-bl rounded-tl" to="/">
-              <li className=" text-white font-extrabold">CARPINTARIA</li>
-            </Link>
-            <Link className="flex justify-center  h-24 items-center lg:w-56 bg-sky-600 lg:m-0 m-0.5 lg:rounded-none rounded-br rounded-tr" to="/">
-              <li className="text-white font-extrabold">IMOBILIARIA</li>
-            </Link>
-            <Link className="flex justify-center  h-24 items-center lg:w-56 bg-sky-600 lg:m-0 m-0.5 lg:rounded-none rounded-bl rounded-tl" to="/">
-              <li className="text-white font-extrabold">INTERNACIONAL</li>
-            </Link>
-          </ul>
-        </menu>
-      </section>
-
-      <section className="bg-blue-50 ">
-        <article className="flex justify-center items-center h-20 relative  lg:flex lg:justify-center ">
-          <p className="text-base relative z-10 bg-blue-50 p-2 lg:text-5xl ">A inovação nos torna diferenes</p>
-          <p className="absolute left-1 right-1 h-0.5 bg-gray-500 z-0"></p>
-        </article>
-      </section>
-
-      <section>
-        <article className="bg-blue-200 h-auto border font-bold text-sky-700 mt-10 lg:p-5">
-          <section className="mt-5 mb-8  lg:mb-10 lg:mt-10">
-            <header className="flex flex-col items-center">
-              <p className="font-extrabold text-3xl lg:text-5xl">30</p>
-              <p className="underline text-lg lg:text-3xl">ANOS DE EXPERIENCIA</p>
-            </header>
-
-            <section className="lg:flex justify-around  grid grid-cols-2 mt-5">
-              <article className="flex flex-col items-center mt-3 ">
-                <p className="lg:text-4xl">120</p>
-                <p className="underline lg:text-2xl">COLABORADORES</p>
-              </article>
-              <article className="flex flex-col items-center  mt-3">
-                <p className="lg:text-4xl">+500</p>
-                <p className="underline lg:text-2xl">OBRAS CONCLUÍDAS</p>
-              </article>
-              <article className="flex flex-col items-center  mt-3">
-                <p className="lg:text-4xl"> 12</p>
-                <p className="underline lg:text-2xl">EMPRESAS</p>
-              </article>
-              <article className="flex flex-col items-center  mt-3">
-                <p className="lg:text-4xl">15</p>
-                <p className="underline lg:text-2xl">PROJETOS EM CURSO</p>
-              </article>
-            </section>
+          <section className="grid grid-cols-2 text-xs text-center pt-2">
+            <StatCard number="120" text="COLABORADORES" />
+            <StatCard number="+500" text="OBRAS CONCLUÍDAS" />
+            <StatCard number="12" text="EMPRESAS" />
+            <StatCard number="15" text="PROJETOS EM CURSO" />
           </section>
-        </article>
+        </section>
       </section>
 
-      <section className="mt-20 lg:mb-32">
-        <header>
-          <p className="text-sky-700 font-extrabold text-3xl flex justify-center lg:text-[64px] lg:mb-24">EMPRESAS DO GRUPO</p>
-        </header>
-        <article>
-          <Marquee className="mb-4 mt-5" pauseOnHover={true} speed={25} direction="right" gradientWidth={5}>
-            <section className="nav-section flex">
-              <Link className="w-28 md:w-96  h-20 ml-1" target="_blank" rel="noreferrer" href="https://attisbyv.es/">
-                <img className=" lg:w-64 w-full h-full" src={logo} alt={logo} />
-              </Link>
-              <Link className="w-28 md:w-96  h-20 ml-1" target="_blank" rel="noreferrer" href="https://attisbyv.es/">
-                <img className=" lg:w-64 w-full h-full" src={logo} alt={logo} />
-              </Link>
-              <Link className="w-28 md:w-96  h-20 ml-1" target="_blank" rel="noreferrer" href="https://attisbyv.es/">
-                <img className=" lg:w-64 w-full h-full" src={logo} alt={logo} />
-              </Link>
-              <Link className="w-28 md:w-96  h-20 ml-1" target="_blank" rel="noreferrer" href="https://attisbyv.es/">
-                <img className=" lg:w-64 w-full h-full" src={logo} alt={logo} />
-              </Link>
-              <Link className="w-28 md:w-96  h-20 ml-1" target="_blank" rel="noreferrer" href="https://attisbyv.es/">
-                <img className=" lg:w-64 w-full h-full" src={logo} alt={logo} />
-              </Link>
-              <Link className="w-28 md:w-96  h-20 ml-1" target="_blank" rel="noreferrer" href="https://attisbyv.es/">
-                <img className=" lg:w-64 w-full h-full" src={logo} alt={logo} />
-              </Link>
-            </section>
-          </Marquee>
-
-          <Marquee className="mb-4" pauseOnHover={true} speed={25} direction="left" gradientWidth={5}>
-            <section className="nav-section flex">
-              <Link className="w-28 md:w-96  h-20 ml-1" target="_blank" rel="noreferrer" href="https://attisbyv.es/">
-                <img className=" lg:w-64 w-full h-full" src={logo} alt={logo} />
-              </Link>
-              <Link className="w-28 md:w-96  h-20 ml-1" target="_blank" rel="noreferrer" href="https://attisbyv.es/">
-                <img className=" lg:w-64 w-full h-full" src={logo} alt={logo} />
-              </Link>
-              <Link className="w-28 md:w-96  h-20 ml-1" target="_blank" rel="noreferrer" href="https://attisbyv.es/">
-                <img className=" lg:w-64 w-full h-full" src={logo} alt={logo} />
-              </Link>
-              <Link className="w-28 md:w-96  h-20 ml-1" target="_blank" rel="noreferrer" href="https://attisbyv.es/">
-                <img className=" lg:w-64 w-full h-full" src={logo} alt={logo} />
-              </Link>
-              <Link className="w-28 md:w-96  h-20 ml-1" target="_blank" rel="noreferrer" href="https://attisbyv.es/">
-                <img className=" lg:w-64 w-full h-full" src={logo} alt={logo} />
-              </Link>
-            </section>
-          </Marquee>
-        </article>
-      </section>
+      <Logos />
 
       <section className="mt-20 bg-blue-200 lg:bg-gray-100 mb-20 flex flex-col sm:flex-row">
         <article className="w-full sm:w-1/2  hidden sm:block">
-          <img src={logo} alt="" className="w-full h-auto" />
+          <img src={logo} alt="" className="h-auto" />
         </article>
         <article className="border w-full sm:w-1/2">
           <header className="flex flex-col items-center">
@@ -194,6 +107,6 @@ export function Home() {
           </figure>
         </article>
       </section>
-    </>
+    </main>
   );
 }
