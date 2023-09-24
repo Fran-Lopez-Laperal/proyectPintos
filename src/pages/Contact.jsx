@@ -1,6 +1,6 @@
-import Location from '../assets/location.svg';
-import Mail from '../assets/mail.svg';
-import Phone from '../assets/phone.svg';
+import Location from '../assets/svg/location.svg';
+import Mail from '../assets/svg/mail.svg';
+import Phone from '../assets/svg/phone.svg';
 
 import { ContactInfo } from '../components/ContactInfo';
 

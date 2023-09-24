@@ -1,21 +1,11 @@
-import imgCompany from '../assets/imgCompany.png';
+import { HeaderPages } from '../components/HeaderPages';
+import areaNegocioHeader from '../assets/headersImages/areaNegocioHeader.jpeg';
+import model from '../assets/model.jpg';
 
 export function AreaNegocio() {
   return (
-    <section>
-      <article>
-        <figure>
-          <img src={imgCompany} alt={imgCompany} />
-        </figure>
-      </article>
-
-      <div className="flex justify-center items-center mt-[-40px] ">
-        <div className="text-lg uppercase relative rotate-45 border-[14px] rounded border-white">
-          <span className="bg-corporative-gradient w-28 h-28 lg:w-40 lg:h-40  inset-0 flex justify-center items-center rounded border-xl">
-            <h1 className="text-center text-white -rotate--45 font-extrabold">IMOBILIARIA</h1>
-          </span>
-        </div>
-      </div>
+    <main className="flex flex-col">
+      <HeaderPages text={'Imobiliária'} textSize="text-5xl" image={areaNegocioHeader} />
 
       <article className="bg-blue-200 w-auto p-8 lg:bg-gray-100 mt-10 flex justify-center">
         <section className="flex flex-col items-center md:w-1/2">
@@ -42,28 +32,28 @@ export function AreaNegocio() {
       <article className=" flex flex-col items-center mb-20">
         <figure className="border-b-4 border-blue-400 mt-7">
           <article className="h-64 w-96 bg-gray-400 mb-4">
-            <img className="w-full h-full" src={imgCompany} alt={imgCompany} />
+            <img className="w-full h-full" src={model} alt={model} />
           </article>
         </figure>
 
         <figure className="border-b-4 border-blue-400 mt-7">
           <article className="h-64 w-96 bg-gray-400 mb-4">
-            <img className="w-full h-full" src={imgCompany} alt={imgCompany} />
+            <img className="w-full h-full" src={model} alt={model} />
           </article>
         </figure>
 
         <figure className="border-b-4 border-blue-400 mt-7">
           <article className="h-64 w-96 bg-gray-400 mb-4">
-            <img className="w-full h-full" src={imgCompany} alt={imgCompany} />
+            <img className="w-full h-full" src={model} alt={model} />
           </article>
         </figure>
 
         <figure className="border-b-4 border-blue-400 mt-7">
           <article className="h-64 w-96 bg-gray-400 mb-4">
-            <img className="w-full h-full" src={imgCompany} alt={imgCompany} />
+            <img className="w-full h-full" src={model} alt={model} />
           </article>
         </figure>
       </article>
-    </section>
+    </main>
   );
 }

@@ -1,7 +1,7 @@
-import logofb from '../assets/react.svg';
-import logoig from '../assets/react.svg';
-import logoli from '../assets/react.svg';
-import logowa from '../assets/react.svg';
+import logofb from '../assets/svg/react.svg';
+import logoig from '../assets/svg/react.svg';
+import logoli from '../assets/svg/react.svg';
+import logowa from '../assets/svg/react.svg';
 
 export function Footer() {
   return (

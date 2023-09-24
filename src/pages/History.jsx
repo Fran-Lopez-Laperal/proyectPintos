@@ -1,19 +1,10 @@
+import { HeaderPages } from '../components/HeaderPages';
+import historyHeader from '../assets/headersImages/historyHeader.jpeg';
+
 export function History() {
   return (
     <main className="flex flex-col">
-      <header>
-        <figure className="w-full h-[810px] bg-red-200 border-b-8 border-corporative-color">
-          <img src="" alt="" />
-        </figure>
-
-        <div className="flex justify-center items-center mt-[-100px] pb-48">
-          <div className="text-6xl uppercase relative rotate-45 border-[14px] rounded border-white">
-            <span className="bg-corporative-gradient w-60 h-60  inset-0 flex justify-center items-center rounded border-xl">
-              <h1 className="text-center text-white -rotate--45 font-extrabold">História</h1>
-            </span>
-          </div>
-        </div>
-      </header>
+      <HeaderPages text={'História'} textSize="text-6xl" image={historyHeader} />
 
       <section className="flex flex-col justify-center items-center bg-[#F1F6F9] w-full mx-auto">
         <div className="mx-80">
