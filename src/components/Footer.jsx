@@ -1,12 +1,12 @@
-import logofb from '../assets/react.svg';
-import logoig from '../assets/react.svg';
-import logoli from '../assets/react.svg';
-import logowa from '../assets/react.svg';
+import logofb from '../assets/svg/react.svg';
+import logoig from '../assets/svg/react.svg';
+import logoli from '../assets/svg/react.svg';
+import logowa from '../assets/svg/react.svg';
 
 export function Footer() {
   return (
     <footer className="flex flex-col text-xl">
-      <div className="bg-blue-600 text-white p-4 lg:px-48">
+      <div className="bg-corporative-color2 text-white p-4 lg:px-48">
         <section className="lg:flex justify-between">
           <article className="mb-6 lg:w-20%">
             <h2 className="text-2xl font-semibold border-b-4 mb-3 lg:border-b">ENDEREÇO</h2>
@@ -56,7 +56,7 @@ export function Footer() {
           </a>
         </section>
 
-        <section className="flex justify-between pt-10 text-base lg:text-2xl">
+        <section className="flex justify-between pt-10 text-sm text-center lg:text-2xl">
           <p>
             <a href="">Política de privacidade</a>
           </p>
@@ -69,8 +69,9 @@ export function Footer() {
         </section>
       </div>
 
-      <div>
-        <p className="flex justify-center text-2xl font-bold py-3">Grupo Spintos 2023© Desenvolvido por Forte Solutions</p>
+      <div className="w-full flex justify-center font-bold py-3 text-sm md:text-2xl lg:justify-around">
+        <p className="mr-2 lg:mr-0">Grupo Spintos 2023©</p>
+        <p>Desenvolvido por Forte Solutions</p>
       </div>
     </footer>
   );

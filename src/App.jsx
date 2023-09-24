@@ -1,15 +1,18 @@
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
 
-import { Footer } from './components/Footer';
-import { NavDesktop } from './components/NavDesktop';
-import { Home } from './components/Home';
 import { useEffect, useState } from 'react';
+
+import { Home } from './pages/Home';
+import { History } from './pages/History';
+import { AreaNegocio } from './pages/AreaNegocio';
+import { Promoçao } from './pages/Promoçao';
+import { Contact } from './pages/Contact';
+
+import { NavDesktop } from './components/NavDesktop';
 import { NavResponsive } from './components/NavResponsive';
-import { History } from './pages/history';
-import { AreaNegocio } from './components/AreaNegocio';
-import { Promoçao } from './components/promoçao';
-import { Contacto } from './components/Contacto';
+import { Footer } from './components/Footer';
+
 import { Noticia } from './components/Noticia';
 
 function App() {
@@ -31,9 +34,8 @@ function App() {
           <Route path="/historia" element={<History />} />
           <Route path="/areaNegocio" element={<AreaNegocio />} />
           <Route path="/promoçao" element={<Promoçao />} />
-          <Route path="/contacto" element={<Contacto/>} />
+          <Route path="/contacto" element={<Contact />} />
           <Route path="/noticia" element={<Noticia/>} />
-
         </Routes>
       </article>
       <Footer />
