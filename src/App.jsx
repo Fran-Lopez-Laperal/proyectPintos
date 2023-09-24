@@ -9,6 +9,7 @@ import { NavResponsive } from './components/NavResponsive';
 import { History } from './pages/history';
 import { AreaNegocio } from './components/AreaNegocio';
 import { Promoçao } from './components/promoçao';
+import { Contacto } from './components/Contacto';
 
 function App() {
   const [showNav, setshowNav] = useState(false);
@@ -29,6 +30,7 @@ function App() {
           <Route path="/historia" element={<History />} />
           <Route path="/areaNegocio" element={<AreaNegocio />} />
           <Route path="/promoçao" element={<Promoçao />} />
+          <Route path="/contacto" element={<Contacto/>} />
         </Routes>
       </article>
       <Footer />
