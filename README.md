@@ -72,7 +72,6 @@ El proyecto sigue una estructura de archivos estándar para una aplicación Reac
   - Titulo
   - Texto
   - Img principal (También sera usado como la miniatura de las cards)
-- Textos: (Todos los textos de la web tienen que poder modifarse y auto formatearse [recomiendo encarecidamente react- quill])????
 - Promoción inmobiliaría:
   - Formulario para debajo de iconos:
     - Pisos del edificio
@@ -85,10 +84,10 @@ El proyecto sigue una estructura de archivos estándar para una aplicación Reac
     - Estado de la obra
     - Dirección
   - Subida de imagenes para collage:
-    - Capacidad de subida de 5 imagenes como aparece el diseño
+    - Capacidad de subida de 5 imagenes como aparece el diseño convertiralas a webp en el servidor
   - Timeline:
     - Formulario para la inclusión de datos:
-        - Imagen principal
+        - Imagen principal (WEBP)
         - Título
         - Texto
         - Año
