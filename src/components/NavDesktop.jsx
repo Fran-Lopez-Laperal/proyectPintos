@@ -11,7 +11,7 @@ export function NavDesktop() {
   ];
 
   return (
-    <header className="flex">
+    <header className="flex shadow-sky-100 shadow">
       <Link to="/" className=" w-1/4 h-18 flex justify-center items-center">
         <img className="w-48" src={logo} alt={logo} />
       </Link>
