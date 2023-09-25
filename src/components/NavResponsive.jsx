@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import logo from '../assets/logo.png';
+
 
 export function NavResponsive() {
   const [openNav, setOpenNav] = useState(false);
@@ -21,11 +23,16 @@ export function NavResponsive() {
   return (
     <>
       <section className="w-full bg-white fixed drop-shadow top-0 z-50">
-        <button className="top-0" onClick={handleShowMenu}>
-          <div className="w-10 h-1 bg-black m-2"></div>
-          <div className="w-10 h-1 bg-black m-2"></div>
-          <div className="w-10 h-1 bg-black m-2"></div>
-        </button>
+        <menu className='flex'>
+          <button className="top-0" onClick={handleShowMenu}>
+            <div className="w-10 h-1 bg-black m-2"></div>
+            <div className="w-10 h-1 bg-black m-2"></div>
+            <div className="w-10 h-1 bg-black m-2"></div>
+          </button>
+          <Link to="/" className="h-18 flex justify-center items-center">
+            <img className="w-48 mx-14" src={logo} alt={logo} />
+          </Link>
+        </menu>
 
         <nav className={`${openNav ? 'h-screen transition-all duration-700  ' : 'h-0'} overflow-hidden bg-white text-blue-800`}>
           <ul className="m-3 " onClick={handleShowSubLink1}>
@@ -87,6 +94,7 @@ export function NavResponsive() {
             <p>|</p>
             <button>IN</button>
           </section>
+
         </nav>
       </section>
     </>

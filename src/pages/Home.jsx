@@ -22,7 +22,7 @@ export function Home() {
       <HeaderPages image={companyHeader} logo={logo2} />
       <HomeLinks />
 
-      <section className="m-4 flex justify-center items-center h-20 relative mt-[-50px] lg:flex lg:justify-center ">
+      <section className="m-4 flex justify-center items-center h-20 relative mt-[-10px] lg:flex lg:justify-center ">
         <p className="text-xl relative z-10 bg-white p-2 font-dancing lg:text-5xl ">A inovação nos torna diferenes</p>
         <p className="absolute left-1 right-1 h-0.5 bg-corporative-color z-0"></p>
       </section>
