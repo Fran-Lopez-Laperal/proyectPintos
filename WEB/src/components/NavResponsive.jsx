@@ -89,6 +89,10 @@ export function NavResponsive() {
             <Link to="/contacto">Contactos</Link>
           </ul>
 
+          <ul className="m-3 font-bold" onClick={handleShowMenu}>
+            <Link to="/areaPrivada">Área privada</Link>
+          </ul>
+
           <section className="flex space-x-4 font-bold justify-center items-center">
             <button>PT</button>
             <p>|</p>

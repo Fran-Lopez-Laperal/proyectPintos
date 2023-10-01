@@ -14,7 +14,6 @@ import { NavDesktop } from './components/NavDesktop';
 import { NavResponsive } from './components/NavResponsive';
 import { Footer } from './components/Footer';
 
-// import { Noticia } from './components/Noticia';
 
 function App() {
   const [showNav, setshowNav] = useState(false);
@@ -36,7 +35,12 @@ function App() {
           <Route path="/areaNegocio" element={<AreaNegocio />} />
           <Route path="/promoçao" element={<Promoçao />} />
           <Route path="/contacto" element={<Contact />} />
+          <Route path="/noticia" element={<Noticia/>} />
+          <Route path="/areaprivada" element={<AreaPrivada/>} />
+          <Route path="/crearNoticia" element={<CreateNew/>} />
+          <Route path="/noticias" element={<FetchNews/>} />
           <Route path="/noticias" element={<Noticias />} />
+
         </Routes>
       </article>
       <Footer />
