@@ -8,15 +8,12 @@ import { History } from './pages/History';
 import { AreaNegocio } from './pages/AreaNegocio';
 import { Promoçao } from './pages/Promoçao';
 import { Contact } from './pages/Contact';
+import { Noticias } from './pages/Noticias';
 
 import { NavDesktop } from './components/NavDesktop';
 import { NavResponsive } from './components/NavResponsive';
 import { Footer } from './components/Footer';
 
-import { Noticia } from './components/Noticia';
-import {AreaPrivada} from './components/AreaPrivada';
-import { CreateNew } from './components/CreateNew';
-import { FetchNews } from './components/fetchNews';
 
 function App() {
   const [showNav, setshowNav] = useState(false);
@@ -42,6 +39,8 @@ function App() {
           <Route path="/areaprivada" element={<AreaPrivada/>} />
           <Route path="/crearNoticia" element={<CreateNew/>} />
           <Route path="/noticias" element={<FetchNews/>} />
+          <Route path="/noticias" element={<Noticias />} />
+
         </Routes>
       </article>
       <Footer />

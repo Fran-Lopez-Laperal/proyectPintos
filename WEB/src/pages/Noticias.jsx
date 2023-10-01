@@ -1,6 +1,6 @@
 import imgCompany from '../assets/headers/imgCompany.png';
 
-export function Noticia() {
+export function Noticias() {
   return (
     <>
       <section className="">

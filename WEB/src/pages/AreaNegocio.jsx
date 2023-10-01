@@ -1,5 +1,5 @@
 import { HeaderPages } from '../components/HeaderPages';
-import areaNegocioHeader from '../assets/headersImages/areaNegocioHeader.jpeg';
+import areaNegocioHeader from '../assets/headers/areaNegocioHeader.jpeg';
 import model from '../assets/model.jpg';
 
 export function AreaNegocio() {
