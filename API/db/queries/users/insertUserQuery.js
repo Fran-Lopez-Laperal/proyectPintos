@@ -29,7 +29,7 @@ const insertUserQuery = async ( name, email, password ) => {
       generateError (`El email ${users[0].email} ya existe`,403);
     };
 
-    const hashedPassword = await bcrypt.hash(password, 10);
+    const hashedPassword = await bcrypt.hash(password, 12);
 
     const [newUser] = await connection.query (
       'INSERT INTO users (name, email, password) VALUES (?, ?, ?)', 
