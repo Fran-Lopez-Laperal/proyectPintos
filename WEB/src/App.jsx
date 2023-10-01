@@ -14,6 +14,9 @@ import { NavResponsive } from './components/NavResponsive';
 import { Footer } from './components/Footer';
 
 import { Noticia } from './components/Noticia';
+import {AreaPrivada} from './components/AreaPrivada';
+import { CreateNew } from './components/CreateNew';
+import { FetchNews } from './components/fetchNews';
 
 function App() {
   const [showNav, setshowNav] = useState(false);
@@ -36,6 +39,9 @@ function App() {
           <Route path="/promoçao" element={<Promoçao />} />
           <Route path="/contacto" element={<Contact />} />
           <Route path="/noticia" element={<Noticia/>} />
+          <Route path="/areaprivada" element={<AreaPrivada/>} />
+          <Route path="/crearNoticia" element={<CreateNew/>} />
+          <Route path="/noticias" element={<FetchNews/>} />
         </Routes>
       </article>
       <Footer />

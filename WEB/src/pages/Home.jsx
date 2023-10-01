@@ -6,6 +6,7 @@ import logo from '../assets/logo.png';
 import logo2 from '../assets/logo2.png';
 
 import companyHeader from '../assets/headersImages/companyHeader.jpeg';
+import { useState } from 'react';
 
 const StatCard = ({ number, text }) => {
   return (
@@ -16,7 +17,14 @@ const StatCard = ({ number, text }) => {
   );
 };
 
-export function Home() {
+export function Home(props) {
+
+
+  const { newsData } = props;
+
+
+  const newArray = newsData || [];
+  console.log(newArray)
   return (
     <main className="flex flex-col">
       <HeaderPages image={companyHeader} logo={logo2} />
@@ -69,43 +77,32 @@ export function Home() {
         </article>
       </section>
 
-      <section className="mb-20 relative">
-        <div className="bg-blue-200 h-20 absolute inset-0 top-40"></div>
-        <header className="text-center mt-10 mb-5">
-          <p className="text-sky-700 font-bold text-3xl">Noticias</p>
+      <section className='mb-20 lg:mb-32 relative'>
+        <div className='bg-blue-200 h-20 absolute inset-0 lg:top-64 top-44'></div>
+        <header className='text-center mt-10 mb-5'>
+          <p className='text-sky-700 font-bold text-3xl lg:mb-10'>Noticias</p>
         </header>
 
-        <article className="flex justify-around mb-5 relative">
-          <figure className="max-w-xs mx-auto bg-white shadow-md rounded-lg overflow-hidden">
-            <img className="w-40 h-24 object-cover bg-gray-300" src="IMAGEN" alt="Imagen" />
-            <footer className="px-4 py-2">
-              <p className="text-gray-700 text-base">Frase uno.</p>
-              <p className="text-gray-700 text-base">Frase dos.</p>
-            </footer>
-          </figure>
-
-          <figure className="max-w-xs mx-auto bg-white shadow-md rounded-lg overflow-hidden">
-            <img className="w-40 h-24 object-cover bg-gray-300" src="IMAGEN" alt="Imagen" />
-            <footer className="px-4 py-2">
-              <p className="text-gray-700 text-base">Frase uno.</p>
-              <p className="text-gray-700 text-base">Frase dos.</p>
-            </footer>
-          </figure>
-          <figure className="hidden lg:block max-w-xs mx-auto bg-white shadow-md rounded-lg overflow-hidden">
-            <img className="w-40 h-24 object-cover bg-gray-300" src="IMAGEN" alt="Imagen" />
-            <footer className="px-4 py-2">
-              <p className="text-gray-700 text-base">Frase uno.</p>
-              <p className="text-gray-700 text-base">Frase dos.</p>
-            </footer>
-          </figure>
-          <figure className="hidden lg:block max-w-xs mx-auto bg-white shadow-md rounded-lg overflow-hidden">
-            <img className="w-40 h-24 object-cover bg-gray-300" src="IMAGEN" alt="Imagen" />
-            <footer className="px-4 py-2">
-              <p className="text-gray-700 text-base">Frase uno.</p>
-              <p className="text-gray-700 text-base">Frase dos.</p>
-            </footer>
-          </figure>
+        <article className='flex justify-around mb-5 relative'>
+          {newArray.slice(0,4).map((newItem, id) => (
+            <figure key={id} className={`max-w-xs mx-auto bg-white shadow-md rounded-lg overflow-hidden ${id < 2 ? '' : 'hidden lg:block'}`}>
+              <img
+                className="w-40 h-24 lg:w-64 lg:h-44 object-cover bg-gray-300"
+                src={newItem.imageSrc}
+                alt={newItem.title}
+              />
+              <footer className="px-4 py-2">
+                <p className="text-gray-700 text-base">
+                  {newItem.title}
+                </p>
+                <p className="text-gray-700 text-base">
+                  {newItem.description}
+                </p>
+              </footer>
+            </figure>
+          ))}
         </article>
+
       </section>
     </main>
   );
