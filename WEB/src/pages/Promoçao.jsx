@@ -1,4 +1,4 @@
-import imgCompany from '../assets/headersImages/imgCompany.png';
+import imgCompany from '../assets/headers/imgCompany.png';
 
 export function Promoçao() {
   return (

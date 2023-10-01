@@ -1,5 +1,5 @@
 import { HeaderPages } from '../components/HeaderPages';
-import historyHeader from '../assets/headersImages/historyHeader.jpeg';
+import historyHeader from '../assets/headers/historyHeader.jpeg';
 
 export function History() {
   return (
