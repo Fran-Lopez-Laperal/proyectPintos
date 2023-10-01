@@ -5,13 +5,13 @@ import { Logos } from '../components/Logos';
 import logo from '../assets/logo.png';
 import logo2 from '../assets/logo2.png';
 
-import companyHeader from '../assets/headersImages/companyHeader.jpeg';
+import companyHeader from '../assets/headers/companyHeader.jpeg';
 
 const StatCard = ({ number, text }) => {
   return (
     <article className="flex flex-col items-center mt-3">
       <p className="font-extrabold text-lg lg:text-4xl">{number}</p>
-      <p className="px-1 border-b-[1px] border-corporative-color lg:text-2xl">{text}</p>
+      <p className="px-1 border-b-[2px] border-corporative-color2 lg:text-2xl lg:border-b-[3px]">{text}</p>
     </article>
   );
 };
@@ -22,7 +22,7 @@ export function Home() {
       <HeaderPages image={companyHeader} logo={logo2} />
       <HomeLinks />
 
-      <section className="m-4 flex justify-center items-center h-20 relative mt-[-10px] lg:flex lg:justify-center ">
+      <section className="m-4 flex justify-center items-center h-20 relative mt-[-30px] lg:flex lg:justify-center lg:mt-10 lg:mb-28 ">
         <p className="text-xl relative z-10 bg-white p-2 font-dancing lg:text-5xl ">A inovação nos torna diferenes</p>
         <p className="absolute left-1 right-1 h-0.5 bg-corporative-color z-0"></p>
       </section>
@@ -31,8 +31,7 @@ export function Home() {
         <section className="py-4 my-4">
           <header className=" flex flex-col items-center">
             <p className="font-extrabold text-3xl lg:text-5xl">30</p>
-            <p className="text-xs lg:text-3xl">ANOS DE EXPERIENCIA</p>
-            <p className="h-[1px] bg-corporative-color text-transparent">aaaaaaaaaaaaaaaaaa</p>
+            <p className="text-xs px-1 border-b-[2px] border-corporative-color2 lg:text-3xl lg:border-b-[3px]">ANOS DE EXPERIENCIA</p>
           </header>
 
           <section className="grid grid-cols-2 text-xs text-center pt-2">
