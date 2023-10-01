@@ -43,7 +43,12 @@ export function Home() {
         </section>
       </section>
 
-      <Logos />
+      <section>
+        <header>
+          <p className="text-sky-700 font-extrabold text-3xl flex justify-center lg:text-[64px] lg:mb-24">EMPRESAS DO GRUPO</p>
+        </header>
+        <Logos />
+      </section>
 
       <section className="mt-20 bg-blue-200 lg:bg-gray-100 mb-20 flex flex-col sm:flex-row">
         <article className="w-full sm:w-1/2  hidden sm:block">

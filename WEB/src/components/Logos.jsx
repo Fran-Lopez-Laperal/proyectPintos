@@ -28,14 +28,9 @@ const LogoList = ({ logoNames, direction }) => (
 
 export function Logos() {
   return (
-    <section>
-      <header>
-        <p className="text-sky-700 font-extrabold text-3xl flex justify-center lg:text-[64px] lg:mb-24">EMPRESAS DO GRUPO</p>
-      </header>
-      <article>
-        <LogoList logoNames={logoGroups.line1} direction="right" />
-        <LogoList logoNames={logoGroups.line2} direction="left" />
-      </article>
-    </section>
+    <article>
+      <LogoList logoNames={logoGroups.line1} direction="right" />
+      <LogoList logoNames={logoGroups.line2} direction="left" />
+    </article>
   );
 }
