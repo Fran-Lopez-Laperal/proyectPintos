@@ -1,16 +1,11 @@
 import { Link } from 'react-router-dom';
-import rectangle1 from '../assets/rectangle1.svg';
-import rectangle2 from '../assets/rectangle2.svg';
-import rectangle3 from '../assets/rectangle3.png';
-import rectangle4 from '../assets/rectangle4.png';
-import rectangle5 from '../assets/rectangle5.svg';
-import rectangle6 from '../assets/rectangle6.svg';
-import home1 from '../assets/home1.jpeg';
-import home2 from '../assets/home2.jpeg';
-import home3 from '../assets/home3.jpeg';
-import home4 from '../assets/home4.jpeg';
-import home5 from '../assets/home5.jpeg';
-import home6 from '../assets/home6.jpeg';
+
+import home2 from '../assets/home/home2.jpeg';
+import home1 from '../assets/home/home1.jpeg';
+import home3 from '../assets/home/home3.jpeg';
+import home4 from '../assets/home/home4.jpeg';
+import home5 from '../assets/home/home5.jpeg';
+import home6 from '../assets/home/home6.jpeg';
 
 const links = [
   { to: '/engenharia', text: 'ENGENHARIA E CONSTRUÇÃO', bgImg: home1 },
