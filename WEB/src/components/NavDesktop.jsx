@@ -6,7 +6,7 @@ export function NavDesktop() {
     { to: '/', text: 'GRUPO PINTOS' },
     { to: '/areaNegocio', text: 'ÁREAS DE NEGOCIO' },
     { to: '/historia', text: 'HISTORIA' },
-    { to: '/', text: 'NOTÍCIAS' },
+    { to: '/noticias', text: 'NOTÍCIAS' },
     { to: '/contacto', text: 'CONTACTO' },
   ];
 
