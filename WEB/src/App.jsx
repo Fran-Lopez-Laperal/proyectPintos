@@ -13,6 +13,8 @@ import { Noticias } from './pages/Noticias';
 import { NavDesktop } from './components/NavDesktop';
 import { NavResponsive } from './components/NavResponsive';
 import { Footer } from './components/Footer';
+import { AreaPrivada } from './components/AreaPrivada';
+import { CreateNew } from './components/CreateNew';
 
 
 function App() {
@@ -35,12 +37,9 @@ function App() {
           <Route path="/areaNegocio" element={<AreaNegocio />} />
           <Route path="/promoçao" element={<Promoçao />} />
           <Route path="/contacto" element={<Contact />} />
-          <Route path="/noticia" element={<Noticia/>} />
+          <Route path="/noticia" element={<Noticias/>} />
           <Route path="/areaprivada" element={<AreaPrivada/>} />
           <Route path="/crearNoticia" element={<CreateNew/>} />
-          <Route path="/noticias" element={<FetchNews/>} />
-          <Route path="/noticias" element={<Noticias />} />
-
         </Routes>
       </article>
       <Footer />

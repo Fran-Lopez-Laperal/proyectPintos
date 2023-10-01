@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react"
 import { getNewsService } from "../../service"
-import { Home } from "../pages/Home"
 
 export function FetchNews() {
     const [data, setData] = useState([])
@@ -21,7 +20,32 @@ console.log(data)
 
     return (
         <>
-            <Home newsData={data}/>
+            <section className="mb-20 lg:mb-32 relative">
+                <div className="bg-blue-200 h-20 absolute inset-0 lg:top-64 top-48"></div>
+                <header className="text-center mt-10 mb-5">
+                    <p className="text-sky-700 font-bold text-3xl lg:mb-10">Noticias</p>
+                </header>
+                <article className='flex justify-around mb-5 relative'>
+                    {data.map(({title, introduction, text, id}) => (
+                        <figure key={id} className={`max-w-xs mx-auto bg-white shadow-md rounded-lg overflow-hidden ${id < 3 ? '' : 'hidden lg:block'}`}>
+                            <img
+                                className="w-40 h-24 lg:w-64 lg:h-44 object-cover bg-gray-300"
+                                src="{newItem.imageSrc}"
+                                alt="{newItem.title}"
+                            />
+                            <footer className="px-4 py-2">
+                                <p className="text-gray-700 text-base">
+                                 
+                                    {title.length > 10 ? title.slice(0, 18) : title}
+                                </p>
+                                <p className="text-gray-700 text-base">
+                                {introduction.length > 10 ? introduction.slice(0, 13) : introduction}
+                                </p>
+                            </footer>
+                        </figure>
+                    )).slice(0,4)}
+                </article>
+            </section>
         </>
     )
 }
