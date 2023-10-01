@@ -5,6 +5,6 @@ const generateError = (msg, code) => {
   };
 
 
-  module.export = {
+  module.exports = {
     generateError
   }

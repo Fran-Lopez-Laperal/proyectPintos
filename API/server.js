@@ -3,11 +3,12 @@ require("dotenv").config();
 const express = require("express");
 const morgan = require("morgan");
 const cors = require("cors");
-const { newUser } = require("./controllers/users");
 const createNew = require("./controllers/news/createNew");
 const getNews = require("./controllers/news/getNews");
 const deleteNew = require("./controllers/news/deleteNew");
 const editNew = require("./controllers/news/editNew");
+const loginUser = require("./controllers/users/loginUser");
+const { newUser } = require("./controllers/users");
 
 const app = express();
 
@@ -17,12 +18,13 @@ app.use(morgan("dev"));
 
 app.use(express.json());
 
-
-app.post('/register', newUser);
+app.post('/register', newUser)
+app.post('/login', loginUser);
 app.post('/criarNoticia' , createNew);
 app.get('/noticias' , getNews);
 app.delete('/noticias/:idNew' , deleteNew);
 app.put('/noticias/:idNew' , editNew);
+
 
 
 app.use((err, req, res, next) => {

@@ -1,27 +1,27 @@
-const insertUserQuery = require("../../db/queries/users/insertUserQuery");
+const insertUserQuery = require('../../db/queries/users/insertUserQuery');
 
+const { generateError } = require('../../helpers');
 
-const registerUser = async (req, res, next) => {
+const newUser = async (req, res, next) => {
     try {
-        console.log(req.body)
-        const { name, email, password,role } = req.body
-        await insertUserQuery(name, email, password, role)
-    
+        // Obtenemos el email y la contraseña del body.
+        const { name, email, password } = req.body;
+
+        // Si falta algún campo lanzamos un error.
+        if (!name || !email || !password) {
+            generateError('Faltan campos', 400);
+        }
+
+        // Creamos el usuario.
+        await insertUserQuery(name, email, password);
+
         res.send({
             status: 'ok',
             message: 'Usuario creado',
-            data: {
-                user: {
-                    name,
-                    email,
-                    password,
-                    role
-                }
-            }
-        })
-    } catch (error) {
-        next(error)
+        });
+    } catch (err) {
+        next(err);
     }
 };
 
-module.exports = registerUser;
+module.exports = newUser;
