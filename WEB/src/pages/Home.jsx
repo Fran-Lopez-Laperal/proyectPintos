@@ -80,7 +80,7 @@ export function Home(props) {
         </article>
       </section>
 
-     <FetchNews/>
+      <FetchNews />
     </main>
   );
 }

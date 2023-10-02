@@ -1,5 +1,6 @@
 import { HeaderPages } from '../components/HeaderPages';
 import historyHeader from '../assets/headers/historyHeader.jpeg';
+import { FetchNews } from '../components/FetchNews';
 
 export function History() {
   return (
@@ -32,6 +33,7 @@ export function History() {
           <p className="bg-blue-300 w-full h-full text-xl font-extrabold m-10 text-center">componente logos</p>
         </div>
       </section>
+      <FetchNews />
     </main>
   );
 }

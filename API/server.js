@@ -9,6 +9,7 @@ const deleteNew = require("./controllers/news/deleteNew");
 const editNew = require("./controllers/news/editNew");
 const loginUser = require("./controllers/users/loginUser");
 const { newUser } = require("./controllers/users");
+const isAuth = require("./middleware/isAuth");
 
 const app = express();
 
@@ -20,10 +21,10 @@ app.use(express.json());
 
 app.post('/register', newUser)
 app.post('/login', loginUser);
-app.post('/criarNoticia' , createNew);
-app.get('/noticias' , getNews);
-app.delete('/noticias/:idNew' , deleteNew);
-app.put('/noticias/:idNew' , editNew);
+app.post('/criarNoticia' ,isAuth, createNew);
+app.get('/noticias' ,isAuth, getNews);
+app.delete('/noticias/:idNew' ,isAuth, deleteNew);
+app.put('/noticias/:idNew' ,isAuth, editNew);
 
 
 

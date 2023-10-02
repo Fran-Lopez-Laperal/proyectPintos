@@ -23,6 +23,7 @@ export function AreaPrivada(){
       navigate("/crearNoticia");
     } catch (error) {
       setError(error.message);
+      console.log(token)
     }
   };
 

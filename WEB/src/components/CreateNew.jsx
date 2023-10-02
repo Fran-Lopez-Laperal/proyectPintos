@@ -5,6 +5,7 @@ import { createNewService } from "../../service";
 
 export function CreateNew() {
     const { token } = useContext(AuthContext);
+    console.log(token)
     const navigate = useNavigate();
     const [title, setTitle] = useState("");
     const [introduction, setIntroduction] = useState("");
@@ -35,11 +36,11 @@ export function CreateNew() {
     };
 
     return (
-        <section className="createNew">
-            <div className="form-container-createNew">
-                <h1 className="h1-title">Crea tu noticia</h1>
-                <form className="form-createNew" onSubmit={handleSubmit}>
-                    <div className="title">
+        <section >
+            <div >
+                <h1 >Crea tu noticia</h1>
+                <form onSubmit={handleSubmit}>
+                    <div >
                         <label htmlFor="title">Título:</label>
                         <input
                             type="text"
@@ -49,7 +50,7 @@ export function CreateNew() {
                             required
                         />
                     </div>
-                    <div className="introduction">
+                    <div >
                         <label htmlFor="introduction">Introducción:</label>
                         <textarea
                             id="introduction"
@@ -58,7 +59,7 @@ export function CreateNew() {
                             required
                         />
                     </div>
-                    <div className="text">
+                    <div >
                         <label htmlFor="text">Texto:</label>
                         <textarea
                             id="text"
@@ -67,11 +68,11 @@ export function CreateNew() {
                             required
                         />
                     </div>
-                    <div className="button-form-createNew">
+                    <div >
                         <button type="submit">Crear noticia</button>
                     </div>
                 </form>
-                {error && <p className="error-message">{error}</p>}
+                {error && <p>{error}</p>}
             </div>
         </section>
     );
