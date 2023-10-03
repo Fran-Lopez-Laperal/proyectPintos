@@ -10,14 +10,14 @@ const logoGroups = {
 
 const Logo = ({ logoName }) => {
   return (
-    <Link className="px-2 lg:px-10" target="_blank" rel="" href="/">
+    <Link className="" target="_blank" rel="" href="/">
       <img className="w-36 md:w-56 lg:w-64" src={logoName} alt={logoName} />
     </Link>
   );
 };
 
 const LogoList = ({ logoNames, direction }) => (
-  <Marquee pauseOnHover={true} speed={25} direction={direction} gradientWidth={5}>
+  <Marquee pauseOnHover={true} speed={25} direction={direction} gradientWidth={5} className="my-8">
     <section className="flex">
       {logoNames.map((logoName) => (
         <Logo key={logoName} logoName={logos[logoName]} />

@@ -16,7 +16,6 @@ import { Footer } from './components/Footer';
 import { AreaPrivada } from './components/AreaPrivada';
 import { CreateNew } from './components/CreateNew';
 
-
 function App() {
   const [showNav, setshowNav] = useState(false);
 
@@ -37,9 +36,9 @@ function App() {
           <Route path="/areaNegocio" element={<AreaNegocio />} />
           <Route path="/promoçao" element={<Promoçao />} />
           <Route path="/contacto" element={<Contact />} />
-          <Route path="/noticia" element={<Noticias/>} />
-          <Route path="/areaprivada" element={<AreaPrivada/>} />
-          <Route path="/crearNoticia" element={<CreateNew/>} />
+          <Route path="/noticia" element={<Noticias />} />
+          <Route path="/areaprivada" element={<AreaPrivada />} />
+          <Route path="/crearNoticia" element={<CreateNew />} />
         </Routes>
       </article>
       <Footer />
