@@ -1,21 +1,16 @@
 const getDB = require("../../getDB");
 
-const selectNewByIdQuery = async (idNew) => {
+const selectNewByIdQuery = async (id_news) => {
+  let connection;
 
-    let connection;
+  try {
+    connection = await getDB();
 
-    try {
-
-        connection = await getDB();
-
-        const newDelete = await connection.query(`SELECT id FROM news WHERE id = ?`, [idNew]);
-        console.log('VIENE AQUI UNA NOTICIA CON ID????', newDelete)
-        return newDelete[0];
-
-    } finally {
-        if (connection) connection.release()
-    }
-
-}
+    const newDelete = await connection.query(`SELECT id FROM news WHERE id = ?`, [id_news]);
+    return newDelete[0];
+  } finally {
+    if (connection) connection.release();
+  }
+};
 
 module.exports = selectNewByIdQuery;

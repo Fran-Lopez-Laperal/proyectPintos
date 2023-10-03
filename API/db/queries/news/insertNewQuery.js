@@ -1,23 +1,22 @@
 const getDB = require("../../getDB");
 
-const insertNewQuery = async (idUser,title, introduction, text) => {
-    let connection;
+const insertNewQuery = async (id_user, title, introduction, text) => {
+  let connection;
 
-    try {
+  try {
+    connection = await getDB();
 
-        connection = await getDB();
+    const [createNew] = await connection.query(`INSERT INTO news (id_user, title, introduction, text) VALUES (?,?,?,?)`, [
+      id_user,
+      title,
+      introduction,
+      text,
+    ]);
 
-        const [createNew] = await connection.query(
-            `INSERT INTO news(idUser,title, introduction, text) VALUES (?,?,?,?)`,
-            [idUser,title, introduction, text]
-        )
+    return createNew;
+  } finally {
+    if (connection) connection.release();
+  }
+};
 
-        return createNew
-
-    } finally {
-        if(connection) connection.release();
-    }
-}
-
-
-module.exports = insertNewQuery
+module.exports = insertNewQuery;

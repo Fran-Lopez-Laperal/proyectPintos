@@ -4,7 +4,7 @@ Web corporativa para la empresa Grupo Pintos.
 
 ## FUNCIONALIDADES PRICIPALES
 
-Esta web será responsive, apta para moviles y dispositivos de escriotorio. Mostrara información sobre la empresa Grupo Pintos
+Esta web será responsive, apta para moviles y dispositivos de escritorio. Mostrará información sobre la empresa Grupo Pintos
 mediante diferentes vistas en las que se muestran caracteristicas e información relacionada con los servicios que ofrecen.
 
 ## ESPECIFICACIONES IMPORTANTES
@@ -13,7 +13,6 @@ mediante diferentes vistas en las que se muestran caracteristicas e información
   - Formato de las mismas WEBP.
   - Se guardan en la carpeta UPLOADS del servidor.
   - ICONS: Todos formato SVG (no tienen por que estar integrados en el HTML)
-  
 - Traducción:
   - Con i18n (react)
   - Se guardan en carpeta assets/translations
@@ -87,9 +86,9 @@ El proyecto sigue una estructura de archivos estándar para una aplicación Reac
     - Capacidad de subida de 5 imagenes como aparece el diseño convertiralas a webp en el servidor
   - Timeline:
     - Formulario para la inclusión de datos:
-        - Imagen principal (WEBP)
-        - Título
-        - Texto
-        - Año
+      - Imagen principal (WEBP)
+      - Título
+      - Texto
+      - Año
 
 ## COMPONENTES
