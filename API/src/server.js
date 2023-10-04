@@ -25,12 +25,17 @@ app.use((req, res, next) => {
  * ## Users Controllers##
  * ######################
  */
+const isAuth = require("../middleware/isAuth");
 
 const createUser = require("../controllers/users/createUser");
 const loginUser = require("../controllers/users/loginUser");
 
+const createNew = require("../controllers/news/createNew");
+
 app.post("/register", createUser);
 app.post("/login", loginUser);
+
+app.post("/crearNoticia", isAuth, createNew);
 
 /**
  * #################
