@@ -1,7 +1,7 @@
 import { useState, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { AuthContext } from '../../context/AuthContext';
-import { createNewService } from '../../service';
+import { AuthContext } from '../context/AuthContext';
+import { createNewService } from '../services';
 
 export function CreateNew() {
   const { token } = useContext(AuthContext);
@@ -11,23 +11,30 @@ export function CreateNew() {
   const [text, setText] = useState('');
   const [error, setError] = useState('');
 
+  const handleTitleChange = (event) => {
+    setTitle(event.target.value);
+  };
+
+  const handleTextChange = (event) => {
+    setIntroduction(event.target.value);
+  };
+
+  const handleIntroductionChange = (event) => {
+    setText(event.target.value);
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    if (!token) {
-      setError('Debe iniciar sesión para crear una noticia.');
-      return;
-    }
-
     try {
-      const formDataNew = {
+      const formDataNews = {
         title,
         introduction,
         text,
       };
 
       await createNewService({
-        formDataNew,
+        formDataNews,
         token,
       });
 
@@ -47,25 +54,19 @@ export function CreateNew() {
             <label className="lg:w-28 lg:text-xl" htmlFor="title">
               Título
             </label>
-            <input className="w-96 h-10 p-3" type="text" id="title" value={title} onChange={(event) => setTitle(event.target.value)} required />
+            <input className="w-96 h-10 p-3" type="text" id="title" value={title} onChange={handleTitleChange} required />
           </div>
           <div className="flex flex-col gap-2">
             <label className="w-28 lg:text-xl" htmlFor="introduction">
               Introducción
             </label>
-            <textarea
-              className="w-96 h-20 p-3"
-              id="introduction"
-              value={introduction}
-              onChange={(event) => setIntroduction(event.target.value)}
-              required
-            />
+            <textarea className="w-96 h-20 p-3" id="introduction" value={introduction} onChange={handleIntroductionChange} required />
           </div>
           <div className="flex flex-col gap-2">
             <label className="w-28 lg:text-xl" htmlFor="text">
               Texto
             </label>
-            <textarea className="w-96 h-20 p-3" id="text" value={text} onChange={(event) => setText(event.target.value)} required />
+            <textarea className="w-96 h-20 p-3" id="text" value={text} onChange={handleTextChange} required />
           </div>
           <div className="flex justify-center h-12 mt-10 mb-12 font-bold text-lg text-white bg-corporative-color2 hover:bg-corporative-color transition-all duration-500">
             <button type="submit">Crear noticia</button>
