@@ -38,7 +38,6 @@ export function CreateNew() {
         token,
       });
 
-      // Navegar a la página de historias después de crear la noticia
       navigate('/historia');
     } catch (error) {
       setError(error.message);
