@@ -1,13 +1,15 @@
+import imgCompany from '../assets/headers/historyHeader.jpeg';
+
 export function Noticia() {
   return (
-    <article className="flex flex-col items-center lg:w-96 lg:flex lg:justify-center">
-      <p className="mt-5 text-4xl font-bold text-sky-600">Titulo</p>
-      <p className="text-justify text-sm font-bold mb-5">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem atque quos nesciunt cumque ducimus quis voluptates consequatur fugit
-        voluptatum doloremque sed unde ex quisquam natus perferendis a est accusantium, beatae blanditiis corporis ipsa dolorum nostrum quia facilis.
-        Ratione accusantium ipsa unde id obcaecati commodi aliquam quisquam laborum ea tempora ducimus ullam iusto, esse consectetur eligendi
-        provident ipsum, aspernatur quos saepe?
-      </p>
+    <article className="flex flex-col justify-center rounded-lg bg-red-400">
+      <figure className="flex justify-center">
+        <img className="rounded-t-lg h-auto w-full" src={imgCompany} alt="" />
+      </figure>
+      <main className="flex flex-col items-center px-2 py-2">
+        <p className="text-sm text-center font-extrabold text-sky-600">Qorem ipsum dolor</p>
+        <p className="text-xs text-justify font-normal">Lorem ipsum dolor...</p>
+      </main>
     </article>
   );
 }
