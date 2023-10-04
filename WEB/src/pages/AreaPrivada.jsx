@@ -1,4 +1,4 @@
-import { useState, useContext } from 'react';
+import { useState, useContext, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { AuthContext } from '../context/AuthContext';
 
@@ -30,9 +30,11 @@ export function AreaPrivada() {
     }
   };
 
-  if (token) {
-    navigate('/crearNoticia');
-  }
+  useEffect(() => {
+    if (token) {
+      navigate('/crearNoticia');
+    }
+  }, [token, navigate]);
 
   return (
     <div className="flex justify-center">
