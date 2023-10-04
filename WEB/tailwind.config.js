@@ -17,7 +17,7 @@ export default {
         'corporative-color4': '#7D7773',
         'contactHeader-color': '#113c9280',
         'graycorporative-color': '#F3F3F3',
-        'sustentabilidade-color': 'rgba(98,203,49,0.03)'
+        'sustentabilidade-color': 'rgba(98,203,49,0.03)',
       },
       backgroundImage: {
         'corporative-gradient': 'linear-gradient(135deg, #1272AB, #FFFFFF)',
