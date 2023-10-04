@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { getNewsService } from '../../service';
+import { getNewsService } from '../services';
 
 export function FetchNews() {
   const [data, setData] = useState([]);
@@ -16,7 +16,6 @@ export function FetchNews() {
 
     fetchData();
   }, []);
-  console.log(data);
 
   return (
     <>
