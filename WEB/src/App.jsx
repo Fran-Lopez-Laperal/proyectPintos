@@ -15,6 +15,7 @@ import { NavResponsive } from './components/NavResponsive';
 import { Footer } from './components/Footer';
 import { AreaPrivada } from './components/AreaPrivada';
 import { CreateNew } from './components/CreateNew';
+import { PlanearConstruir } from './pages/PlanearConstruir';
 
 function App() {
   const [showNav, setshowNav] = useState(false);
@@ -39,6 +40,7 @@ function App() {
           <Route path="/noticia" element={<Noticias />} />
           <Route path="/areaprivada" element={<AreaPrivada />} />
           <Route path="/crearNoticia" element={<CreateNew />} />
+          <Route path='/planearConstruir' element={<PlanearConstruir/>}/>
         </Routes>
       </article>
       <Footer />
