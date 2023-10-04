@@ -31,7 +31,6 @@ function App() {
   }, []);
 
   useEffect(() => {
-    console.log(!localStorage.getItem('token'));
     if (location.pathname === '/crearNoticia' && !localStorage.getItem('token') === false) {
       navigate('/areaPrivada');
     }

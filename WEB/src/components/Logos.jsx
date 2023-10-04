@@ -11,13 +11,13 @@ const logoGroups = {
 const Logo = ({ logoName }) => {
   return (
     <Link className="" target="_blank" rel="" href="/">
-      <img className="w-36 md:w-56 lg:w-64" src={logoName} alt={logoName} />
+      <img className="w-28 md:w-56 lg:w-64" src={logoName} alt={logoName} />
     </Link>
   );
 };
 
 const LogoList = ({ logoNames, direction }) => (
-  <Marquee pauseOnHover={true} speed={25} direction={direction} gradientWidth={5} className="my-8">
+  <Marquee pauseOnHover={true} speed={25} direction={direction} gradientWidth={5}>
     <section className="flex">
       {logoNames.map((logoName) => (
         <Logo key={logoName} logoName={logos[logoName]} />
@@ -28,7 +28,7 @@ const LogoList = ({ logoNames, direction }) => (
 
 export function Logos() {
   return (
-    <article>
+    <article className="flex flex-col gap-4 pt-5 pb-12">
       <LogoList logoNames={logoGroups.line1} direction="right" />
       <LogoList logoNames={logoGroups.line2} direction="left" />
     </article>

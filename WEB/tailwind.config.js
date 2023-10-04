@@ -19,6 +19,10 @@ export default {
       },
       backgroundImage: {
         'corporative-gradient': 'linear-gradient(135deg, #1272AB, #FFFFFF)',
+        facebook: 'url("../assets/facebook-bg.jpg")',
+        instagram: 'url("../assets/instagram-bg.jpg")',
+        linkedin: 'url("../assets/linkedin-bg.jpg")',
+        whatsapp: 'url("../assets/whatsapp-bg.jpg")',
       },
       rotate: {
         '--45': '-45deg',
