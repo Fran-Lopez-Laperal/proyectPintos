@@ -2,7 +2,7 @@ import imgCompany from '../assets/headers/historyHeader.jpeg';
 
 export function Noticia() {
   return (
-    <article className="flex flex-col justify-center rounded-lg bg-red-400">
+    <article className="flex flex-col justify-center rounded-lg">
       <figure className="flex justify-center">
         <img className="rounded-t-lg h-auto w-full" src={imgCompany} alt="" />
       </figure>
