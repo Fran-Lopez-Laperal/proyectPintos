@@ -1,28 +1,15 @@
-import imgCompany from '../assets/headers/imgCompany.png';
+import imgCompany from '../assets/headers/historyHeader.jpeg';
 
 export function Noticia() {
   return (
-    <>
-      <section className="">
-        <article className="flex justify-center mt-28 mb-20 lg:w-auto ">
-          <figure className="w-4/5 lg:w-2/6 lg:h-[600px] shadow-2xl p-5 lg:mt-[-10px] rounded-2xl lg:flex lg:flex-col  lg:items-center ">
-            <header className="flex justify-center mt-5 lg:mt-0">
-              <img className="w-60 h-40 lg:w-96 lg:h-60 rounded-xl shadow-2xl" src={imgCompany} alt="" />
-            </header>
-            <article className="flex flex-col items-center lg:w-96 lg:flex lg:justify-center">
-              <p className="mt-5 text-4xl font-bold text-sky-600">Titulo</p>
-              <p className="text-justify text-sm font-bold mb-5">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem atque quos nesciunt cumque ducimus quis voluptates consequatur fugit
-                voluptatum doloremque sed unde ex quisquam natus perferendis a est accusantium, beatae blanditiis corporis ipsa dolorum nostrum quia
-                facilis. Ratione accusantium ipsa unde id obcaecati commodi aliquam quisquam laborum ea tempora ducimus ullam iusto, esse consectetur
-                eligendi provident ipsum, aspernatur quos saepe?
-              </p>
-            </article>
-          </figure>
-        </article>
-      </section>
-
-      <FetchNews />
-    </>
+    <article className="flex flex-col justify-center rounded-lg bg-red-400">
+      <figure className="flex justify-center">
+        <img className="rounded-t-lg h-auto w-full" src={imgCompany} alt="" />
+      </figure>
+      <main className="flex flex-col items-center px-2 py-2">
+        <p className="text-sm text-center font-extrabold text-sky-600">Qorem ipsum dolor</p>
+        <p className="text-xs text-justify font-normal">Lorem ipsum dolor...</p>
+      </main>
+    </article>
   );
 }
