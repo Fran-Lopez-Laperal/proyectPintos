@@ -47,7 +47,7 @@ export function Home() {
 
       <section className="lg:pt-24 lg:px-36">
         <header>
-          <h2 className="text-corporative-color2 font-extrabold text-3xl flex justify-center lg:text-6xl lg:pb-6">EMPRESAS DO GRUPO</h2>
+          <h2 className="text-corporative-color2 font-extrabold text-3xl flex justify-center pt-6 lg:text-6xl lg:pb-6">EMPRESAS DO GRUPO</h2>
         </header>
         <Logos />
       </section>
@@ -79,9 +79,11 @@ export function Home() {
         </article>
       </section>
 
-      <section className="flex flex-col font-extrabold p-6 py-8 lg:flex-row lg:px-44">
-        <h2 className="text-corporative-color2 text-center text-3xl">Noticias</h2>
-        <div className="flex gap-6 py-4">
+      <section className="flex flex-col font-extrabold p-6 py-8 lg:flex lg:px-44">
+        <h2 className="text-corporative-color2 text-center text-3xl lg:text-6xl lg:pb-6">Noticias</h2>
+        <div className="flex gap-6 py-4 lg:gap-12">
+          <Noticia />
+          <Noticia />
           <Noticia />
           <Noticia />
         </div>
