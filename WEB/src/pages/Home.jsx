@@ -81,7 +81,7 @@ export function Home() {
 
       <section className="flex flex-col font-extrabold p-6 py-8 lg:flex lg:px-44">
         <h2 className="text-corporative-color2 text-center text-3xl lg:text-6xl lg:pb-6">Noticias</h2>
-        <div className="flex gap-6 py-4 lg:gap-12">
+        <div className="grid grid-cols-2 gap-6 py-4 lg:grid-cols-4 lg:gap-12">
           <Noticia />
           <Noticia />
           <Noticia />
