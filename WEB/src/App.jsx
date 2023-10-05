@@ -17,6 +17,7 @@ import { PlanearConstruir } from './pages/PlanearConstruir';
 import { NavDesktop } from './components/NavDesktop';
 import { NavResponsive } from './components/NavResponsive';
 import { Footer } from './components/Footer';
+import { Betão } from './pages/Betão';
 
 function App() {
   const [showNav, setshowNav] = useState(false);
@@ -51,6 +52,7 @@ function App() {
           <Route path="/areaprivada" element={<AreaPrivada />} />
           <Route path="/crearNoticia" element={<CreateNew />} />
           <Route path="/planearConstruir" element={<PlanearConstruir />} />
+          <Route path="/betão" element={<Betão/>} />
         </Routes>
       </article>
       <Footer />
