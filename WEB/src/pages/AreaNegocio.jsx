@@ -1,8 +1,22 @@
 import { HeaderPages } from '../components/HeaderPages';
 import areaNegocioHeader from '../assets/headers/areaNegocioHeader.jpeg';
 import model from '../assets/model.jpg';
+import { useEffect, useState } from 'react';
+import { PromoçaoImages } from '../components/PromoçaoImages';
+import { ResponsivePromoçaoImages } from '../components/ResponsivePromoçaoImages';
 
 export function AreaNegocio() {
+  const [showImages, setshowImages] = useState(false);
+
+  useEffect(() => {
+    const responsiveMovil = () => (window.innerWidth > 840 ? setshowImages(true) : setshowImages(false));
+
+    responsiveMovil();
+
+    window.addEventListener('resize', () => responsiveMovil());
+  }, []);
+
+ 
   return (
     <main className="flex flex-col">
       <HeaderPages text={'Imobiliária'} textSize="text-5xl" image={areaNegocioHeader} />
@@ -29,31 +43,14 @@ export function AreaNegocio() {
         </section>
       </article>
 
-      <article className=" flex flex-col items-center mb-20">
-        <figure className="border-b-4 border-blue-400 mt-7">
-          <article className="h-64 w-96 bg-gray-400 mb-4">
-            <img className="w-full h-full" src={model} alt={model} />
-          </article>
-        </figure>
+      <section>
+        {showImages ?
+          <PromoçaoImages />
+          :
+          <ResponsivePromoçaoImages />
+        }
 
-        <figure className="border-b-4 border-blue-400 mt-7">
-          <article className="h-64 w-96 bg-gray-400 mb-4">
-            <img className="w-full h-full" src={model} alt={model} />
-          </article>
-        </figure>
-
-        <figure className="border-b-4 border-blue-400 mt-7">
-          <article className="h-64 w-96 bg-gray-400 mb-4">
-            <img className="w-full h-full" src={model} alt={model} />
-          </article>
-        </figure>
-
-        <figure className="border-b-4 border-blue-400 mt-7">
-          <article className="h-64 w-96 bg-gray-400 mb-4">
-            <img className="w-full h-full" src={model} alt={model} />
-          </article>
-        </figure>
-      </article>
+      </section>     
     </main>
   );
 }
