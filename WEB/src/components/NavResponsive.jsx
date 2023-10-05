@@ -10,7 +10,7 @@ export function NavResponsive() {
   const [openNav, setOpenNav] = useState(false);
   const [showSubLink1, setShowSubLink1] = useState(false);
   const [showSubLink2, setShowSubLink2] = useState(false);
-  const { token } = useContext(AuthContext);
+  const { token, logOut } = useContext(AuthContext);
 
   function handleShowMenu() {
     setOpenNav(!openNav);
@@ -23,10 +23,12 @@ export function NavResponsive() {
   function handleShowSubLink2() {
     setShowSubLink2(!showSubLink2);
   }
-
+  function handleLogOut() {
+    logOut();
+  }
   return (
     <main className="">
-      <section className="w-full bg-white fixed drop-shadow z-50">
+      <section className="w-full bg-blue-400 drop-shadow z-50">
         <menu className="flex">
           <button className="pl-4 w-1/4" onClick={handleShowMenu}>
             {openNav ? (
@@ -101,9 +103,14 @@ export function NavResponsive() {
 
           <ul className="m-3" onClick={handleShowMenu}>
             {token && (
-              <Link className="border-b border-blue-200" to={'/crearNoticia'}>
-                Crear noticia
-              </Link>
+              <div className="flex flex-col">
+                <Link className="" to={'/crearNoticia'}>
+                  Crear noticia
+                </Link>
+                <Link onClick={logOut} className="b">
+                  Cerrar sesión
+                </Link>
+              </div>
             )}
           </ul>
 

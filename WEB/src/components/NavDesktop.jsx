@@ -14,40 +14,42 @@ export function NavDesktop() {
   const { token } = useContext(AuthContext);
 
   return (
-    <section className="flex justify-between bg-red-800">
-      <header className="flex">
-        <Link to="/" className=" w-1/4 h-18 flex justify-center items-center">
-          <img className="w-48" src={logo} alt={logo} />
-        </Link>
-        <menu className="flex-1 flex justify-center">
-          {links.map((link) => (
-            <div key={link.to}>
-              <Link
-                className="flex justify-center items-center w-48 h-full hover:bg-corporative-color2 transition-all duration-500 no-underline"
-                to={link.to}
-              >
-                <p style={{ backgroundColor: 'none' }}>{link.text}</p>
-              </Link>
-            </div>
-          ))}
-        </menu>
-      </header>
-      <main className="flex">
-        {token && (
-          <Link
-            className="flex justify-center items-center w-48 h-full hover:bg-corporative-color2 transition-all duration-500 no-underline"
-            to={'/crearNoticia'}
-          >
-            Crear noticia
+    <section>
+      <section className="flex justify-between h-[100px] bg-red-800">
+        <header className="flex">
+          <Link to="/" className=" w-1/4 h-18 flex justify-center items-center">
+            <img className="w-48" src={logo} alt={logo} />
           </Link>
-        )}
-        <Link
-          className=" bg-red-400 flex justify-center items-center w-48 h-full hover:bg-corporative-color2 transition-all duration-500 no-underline"
-          to={'/areaPrivada'}
-        >
-          Area privada
-        </Link>
-      </main>
+          <menu className="flex-1 flex justify-center">
+            {links.map((link) => (
+              <div key={link.to}>
+                <Link
+                  className="flex justify-center items-center w-48 h-full hover:bg-corporative-color2 transition-all duration-500 no-underline"
+                  to={link.to}
+                >
+                  <p style={{ backgroundColor: 'none' }}>{link.text}</p>
+                </Link>
+              </div>
+            ))}
+          </menu>
+        </header>
+        <main className="flex">
+          {token && (
+            <Link
+              className="flex justify-center items-center w-48 h-full hover:bg-corporative-color2 transition-all duration-500 no-underline"
+              to={'/crearNoticia'}
+            >
+              Crear noticia
+            </Link>
+          )}
+          <Link
+            className=" bg-red-400 flex justify-center items-center w-48 h-full hover:bg-corporative-color2 transition-all duration-500 no-underline"
+            to={'/areaPrivada'}
+          >
+            Area privada
+          </Link>
+        </main>
+      </section>
     </section>
   );
 }

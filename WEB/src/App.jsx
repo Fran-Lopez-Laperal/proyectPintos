@@ -10,26 +10,16 @@ import { Noticias } from './pages/Noticias';
 import { CreateNew } from './pages/CreateNew';
 import { AreaPrivada } from './pages/AreaPrivada';
 import { PlanearConstruir } from './pages/PlanearConstruir';
-import { NavDesktop } from './components/NavDesktop';
-import { NavResponsive } from './components/NavResponsive';
 import { Footer } from './components/Footer';
+import { Nav } from './components/Nav';
 
 function App() {
-  const [showNav, setshowNav] = useState(false);
   const { token } = useContext(AuthContext);
-
-  useEffect(() => {
-    const responsiveMovil = () => (window.innerWidth > 840 ? setshowNav(true) : setshowNav(false));
-
-    responsiveMovil();
-
-    window.addEventListener('resize', () => responsiveMovil());
-  }, []);
 
   return (
     <main className="mt-12 lg:mt-0">
       <article>
-        {showNav ? <NavDesktop /> : <NavResponsive />}
+        <Nav />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/historia" element={<History />} />
