@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import logo from '../assets/logo.png';
-
+import { useContext } from 'react';
+import { AuthContext } from '../context/AuthContext';
 export function NavDesktop() {
   const links = [
     { to: '/', text: 'GRUPO PINTOS' },
@@ -10,27 +11,45 @@ export function NavDesktop() {
     { to: '/contacto', text: 'CONTACTO' },
   ];
 
+  const { token } = useContext(AuthContext);
+
   return (
-    <header className="flex shadow-sky-100 shadow">
-      <Link to="/" className=" w-1/4 h-18 flex justify-center items-center">
-        <img className="w-48" src={logo} alt={logo} />
-      </Link>
-      <ul className="flex-1 flex justify-center">
-        {links.map((link, index) => (
-          <Link
-            key={index}
-            className="flex justify-center items-center w-48 h-full hover:bg-corporative-color2 transition-all duration-500"
-            to={link.to}
-            style={{ textDecoration: 'none' }}
-          >
-            <li>
-              <p className="" style={{ backgroundColor: 'none' }}>
-                {link.text}
-              </p>
-            </li>
+    <section>
+      <section className="flex justify-between h-[100px] bg-red-800">
+        <header className="flex">
+          <Link to="/" className=" w-1/4 h-18 flex justify-center items-center">
+            <img className="w-48" src={logo} alt={logo} />
           </Link>
-        ))}
-      </ul>
-    </header>
+          <menu className="flex-1 flex justify-center">
+            {links.map((link) => (
+              <div key={link.to}>
+                <Link
+                  className="flex justify-center items-center w-48 h-full hover:bg-corporative-color2 transition-all duration-500 no-underline"
+                  to={link.to}
+                >
+                  <p style={{ backgroundColor: 'none' }}>{link.text}</p>
+                </Link>
+              </div>
+            ))}
+          </menu>
+        </header>
+        <main className="flex">
+          {token && (
+            <Link
+              className="flex justify-center items-center w-48 h-full hover:bg-corporative-color2 transition-all duration-500 no-underline"
+              to={'/crearNoticia'}
+            >
+              Crear noticia
+            </Link>
+          )}
+          <Link
+            className=" bg-red-400 flex justify-center items-center w-48 h-full hover:bg-corporative-color2 transition-all duration-500 no-underline"
+            to={'/areaPrivada'}
+          >
+            Area privada
+          </Link>
+        </main>
+      </section>
+    </section>
   );
 }

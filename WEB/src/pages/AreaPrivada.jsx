@@ -1,5 +1,4 @@
-import { useState } from 'react';
-import { useContext } from 'react';
+import { useState, useContext, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { AuthContext } from '../context/AuthContext';
 
@@ -9,7 +8,7 @@ export function AreaPrivada() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
-  const { logIn } = useContext(AuthContext);
+  const { logIn, token } = useContext(AuthContext);
   const navigate = useNavigate();
 
   const handleUsernameChange = (event) => {
@@ -30,6 +29,12 @@ export function AreaPrivada() {
       setError(err.message);
     }
   };
+
+  useEffect(() => {
+    if (token) {
+      navigate('/crearNoticia');
+    }
+  }, [token, navigate]);
 
   return (
     <div className="flex justify-center">

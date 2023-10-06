@@ -45,7 +45,7 @@ export function CreateNew() {
   };
 
   return (
-    <section className="p-4">
+    <section>
       <div className="flex flex-col justify-center items-center pt-8 bg-corporative-color3">
         <h1 className="text-corporative-color2 text-center text-2xl uppercase w-full font-bold pb-8 lg:text-5xl">Crea tu noticia</h1>
         <form onSubmit={handleSubmit} className="flex flex-col justify-center w-auto gap-4">
