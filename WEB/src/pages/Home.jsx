@@ -52,7 +52,7 @@ export function Home() {
         <Logos />
       </section>
 
-      <section className="flex flex-col font-extrabold bg-corporative-color3 p-6 py-8 lg:flex-row lg:px-36">
+      <section className="flex flex-col font-extrabold bg-corporative-color3 lg:bg-graycorporative-color p-6 py-8 lg:flex-row lg:px-36">
         <article className="hidden lg:block lg:w-1/2 lg:pr-8 lg:border-r-[3px] lg:border-corporative-color2 lg:mt-24">
           <img src={imgHome} alt="" className="h-auto" />
         </article>
