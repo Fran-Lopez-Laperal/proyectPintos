@@ -23,8 +23,8 @@ export function AreaNegocio() {
 
       <article className="bg-blue-200 w-auto p-8 lg:bg-gray-100 mt-10 flex justify-center">
         <section className="flex flex-col items-center md:w-1/2">
-          <h1 className="border-b-2 border-sky-600 text-2xl font-bold text-sky-600 text-2x1 md:hidden">PROMOÇÃO IMOBILIÁRIA</h1>
-          <h1 className="border-b-4 border-sky-600 text-2xl font-bold text-sky-600 text-4x1 hidden md:block lg:text-6xl w-full text-center">
+          <h1 className="border-b-2 border-sky-600 text-2xl font-extrabold text-sky-600 text-2x1 md:hidden">PROMOÇÃO IMOBILIÁRIA</h1>
+          <h1 className="border-b-4 border-sky-600 text-2xl font-extrabold text-sky-600 text-4x1 hidden md:block lg:text-6xl w-full text-center">
             PROMOÇÃO
           </h1>
           <p className="mt-8 font-bold lg:text-xl text-justify">
