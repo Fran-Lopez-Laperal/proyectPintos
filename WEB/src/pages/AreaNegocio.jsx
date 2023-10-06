@@ -1,16 +1,30 @@
 import { HeaderPages } from '../components/HeaderPages';
 import areaNegocioHeader from '../assets/headers/areaNegocioHeader.jpeg';
 import model from '../assets/model.jpg';
+import { useEffect, useState } from 'react';
+import { PromoçaoImages } from '../components/PromoçaoImages';
+import { ResponsivePromoçaoImages } from '../components/ResponsivePromoçaoImages';
 
 export function AreaNegocio() {
+  const [showImages, setshowImages] = useState(false);
+
+  useEffect(() => {
+    const responsiveMovil = () => (window.innerWidth > 840 ? setshowImages(true) : setshowImages(false));
+
+    responsiveMovil();
+
+    window.addEventListener('resize', () => responsiveMovil());
+  }, []);
+
+ 
   return (
     <main className="flex flex-col">
       <HeaderPages text={'Imobiliária'} textSize="text-5xl" image={areaNegocioHeader} />
 
       <article className="bg-blue-200 w-auto p-8 lg:bg-gray-100 mt-10 flex justify-center">
         <section className="flex flex-col items-center md:w-1/2">
-          <h1 className="border-b-2 border-sky-600 text-2xl font-bold text-sky-600 text-2x1 md:hidden">PROMOÇÃO IMOBILIÁRIA</h1>
-          <h1 className="border-b-4 border-sky-600 text-2xl font-bold text-sky-600 text-4x1 hidden md:block lg:text-6xl w-full text-center">
+          <h1 className="border-b-2 border-sky-600 text-2xl font-extrabold text-sky-600 text-2x1 md:hidden">PROMOÇÃO IMOBILIÁRIA</h1>
+          <h1 className="border-b-4 border-sky-600 text-2xl font-extrabold text-sky-600 text-4x1 hidden md:block lg:text-6xl w-full text-center">
             PROMOÇÃO
           </h1>
           <p className="mt-8 font-bold lg:text-xl text-justify">
@@ -29,31 +43,14 @@ export function AreaNegocio() {
         </section>
       </article>
 
-      <article className=" flex flex-col items-center mb-20">
-        <figure className="border-b-4 border-blue-400 mt-7">
-          <article className="h-64 w-96 bg-gray-400 mb-4">
-            <img className="w-full h-full" src={model} alt={model} />
-          </article>
-        </figure>
+      <section>
+        {showImages ?
+          <PromoçaoImages />
+          :
+          <ResponsivePromoçaoImages />
+        }
 
-        <figure className="border-b-4 border-blue-400 mt-7">
-          <article className="h-64 w-96 bg-gray-400 mb-4">
-            <img className="w-full h-full" src={model} alt={model} />
-          </article>
-        </figure>
-
-        <figure className="border-b-4 border-blue-400 mt-7">
-          <article className="h-64 w-96 bg-gray-400 mb-4">
-            <img className="w-full h-full" src={model} alt={model} />
-          </article>
-        </figure>
-
-        <figure className="border-b-4 border-blue-400 mt-7">
-          <article className="h-64 w-96 bg-gray-400 mb-4">
-            <img className="w-full h-full" src={model} alt={model} />
-          </article>
-        </figure>
-      </article>
+      </section>     
     </main>
   );
 }

@@ -12,6 +12,7 @@ import { AreaPrivada } from './pages/AreaPrivada';
 import { PlanearConstruir } from './pages/PlanearConstruir';
 import { Footer } from './components/Footer';
 import { Nav } from './components/Nav';
+import { Betão } from './pages/Betão';
 
 function App() {
   const { token } = useContext(AuthContext);
@@ -30,6 +31,7 @@ function App() {
           <Route path="/areaprivada" element={<AreaPrivada />} />
           <Route path="/crearNoticia" element={token ? <CreateNew /> : <Navigate to="/areaprivada" />} />
           <Route path="/planearConstruir" element={<PlanearConstruir />} />
+          <Route path="/betão" element={<Betão/>} />
         </Routes>
       </article>
       <Footer />
