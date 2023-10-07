@@ -1,4 +1,5 @@
 // import { FetchNews } from '../components/FetchNews';
+import { FetchNews } from '../components/FetchNews';
 import { Noticia } from '../components/Noticia';
 
 export function Noticias() {
@@ -6,9 +7,12 @@ export function Noticias() {
     <>
       <section className="">
         <Noticia />
-        <Noticia />
+        {/* <Noticia /> */}
       </section>
-      {/* <FetchNews /> */}
+      <section className='mb-96'>
+        <FetchNews />
+      </section>
+
     </>
   );
 }

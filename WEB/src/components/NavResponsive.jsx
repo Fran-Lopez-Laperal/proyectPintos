@@ -1,16 +1,30 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../assets/logo.png';
 import { useContext } from 'react';
 import { AuthContext } from '../context/AuthContext';
 import menu from '../assets/svg/menu.svg';
 import closeMenu from '../assets/svg/close.svg';
+import { LanguageContext } from '../context/LanguageContext';
+import { useTranslation } from 'react-i18next';
 
 export function NavResponsive() {
   const [openNav, setOpenNav] = useState(false);
   const [showSubLink1, setShowSubLink1] = useState(false);
   const [showSubLink2, setShowSubLink2] = useState(false);
   const { token, logOut } = useContext(AuthContext);
+  const {language, changeLanguage} = useContext(LanguageContext)
+  const {t, i18n} = useTranslation()
+
+
+  const handleLanguageChange = (lang) => {
+    changeLanguage(lang);
+  };
+
+
+  useEffect(() => {
+    i18n.changeLanguage(language);
+  }, [language, i18n]);
 
   function handleShowMenu() {
     setOpenNav(!openNav);
@@ -27,8 +41,8 @@ export function NavResponsive() {
     logOut();
   }
   return (
-    <main className="">
-      <section className="w-full bg-blue-400 drop-shadow z-50">
+    <main className="z-10 relative">
+      <section className="w-full bg-blue-400 drop-shadow">
         <menu className="flex">
           <button className="pl-4 w-1/4" onClick={handleShowMenu}>
             {openNav ? (
@@ -48,7 +62,7 @@ export function NavResponsive() {
 
         <nav className={`${openNav ? 'h-screen transition-all duration-700  ' : 'h-0'} overflow-hidden bg-white text-blue-800`}>
           <ul className="" onClick={handleShowSubLink1}>
-            <p className="font-bold">Sobre nós</p>
+            <p className="font-bold">{t('nav.sobreNos')}</p>
 
             <li className={`${showSubLink1 ? 'h-24 transition-all duration-700' : 'h-0'} overflow-hidden m-2`}>
               <section className="flex flex-col m-1 border-b border-blue-200">
@@ -115,9 +129,13 @@ export function NavResponsive() {
           </ul>
 
           <section className="flex space-x-4 font-bold justify-center items-center">
-            <button>PT</button>
+            <button
+            onClick={() => handleLanguageChange('pt')}
+            >PT</button>
             <p>|</p>
-            <button>IN</button>
+            <button
+            onClick={() => handleLanguageChange('en')}
+            >IN</button>
           </section>
         </nav>
       </section>

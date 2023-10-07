@@ -16,27 +16,27 @@ export function AreaNegocio() {
     window.addEventListener('resize', () => responsiveMovil());
   }, []);
 
- 
+
   return (
     <main className="flex flex-col">
-      <HeaderPages text={'Imobiliária'} textSize="text-5xl" image={areaNegocioHeader} />
+      <HeaderPages text={'Imobiliária'} textSize="lg:text-5xl" textSizeR="text-xl" image={areaNegocioHeader} />
 
-      <article className="bg-blue-200 w-auto p-8 lg:bg-gray-100 mt-10 flex justify-center">
-        <section className="flex flex-col items-center md:w-1/2">
-          <h1 className="border-b-2 border-sky-600 text-2xl font-extrabold text-sky-600 text-2x1 md:hidden">PROMOÇÃO IMOBILIÁRIA</h1>
-          <h1 className="border-b-4 border-sky-600 text-2xl font-extrabold text-sky-600 text-4x1 hidden md:block lg:text-6xl w-full text-center">
+      <article className="bg-corporative-color3 w-auto px-8 lg:bg-graycorporative-color mt-10 lg:mt-24 flex justify-center">
+        <section className="flex flex-col items-center lg:px-40 ">
+          <h1 className="mt-10 border-b-[1px] w-full text-center border-corporative-color2 text-[28px] font-bold text-corporative-color2 text-2x1 md:hidden">PROMOÇÃO IMOBILIÁRIA</h1>
+          <h1 className="mt-10 border-b-4 border-corporative-color2 text-2xl font-bold text-corporative-color2 text-4x1 hidden md:block lg:text-6xl w-full text-center">
             PROMOÇÃO
           </h1>
           <p className="mt-8 font-bold lg:text-xl text-justify">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil nam quis recusandae cum soluta accusantium beatae odio rerum, quod cumque.
-            Exercitationem hic magni nostrum veritatis aliquam quisquam atque officia, voluptas esse in ex quidem quo tenetur provident quasi culpa
-            nam quos animi doloribus at accusantium illo quas! Aperiam incidunt ipsa reprehenderit, reiciendis voluptate quidem nam molestiae quasi
-            porro, fugiat sequi blanditiis aspernatur a, iste distinctio iure est enim voluptates obcaecati beatae harum. Iste, in alias numquam iure
-            sapiente vero eligendi. In non dolor, animi magni, quos tempore quae repellendus illo nobis id ab autem similique repudiandae vero impedit
-            iure commodi.
+            Korem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim,
+            metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit,
+            sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+            Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl,
+            eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum tellus.
+
           </p>
           <section className=" w-full">
-            <button className="bg-blue-400 rounded lg:float-left float-right p-3 mt-3 text-white font-extrabold bg-gradient-to-t from-white to-blue-500 ">
+            <button className="bg-corporative-color rounded lg:float-left float-right p-3 mt-3 mb-10 text-white font-extrabold bg-gradient-to-t from-white to-blue-500 ">
               Bolsa imobiliária
             </button>
           </section>
@@ -50,7 +50,7 @@ export function AreaNegocio() {
           <ResponsivePromoçaoImages />
         }
 
-      </section>     
+      </section>
     </main>
   );
 }

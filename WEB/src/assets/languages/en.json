@@ -1,0 +1,110 @@
+{
+  "nav": {
+    "sobreNos": "with us",
+    "internacionalización": "",
+    "noticias": "",
+    "contactos": "",
+    "areaPrivada": ""
+  },
+
+  "home": {
+    "link1": "",
+    "link2": "",
+    "link3": "",
+    "link4": "",
+    "link5": "",
+    "link6": "",
+    "homeHeader": "",
+    "homeTitle": "",
+    "section1Title": "",
+    "section1sub1": "",
+    "section1sub2": "",
+    "section1sub3": "",
+    "section1sub4": "",
+    "marqueeTitle": "",
+    "section2Title": "",
+    "section2subTitle1": "",
+    "section2subTitle2": "",
+    "section2Text": ""
+  },
+
+  "history": {
+    "historyHeader": "",
+    "historyText": "",
+    "title1": "",
+    "text1": "",
+    "title2": "",
+    "text2": "",
+    "title3": "",
+    "text3": ""
+  },
+
+  "planear": {
+    "header": "",
+    "phrase": "",
+    "text": "",
+    "title1": "",
+    "text1": "",
+    "text2": "",
+    "title2": "",
+    "text3": "",
+    "title3": "",
+    "title4": "",
+    "award1": "",
+    "award2": "",
+    "award3": "",
+    "award4": "",
+    "missaoTitle": "",
+    "missaoText": "",
+    "visaoTitle": "",
+    "visaoText": "",
+    "valoresTitle": "",
+    "valoresText": ""
+  },
+
+  "promoçao": {
+    "logo1": "",
+    "logo2": "",
+    "vendido": "",
+    "verMais": "",
+    "text": "",
+    "projetos": ""
+  },
+
+  "contacto": {
+    "header": "",
+    "text1": "",
+    "text2": "",
+    "text3": "",
+    "text4": "",
+    "text5": ""
+  },
+
+  "notica": {
+    "title": "",
+    "introduction": "",
+    "text": ""
+  },
+
+  "betao": {
+    "header": "",
+    "img1titleL1": "",
+    "img1titleL2": "",
+    "img1titleR3": "",
+    "img1titleR4": "",
+    "img2title1": "",
+    "img2title2": "",
+    "tite1": "",
+    "text1": "",
+    "title2": "",
+    "text2": "",
+    "title3": ""
+  },
+
+  "areaNegocio": {
+    "header": "",
+    "title": "",
+    "text": "",
+    "button": ""
+  }
+}
