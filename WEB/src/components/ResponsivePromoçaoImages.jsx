@@ -1,12 +1,16 @@
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry"
+import home1 from '../assets/home/home1.jpeg';
+import home2 from '../assets/home/home2.jpeg';
+import home3 from '../assets/home/home3.jpeg';
+import home4 from '../assets/home/home4.jpeg';
 
 export function ResponsivePromoçaoImages() {
 
     const images = [
-        "https://picsum.photos/2000/2000",
-        "https://picsum.photos/2000/2000",
-        "https://picsum.photos/2000/2000",
-        "https://picsum.photos/2000/2000",
+       home1,
+       home2,
+       home3,
+       home4
     ]
 
     return (
@@ -17,7 +21,7 @@ export function ResponsivePromoçaoImages() {
                     <Masonry columnsCount={5} gutter="10px">
                         {images.map((image, i) => (
                             <img
-                            className="w-full block p-1"
+                                className="h-[300px] w-full block p-1 shadow-lg shadow-gray"
                                 key={i}
                                 src={image}
                                 alt="" />

@@ -22,7 +22,10 @@ export function FetchNews() {
       <section className="mb-20 lg:mb-32 relative">
         <div className="bg-blue-200 h-32 absolute inset-0 lg:top-64 top-48"></div>
         <header className="text-center mt-10 mb-5">
-          <p className="text-corporative-color text-center text-4xl uppercase w-full  pb-3 font-bold lg:text-6xl">Noticias</p>
+        <p
+              className="font-bold text-3xl text-center lg:border-none border-b-2 border-corporative-color2 pb-1 lg:px-4 lg:w-full lg:text-6xl text-corporative-color2">
+              Noticias
+            </p>
         </header>
         <article className="flex justify-around mb-5 relative">
           {data

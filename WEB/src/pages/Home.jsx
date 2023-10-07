@@ -3,9 +3,9 @@ import { HomeLinks } from '../components/HomeLinks';
 import { Logos } from '../components/Logos';
 import logo2 from '../assets/logo2.png';
 import imgHome from '../assets/img-home.jpeg';
-import { Noticia } from '../components/Noticia';
 
 import companyHeader from '../assets/headers/companyHeader.jpeg';
+import { Timeline } from '../components/Timeline';
 
 const StatCard = ({ number, text }) => {
   return (
@@ -82,12 +82,7 @@ export function Home() {
       <section className="flex flex-col font-extrabold p-6 py-8 lg:flex lg:px-44">
         <h2 className="text-corporative-color2 text-center text-3xl lg:text-6xl lg:pb-6">Noticias</h2>
         <div className="grid grid-cols-2 gap-6 py-4 lg:grid-cols-4 lg:gap-12">
-          <Noticia />
-          <Noticia />
-          <Noticia />
-          <Noticia />
         </div>
       </section>
     </main>
   );
-}

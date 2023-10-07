@@ -1,17 +1,22 @@
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry"
+import home1 from '../assets/home/home1.jpeg';
+import home2 from '../assets/home/home2.jpeg';
+import home3 from '../assets/home/home3.jpeg';
+import home4 from '../assets/home/home4.jpeg';
 
 export function PromoçaoImages() {
 
     const images = [
-        "https://picsum.photos/1000/2000",
-        "https://picsum.photos/2000/2000",
-        "https://picsum.photos/1000/2000",
-        "https://picsum.photos/1500/3000",
-        "https://picsum.photos/2000/2000",
-        "https://picsum.photos/2000/1500",
-        "https://picsum.photos/2000/2000",
-        "https://picsum.photos/1500/3000",
-        "https://picsum.photos/2000/1000",
+       home1,
+       home2,
+       home3,
+       home4,
+       home1,
+       home2,
+       home3,
+       home4,
+       home1,
+       home1
     ]
 
     return (
