@@ -102,19 +102,19 @@ export function NavResponsive() {
             </li>
           </ul>
 
-          <ul className="flex items-center h-10 pl-2 border-b" onClick={handleShowMenu}>
+          <ul className="flex items-center h-10 pl-2 border-b bg-gray-100" onClick={handleShowMenu}>
             <Link to="/internacionalizacion">Internacional</Link>
           </ul>
 
-          <ul className="flex items-center h-10 pl-2 border-b" onClick={handleShowMenu}>
+          <ul className="flex items-center h-10 pl-2 border-b bg-gray-100" onClick={handleShowMenu}>
             <Link to="/noticias">Notícias</Link>
           </ul>
 
-          <ul className="flex items-center h-10 pl-2 border-b" onClick={handleShowMenu}>
+          <ul className="flex items-center h-10 pl-2 border-b bg-gray-100" onClick={handleShowMenu}>
             <Link to="/contacto">Contactos</Link>
           </ul>
 
-          <ul className="flex items-center h-10 pl-2 border-b" onClick={handleShowMenu}>
+          <ul className="flex items-center h-10 pl-2 border-b bg-gray-100" onClick={handleShowMenu}>
             <Link to="/areaPrivada">Área privada</Link>
           </ul>
 
