@@ -46,7 +46,7 @@ export function AreaPrivada() {
   return (
     <div className="flex justify-center">
       <section className="flex flex-col gap-4 items-center m-10 py-10 px-6 lg:px-48 border rounded-md">
-        <h2 className="font-bold text-2xl lg:text-3xl" id="h2-login">
+        <h2 className="text-corporative-color2 text-center text-2xl uppercase w-full font-bold lg:text-4xl" id="h2-login">
           Iniciar sesión
         </h2>
         <form className="flex flex-col gap-3" onSubmit={handleSubmit}>

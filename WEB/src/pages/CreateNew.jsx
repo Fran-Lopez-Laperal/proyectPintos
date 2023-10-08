@@ -15,11 +15,11 @@ export function CreateNew() {
     setTitle(event.target.value);
   };
 
-  const handleTextChange = (event) => {
+  const handleIntroductionChange = (event) => {
     setIntroduction(event.target.value);
   };
 
-  const handleIntroductionChange = (event) => {
+  const handleTextChange = (event) => {
     setText(event.target.value);
   };
 
@@ -33,46 +33,39 @@ export function CreateNew() {
         text,
       };
 
-      await createNewService({
-        formDataNews,
-        token,
-      });
+      await createNewService(formDataNews, token);
 
-      navigate('/historia');
+      navigate('/');
     } catch (error) {
       setError(error.message);
     }
   };
 
   return (
-    <section>
-      <div className="flex flex-col justify-center items-center pt-8 bg-corporative-color3">
-        <h1 className="text-corporative-color2 text-center text-2xl uppercase w-full font-bold pb-8 lg:text-5xl">Crea tu noticia</h1>
-        <form onSubmit={handleSubmit} className="flex flex-col justify-center w-auto gap-4">
-          <div className="flex flex-col gap-2">
-            <label className="lg:w-28 lg:text-xl" htmlFor="title">
-              Título
-            </label>
-            <input className="w-96 h-10 p-3" type="text" id="title" value={title} onChange={handleTitleChange} required />
-          </div>
-          <div className="flex flex-col gap-2">
-            <label className="w-28 lg:text-xl" htmlFor="introduction">
-              Introducción
-            </label>
-            <textarea className="w-96 h-20 p-3" id="introduction" value={introduction} onChange={handleIntroductionChange} required />
-          </div>
-          <div className="flex flex-col gap-2">
-            <label className="w-28 lg:text-xl" htmlFor="text">
-              Texto
-            </label>
-            <textarea className="w-96 h-20 p-3" id="text" value={text} onChange={handleTextChange} required />
-          </div>
-          <div className="flex justify-center h-12 mt-10 mb-12 font-bold text-lg text-white bg-corporative-color2 hover:bg-corporative-color transition-all duration-500">
-            <button type="submit">Crear noticia</button>
-          </div>
+    <div className="flex justify-center">
+      <section className="flex flex-col gap-4 items-center m-10 py-10 px-6 lg:px-48 border rounded-md">
+        <h1 className="text-corporative-color2 text-center text-2xl uppercase w-full font-bold lg:text-4xl">Crear nueva noticia</h1>
+        <form onSubmit={handleSubmit} className="flex flex-col gap-3 lg:w-80">
+          <label htmlFor="title">Título</label>
+          <input className="border px-3" type="text" id="title" value={title} onChange={handleTitleChange} required />
+
+          <label htmlFor="introduction">Introducción</label>
+          <textarea className="border px-3" id="introduction" value={introduction} onChange={handleIntroductionChange} required />
+
+          <label htmlFor="text">Texto</label>
+          <textarea className="border px-3" id="text" value={text} onChange={handleTextChange} required />
+
+          <section className="flex flex-col justify-center">
+            <button
+              className="border p-1 mt-2 text-white bg-corporative-color2 rounded hover:bg-corporative-color transition-all duration-500"
+              type="submit"
+            >
+              Crear noticia
+            </button>
+            {error && <p className="text-red-600 text-left text-xs font-bold p-1">*{error}</p>}
+          </section>
         </form>
-        {error && <p>{error}</p>}
-      </div>
-    </section>
+      </section>
+    </div>
   );
 }
