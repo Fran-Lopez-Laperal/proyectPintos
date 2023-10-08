@@ -19,9 +19,9 @@ function App() {
   const { token } = useContext(AuthContext);
 
   return (
-    <main className="mt-12 lg:mt-0">
-      <article>
-        <Nav />
+    <section className="min-h-screen flex flex-col">
+      <Nav />
+      <main className="flex-grow">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/historia" element={<History />} />
@@ -34,9 +34,9 @@ function App() {
           <Route path="/planearConstruir" element={<PlanearConstruir />} />
           <Route path="/betao" element={<Betao />} />
         </Routes>
-      </article>
+      </main>
       <Footer />
-    </main>
+    </section>
   );
 }
 
