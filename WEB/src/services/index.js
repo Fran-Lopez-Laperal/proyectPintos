@@ -35,7 +35,7 @@ export const getMyUserDataService = async ({ token }) => {
 };
 
 export const createNewService = async ({ token }) => {
-  const response = await fetch(`${API_URL}/criarNoticia`, {
+  const response = await fetch(`${API_URL}/crearNoticia`, {
     method: 'POST',
     headers: {
       Authorization: token,
