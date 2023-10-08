@@ -1,6 +1,5 @@
 import { HeaderPages } from '../components/HeaderPages';
 import areaNegocioHeader from '../assets/headers/areaNegocioHeader.jpeg';
-import model from '../assets/model.jpg';
 import { useEffect, useState } from 'react';
 import { PromoçaoImages } from '../components/PromoçaoImages';
 import { ResponsivePromoçaoImages } from '../components/ResponsivePromoçaoImages';
