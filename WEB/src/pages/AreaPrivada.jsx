@@ -49,16 +49,16 @@ export function AreaPrivada() {
         <h2 className="text-corporative-color2 text-center text-2xl uppercase w-full font-bold lg:text-4xl" id="h2-login">
           Iniciar sesión
         </h2>
-        <form className="flex flex-col gap-3" onSubmit={handleSubmit}>
+        <form className="flex flex-col gap-3 lg:w-80" onSubmit={handleSubmit}>
           <label htmlFor="username">Username</label>
-          <input className="border px-3" type="text" id="username" name="username" required onChange={handleUsernameChange} value={username} />
+          <input className="border px-3 py-2" type="text" id="username" name="username" required onChange={handleUsernameChange} value={username} />
 
           <label className="" htmlFor="password">
             Password
           </label>
           <div className="password-input border">
             <input
-              className="px-3"
+              className="px-3 py-2"
               type={showPassword ? 'text' : 'password'}
               id="password"
               name="password"

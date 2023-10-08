@@ -47,13 +47,13 @@ export function CreateNew() {
         <h1 className="text-corporative-color2 text-center text-2xl uppercase w-full font-bold lg:text-4xl">Crear nueva noticia</h1>
         <form onSubmit={handleSubmit} className="flex flex-col gap-3 lg:w-80">
           <label htmlFor="title">Título</label>
-          <input className="border px-3" type="text" id="title" value={title} onChange={handleTitleChange} required />
+          <input className="border px-3 py-2" type="text" id="title" value={title} onChange={handleTitleChange} required />
 
           <label htmlFor="introduction">Introducción</label>
-          <textarea className="border px-3" id="introduction" value={introduction} onChange={handleIntroductionChange} required />
+          <textarea className="border px-3 py-2" id="introduction" value={introduction} onChange={handleIntroductionChange} required />
 
           <label htmlFor="text">Texto</label>
-          <textarea className="border px-3" id="text" value={text} onChange={handleTextChange} required />
+          <textarea className="border px-3 py-2" id="text" value={text} onChange={handleTextChange} required />
 
           <section className="flex flex-col justify-center">
             <button
