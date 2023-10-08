@@ -26,7 +26,6 @@ export function PlanearConstruir() {
             <p className="text-xl font-bold lg:text-[64px] border-b-[1px]  border-corporative-color2 pb-2 text-corporative-color2 mt-7">
               RESPONSABILIDADES SOCIAL
             </p>
-            {/* <p className="lg:border-b-4 border-b-2 border-corporative-color2 lg:mt-4"></p> */}
           </section>
           <section className="lg:h-[126px]">
             <p className="text-center font-bold text-xs mt-5 lg:text-xl">Ao serviço da sociedade procuramos criar um mundo melhor.</p>
