@@ -1,6 +1,6 @@
 const getDB = require("../../getDB");
 
-const deleteNewQuery = async (id_news) => {
+const deleteNewsQuery = async (id_news) => {
   let connection;
   try {
     connection = await getDB();
@@ -11,4 +11,4 @@ const deleteNewQuery = async (id_news) => {
   }
 };
 
-module.exports = deleteNewQuery;
+module.exports = deleteNewsQuery;

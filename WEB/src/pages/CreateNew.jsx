@@ -1,7 +1,11 @@
-import { useState, useContext } from 'react';
+import { useState, useContext, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useDropzone } from 'react-dropzone';
+import dragDrop from '../assets/svg/dragdrop.svg';
+
 import { AuthContext } from '../context/AuthContext';
 import { createNewService } from '../services';
+
 import { CountdownTimer } from '../components/CountdownTimer';
 import { DataInput } from '../components/DataInput';
 
@@ -11,8 +15,10 @@ export function CreateNew() {
   const [title, setTitle] = useState('');
   const [introduction, setIntroduction] = useState('');
   const [text, setText] = useState('');
+  const [image, setImage] = useState(null);
   const [error, setError] = useState('');
   const [newsCreated, setNewsCreated] = useState(false);
+  const [selectedFile, setSelectedFile] = useState(null);
 
   const handleTitleChange = (event) => {
     setTitle(event.target.value);
@@ -34,6 +40,7 @@ export function CreateNew() {
         title,
         introduction,
         text,
+        image,
         token,
       };
 
@@ -45,8 +52,15 @@ export function CreateNew() {
     }
   };
 
+  const onDrop = useCallback((acceptedFiles) => {
+    setImage(acceptedFiles[0]);
+    setSelectedFile(acceptedFiles[0]);
+  }, []);
+
+  const { getRootProps, getInputProps } = useDropzone({ onDrop });
+
   const handleTimeout = () => {
-    navigate('/');
+    navigate('/noticias');
   };
 
   return (
@@ -65,6 +79,18 @@ export function CreateNew() {
               <DataInput label="Título" value={title} onChange={handleTitleChange} />
               <DataInput label="Introducción" value={introduction} onChange={handleIntroductionChange} />
               <DataInput label="Texto" value={text} onChange={handleTextChange} />
+              <label htmlFor="image"></label>
+              <div {...getRootProps()}>
+                <input {...getInputProps()} />
+                <div className="flex flex-col justify-center items-center border cursor-pointer p-2">
+                  <p className="font-semibold">Arrastre la imagen</p>
+                  <img className="h-8 m-2" src={dragDrop} alt="" />
+                  <p className="font-semibold">
+                    o haga click <span className="underline">aquí</span>
+                  </p>
+                  {selectedFile && <p className="text-gray-400 text-center">{selectedFile.name}</p>}
+                </div>
+              </div>
 
               <section className="flex flex-col justify-center">
                 <button

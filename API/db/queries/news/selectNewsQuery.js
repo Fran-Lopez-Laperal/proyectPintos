@@ -5,13 +5,11 @@ const selectNewsQuery = async () => {
   try {
     connection = await getDB();
 
-    let [news] = await connection.query(
-      `SELECT * FROM news`
-    )
+    let [news] = await connection.query(`SELECT title, introduction, text, image FROM news`);
     return news;
   } finally {
     connection?.release();
   }
-}
+};
 
-module.exports = selectNewsQuery
+module.exports = selectNewsQuery;
