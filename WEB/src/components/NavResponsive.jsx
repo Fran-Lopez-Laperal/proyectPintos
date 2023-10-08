@@ -71,7 +71,7 @@ export function NavResponsive() {
                 <Link className="flex items-center h-10 pl-6 border-b" to="/historia" onClick={handleShowMenu}>
                   Historia
                 </Link>
-                <Link className="flex items-center h-10 pl-6 border-b" onClick={handleShowMenu}>
+                <Link className="flex items-center h-10 pl-6 border-b" to="/planearConstruir" onClick={handleShowMenu}>
                   Planear e Contruir
                 </Link>
               </section>
