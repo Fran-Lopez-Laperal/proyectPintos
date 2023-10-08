@@ -131,7 +131,7 @@ export function NavResponsive() {
             )}
           </ul>
 
-          <section className="flex space-x-4 font-bold justify-center items-center">
+          <section className="flex items-center justify-center h-10 space-x-4">
             <button onClick={() => handleLanguageChange('pt')}>PT</button>
             <p>|</p>
             <button onClick={() => handleLanguageChange('en')}>EN</button>
