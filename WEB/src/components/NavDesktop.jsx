@@ -15,7 +15,7 @@ export function NavDesktop() {
 
   return (
     <section>
-      <section className="flex justify-between h-[100px] bg-red-800">
+      <section className="flex justify-between h-[100px]">
         <header className="flex">
           <Link to="/" className=" w-1/4 h-18 flex justify-center items-center">
             <img className="w-48" src={logo} alt={logo} />
@@ -43,7 +43,7 @@ export function NavDesktop() {
             </Link>
           )}
           <Link
-            className=" bg-red-400 flex justify-center items-center w-48 h-full hover:bg-corporative-color2 transition-all duration-500 no-underline"
+            className="  flex justify-center items-center w-48 h-full hover:bg-corporative-color2 transition-all duration-500 no-underline"
             to={'/areaPrivada'}
           >
             Area privada
