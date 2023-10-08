@@ -56,7 +56,7 @@ export function AreaPrivada() {
           <label className="" htmlFor="password">
             Password
           </label>
-          <div className="password-input border">
+          <div className="border flex justify-between items-center">
             <input
               className="px-3 py-2"
               type={showPassword ? 'text' : 'password'}
@@ -67,7 +67,7 @@ export function AreaPrivada() {
               value={password}
             />
             <span className="toggle-password" onClick={toggleShowPassword}>
-              <FontAwesomeIcon className="w-10" icon={showPassword ? faEyeSlash : faEye} />
+              <FontAwesomeIcon className="pr-2" icon={showPassword ? faEyeSlash : faEye} />
             </span>
           </div>
 
