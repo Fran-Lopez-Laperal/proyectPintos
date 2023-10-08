@@ -21,9 +21,9 @@ app.use((req, res, next) => {
 });
 
 /**
- * ######################
- * ## Users Controllers##
- * ######################
+ * #################
+ * ## Controllers ##
+ * #################
  */
 const isAuth = require("../middleware/isAuth");
 
