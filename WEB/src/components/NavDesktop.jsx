@@ -11,8 +11,11 @@ export function NavDesktop() {
     { to: '/contacto', text: 'CONTACTO' },
   ];
 
-  const { token } = useContext(AuthContext);
+  const { token, logOut } = useContext(AuthContext);
 
+  function handleLogOut() {
+    logOut();
+  }
   return (
     <section>
       <section className="flex justify-between h-[100px]">
@@ -35,19 +38,30 @@ export function NavDesktop() {
         </header>
         <main className="flex">
           {token && (
+            <div className="flex">
+              <Link
+                className="flex justify-center items-center w-48 h-full hover:bg-corporative-color2 transition-all duration-500 no-underline"
+                to={'/crearNoticia'}
+              >
+                Crear noticia
+              </Link>
+              <Link
+                onClick={handleLogOut}
+                className="flex justify-center items-center w-48 h-full hover:bg-corporative-color2 transition-all duration-500 no-underline"
+                to={'/crearNoticia'}
+              >
+                Cerrar sesión
+              </Link>
+            </div>
+          )}
+          {token ? null : (
             <Link
-              className="flex justify-center items-center w-48 h-full hover:bg-corporative-color2 transition-all duration-500 no-underline"
-              to={'/crearNoticia'}
+              className="  flex justify-center items-center w-48 h-full hover:bg-corporative-color2 transition-all duration-500 no-underline"
+              to={'/areaPrivada'}
             >
-              Crear noticia
+              Área privada
             </Link>
           )}
-          <Link
-            className="  flex justify-center items-center w-48 h-full hover:bg-corporative-color2 transition-all duration-500 no-underline"
-            to={'/areaPrivada'}
-          >
-            Area privada
-          </Link>
         </main>
       </section>
     </section>
