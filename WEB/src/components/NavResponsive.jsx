@@ -127,7 +127,7 @@ export function NavResponsive() {
                 <Link className="" to={'/crearNoticia'}>
                   Crear noticia
                 </Link>
-                <Link onClick={logOut} className="b">
+                <Link onClick={handleLogOut} className="b">
                   Cerrar sesión
                 </Link>
               </div>
