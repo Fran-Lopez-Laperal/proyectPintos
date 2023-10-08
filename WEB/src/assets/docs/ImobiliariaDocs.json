@@ -1,6 +1,3 @@
-
-
-
 [
   {
     "id": 1,
@@ -8,7 +5,7 @@
     "endConstruction": "2023",
     "location": "Porto",
     "text": "O LEMONTREE GARDEN é um luxuoso condomínio fechado, situado numa das zonas mais nobres da cidade do Porto, junto a Serralves, localizado entre a Avenida Marechal Gomes da Costa e a Avenida da Boavista, integrando um edifício residencial organizado em 16 apartamentos de luxo de tipologias T1 a T4. As habitações revelam uma qualidade superior na construção e acabamentos de luxo, onde sobressai o betão e materiais nobres e sustentáveis. No LemonTree Garden valorizam-se os aspetos da arquitetura moderna com conceitos de luminosidade, funcionalidade e conforto, privilegiando-se as áreas generosas, as varandas, os terraços, e os amplos espaços ajardinados e de lazer.",
-    "img": "../home/home1.jpeg"
+    "img": "home1.jpeg"
   },
 
   {
@@ -17,7 +14,7 @@
     "endConstruction": "2023",
     "location": "Vila Nova de Gaia",
     "text": "O condomínio fechado com piscina Lounge Terrace oferece proximidade do mar. O edifício com 26 apartamentos foi projetado para famílias que valorizam o bem-estar, a qualidade de vida, e o investimento seguro. O empreendimento dispõe de piscina, jardim, e também de um rooftop, com vista panorâmica de mar para desfrutar de momentos especiais de convívio e descontração. No edifício de elevado padrão de construção onde predomina o betão, os materiais de qualidade, tendo em conta a sustentabilidade. O Lounge Terrace, localizado a 1 km da Marina da Afurada, é ideal para quem procura viver com comodidade, proximidade do mar e das praias, do comércio e serviços e de equipamentos de lazer, desde passadiços pedonais e de ciclovias, assim como dezenas de bares e restaurante ",
-    "img": "../home/home1.jpeg"
+    "img": "home2.jpeg"
   },
 
   {
@@ -26,7 +23,7 @@
     "endConstruction": "2022 - Lote 5 (Edifício 1) - Em construção (os edifícios 2, 3 e 4)",
     "location": "Vila Nova de Gaia",
     "text": "O Empreendimento REPÚBLICA RESIDENCE - LOTE 5 é composto por 4 edifícios com 30 apartamentos cada distribuídos por 6 pisos e tipologias T1, T2, T2+1 e T3 com amplas varandas e terraços. Destaca-se a construção de elevada qualidade e a domótica. Dispõe de acabamentos e design de cariz minimalista onde predomina o betão. A ótima localização no centro de Vila Nova de Gaia, a 400 metros do El Corte Inglês e a 500 metros do Metro de Superfície, proporciona, ainda, excelentes vistas sobre a cidade do Porto, o Rio Douro e as pontes do Infante e do Freixo.",
-    "img": "../home/home1.jpeg"
+    "img": "home3.jpeg"
   },
 
   {
@@ -35,7 +32,7 @@
     "endConstruction": "2023 – Em construção",
     "location": "Matosinhos",
     "text": "O empreendimento Metro Real de arquitetura moderna, constituído por 21 estúdios - versáteis apartamentos com open space e quarto independente distribuídos por 4 pisos, destina-se ao estilo de vida jovem, moderno e dinâmico. A localização privilegiada junto ao Parque de Real, em Matosinhos, potencia a possibilidade de desfrutar da qualidade de vida junto à natureza e nas proximidades do mar. As ligações ao Metro e a Matosinhos Sul são fatores a somar ainda aos serviços, ao comércio tradicional, à restauração e a instituições de ensino público e privado. Destaca-se a excelente construção e os acabamentos dos apartamentos que dispõe de varanda ou terraço e praticamente todos incluem lugar de estacionamento e arrumo. O empreendimento conta ainda com um lobby/sala de condomínio, um jardim do condomínio e estacionamento para visitantes.",
-    "img": "../home/home1.jpeg"
+    "img": "home4.jpeg"
   },
 
   {
@@ -44,7 +41,7 @@
     "endConstruction": "2023 – Em Construção",
     "location": "Vila Nova de Gaia",
     "text": "O edifício de linhas modernas com 5 pisos e 40 habitações com tipologias T0, T1+1 e T2 foi projetado para famílias que valorizam o bem-estar, a comodidade e a proximidade de serviços e comércio. A localização privilegiada permite rápido acesso à Ponte do Infante, Freixo e Arrábida ao metro, farmácia, El Corte Inglês, Mercadona, Aldi e Lidl. O imóvel está equipado caixilharia de alumínio com bomba de calor, corte térmico e vidros duplos, ar-condicionado, porta de segurança, entre outros equipamentos.",
-    "img": "../home/home1.jpeg"
+    "img": "home1.jpeg"
   },
 
   {
@@ -53,7 +50,7 @@
     "endConstruction": "2023 (?) – Em construção",
     "location": "Vila Nova de Gaia",
     "text": "O edifício oferece vistas magníficas para o Rio Douro e para as cidades do Porto e de Gaia. A torre de apartamentos destaca-se pela elevada qualidade de construção e de acabamentos. O empreendimento apresenta uma piscina e espaço de lazer no rooftop, bicicletário e um lobby espaçoso para convívio, sendo uma das áreas privilegiadas. Localizado junto ao novo acesso de metro da segunda linha de Gaia (Santo Ovídio - Casa da Música), o empreendimento, de 10 pisos, é constituído por: 11 T0 Duplex; 33 T0; 16 T2 e 1 Loja",
-    "img": "../home/home1.jpeg"
+    "img": "home2.jpeg"
   },
 
   {
@@ -62,7 +59,7 @@
     "endConstruction": "2025 – Em construção",
     "location": "Vila Nova de Gaia",
     "text": "O condomínio fechado JARDINS DA SEARA localizado próximo do centro de Vila Nova de Gaia, numa zona calma, dispõe de bons acessos às principais vias rodoviárias e autoestradas, com Metro bus à porta e o novo pavilhão multiusos. Dividido em 10 lotes, o empreendimento, com cerca 700 habitações terá uma zona comercial e serviços. O empreendimento dispõe de apartamentos de tipologias T1, T2 e T3, mais de 2000m2 de jardins, uma sala de convívio, uma brinquedoteca e um ginásio. Tudo pensado em criar o melhor ambiente e uma experiência única para quem aqui irá viver. Destaque para as varandas com áreas entre 6m2 e 18m2, arrumos para os T2 e T3, ar condicionado entre outras características",
-    "img": "../home/home1.jpeg"
+    "img": "home3.jpeg"
   },
 
   {
@@ -71,7 +68,7 @@
     "endConstruction": "2017",
     "location": "Vila Nova de Gaia",
     "text": "Com 48 apartamentos e 7 lojas, o edifício Cais d’Afurada construído em betão aparente destaca- se na margem do rio Douro, em Vila Nova de Gaia, tendo o privilégio de contemplar uma vista deslumbrante e panorâmica sobre o rio e a cidade do Porto. As arquiteturas exteriores contemporâneas, com grandes varandas, evidenciam a qualidade de construção irrepreensível.",
-    "img": "../home/home1.jpeg"
+    "img": "home4.jpeg"
   },
 
   {
@@ -80,7 +77,7 @@
     "endConstruction": "2022",
     "location": "Vila Nova de Gaia",
     "text": "Localizado em Canidelo, o edifício Seca do Bacalhau destaca-se pela sua arquitetura contemporânea e pela construção sustentável em betão aparente dos 29 apartamentos. As grandes varandas e as portas de vidro permitem aproveitar toda a luz natura ",
-    "img": "../home/home1.jpeg"
+    "img": "home1.jpeg"
   },
 
   {
@@ -89,7 +86,7 @@
     "endConstruction": "2012",
     "location": "Vila Nova de Gaia",
     "text": "Em plena marginal fluvial de Vila Nova de Gaia e de fácil acesso ao Porto pela Ponte da Arrábida e pela Ponte D. Luís, o Edifício Cais do Cavaco integra um conjunto de apartamentos feitos em betão e dotados de grandes varandas envidraçadas com vista para o Rio Douro.",
-    "img": "../home/home1.jpeg"
+    "img": "home2.jpeg"
   },
 
   {
@@ -98,7 +95,7 @@
     "endConstruction": "Gandra-Paredes",
     "location": "Janeiro 2023",
     "text": "Em pleno campus da CESPU, a MEU STUDIO é a nova residência universitária com 71 estúdios (individuais, duplos ou triplos) totalmente equipados com kitchenette, wc privado, climatização, internet, ginásio, sala de estudo, lavandaria self-service, sala de estar e deck exterior e garagem. O edifício dispõe de jardins interiores e de sistema de videovigilância, com todas as comodidades para os estudantes.",
-    "img": "../home/home1.jpeg"
+    "img": "home3.jpeg"
   },
 
   {
@@ -107,6 +104,6 @@
     "endConstruction": "Dezembro 2021",
     "location": "Gandra-Paredes",
     "text": "Aberto desde dezembro de 2021, O MEU HOTEL dispõe de 50 quartos, bar, salas de reunião e eventos, estacionamento, carregadores de veículos elétricos, oferece aos hóspedes conforto, qualidade e design.",
-    "img": "../home/home1.jpeg"
+    "img": "home4.jpeg"
   }
 ]

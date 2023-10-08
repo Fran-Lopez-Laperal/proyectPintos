@@ -21,7 +21,7 @@ const saveImg = async (img, resizePx) => {
   const sharpImg = sharp(img.data);
   sharpImg.resize(resizePx);
 
-  const imgName = `${uuid()}.webp`;
+  const imgName = `${uuid()}.jpg`;
   const imgPath = path.join(uploadsPath, imgName);
 
   await sharpImg.toFile(imgPath);

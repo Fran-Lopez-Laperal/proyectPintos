@@ -1,23 +1,21 @@
 import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry';
+import data from '../assets/docs/ImobiliariaDocs.json';
 
-export function PromoçaoImages({ imoData }) {
-  console.log(imoData)
+const PUBLIC_URL = 'http://127.0.0.1:5173';
+
+export function PromoçaoImages() {
   return (
-    <>
-      <section className="h-auto">
-        <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 900: 2 }}>
-          <Masonry columnsCount={5} gutter="">
-            {imoData.map(({img,text, id}) => (
-              <div>
-                <img className="border-r-2 border-b-2 py-[11px] px-[11px] border-corporative-color2" key={id} src={img} alt="" />
-                <p>{text}</p>
-              </div>
-
-            ))}
-          </Masonry>
-        </ResponsiveMasonry>
-      </section>
-    </>
+    <section className="h-auto">
+      <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 900: 2 }}>
+        <Masonry columnsCount={2} gutter="10px">
+          {data.map((item) => (
+            <div key={item.id} className="masonry-item">
+              <img src={`${PUBLIC_URL}/public/home/${item.img}`} alt={item.title} />
+              {/* <p>{item.text}</p> */}
+            </div>
+          ))}
+        </Masonry>
+      </ResponsiveMasonry>
+    </section>
   );
 }
-
