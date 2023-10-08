@@ -3,11 +3,14 @@ import { useNavigate } from 'react-router-dom';
 import { AuthContext } from '../context/AuthContext';
 
 import { loginUserService } from '../services';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
 
 export function AreaPrivada() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
+  const [showPassword, setShowPassword] = useState(false);
   const { logIn, token } = useContext(AuthContext);
   const navigate = useNavigate();
 
@@ -17,6 +20,10 @@ export function AreaPrivada() {
 
   const handlePasswordChange = (event) => {
     setPassword(event.target.value);
+  };
+
+  const toggleShowPassword = () => {
+    setShowPassword(!showPassword);
   };
 
   const handleSubmit = async (event) => {
@@ -38,25 +45,37 @@ export function AreaPrivada() {
 
   return (
     <div className="flex justify-center">
-      <section className="mt-32 mb-32 border shadow-sky-100 shadow-md rounded-md w-4/5 lg:w-2/5 h-80 flex flex-col items-center">
-        <h2 className="mt-12 font-bold text-2xl lg:text-3xl" id="h2-login">
+      <section className="flex flex-col gap-4 items-center m-10 py-10 px-6 lg:px-48 border rounded-md">
+        <h2 className="font-bold text-2xl lg:text-3xl" id="h2-login">
           Iniciar sesión
         </h2>
-        <form className="flex flex-col mt-5" onSubmit={handleSubmit}>
+        <form className="flex flex-col gap-3" onSubmit={handleSubmit}>
           <label htmlFor="username">Username</label>
-          <input className="border" type="text" id="username" name="username" required onChange={handleUsernameChange} value={username} />
+          <input className="border px-3" type="text" id="username" name="username" required onChange={handleUsernameChange} value={username} />
 
-          <label className="mt-4" htmlFor="password">
+          <label className="" htmlFor="password">
             Password
           </label>
-          <input className="border" type="password" id="password" name="password" required onChange={handlePasswordChange} value={password} />
+          <div className="password-input border">
+            <input
+              className="px-3"
+              type={showPassword ? 'text' : 'password'}
+              id="password"
+              name="password"
+              required
+              onChange={handlePasswordChange}
+              value={password}
+            />
+            <span className="toggle-password" onClick={toggleShowPassword}>
+              <FontAwesomeIcon className="w-10" icon={showPassword ? faEyeSlash : faEye} />
+            </span>
+          </div>
 
-          <section className="flex justify-center mt-10">
-            {error && <p className="text-red-600 text-left text-[12px] p-1">{error}</p>}
-
-            <button className="border p-1 w-24 bg-sky-500 rounded text-white" type="submit">
+          <section className="flex flex-col justify-center">
+            <button className="border p-1 mt-2 bg-corporative-color2 rounded text-white" type="submit">
               Enter
             </button>
+            {error && <p className="text-red-600 text-left text-xs font-bold p-1">*{error}</p>}
           </section>
         </form>
       </section>
