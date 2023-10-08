@@ -34,12 +34,18 @@ export const getMyUserDataService = async ({ token }) => {
   return json.data;
 };
 
-export const createNewService = async ({ token }) => {
+export const createNewService = async (formDataNews) => {
   const response = await fetch(`${API_URL}/createNew`, {
     method: 'POST',
     headers: {
-      Authorization: token,
+      Authorization: formDataNews.token,
+      'Content-Type': 'application/json',
     },
+    body: JSON.stringify({
+      title: formDataNews.title,
+      introduction: formDataNews.introduction,
+      text: formDataNews.text,
+    }),
   });
 
   const json = await response.json();
