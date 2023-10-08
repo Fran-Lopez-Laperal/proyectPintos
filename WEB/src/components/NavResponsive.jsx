@@ -92,7 +92,7 @@ export function NavResponsive() {
                 <Link className="flex items-center h-10 pl-6 border-b" to="/carpinteria" onClick={handleShowMenu}>
                   Carpintaria
                 </Link>
-                <Link className="flex items-center h-10 pl-6 border-b" to="/promoção" onClick={handleShowMenu}>
+                <Link className="flex items-center h-10 pl-6 border-b" to="/areaNegocio" onClick={handleShowMenu}>
                   Promoção Imboliriária
                 </Link>
                 <Link className="flex items-center h-10 pl-6 border-b" to="/turismo" onClick={handleShowMenu}>
