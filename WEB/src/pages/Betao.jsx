@@ -50,11 +50,12 @@ export function Betao() {
           </article>
 
           <p className="text-justify font-extrabold text-[12px] lg:text-[22px] ">
-            Korem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec
-            fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat
-            lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim
-            egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem.
-            Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum tellus.
+            A empresa atua na produção e comercialização e transporte de betão pronto com 2 centrais em
+            Portugal e uma na Costa do Marfim. Com elevada capacidade instalada de produção e com uma
+            frota de autobetoneiras e camiões-bomba, permite resposta rápida e eficaz ao cliente.
+            As duas unidades de produção de betão obtiveram a “Certificação do Controlo de Produção” (NP
+            EN 206:2013 +A2:2021) atribuída pela APCER. A capacidade instalada de produção de betão das
+            duas centrais é superior a 10.000 m3/mês.
           </p>
         </section>
         <div className=" lg:h-1 lg:w-1/4 lg:bg-corporative-color2"></div>
