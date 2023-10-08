@@ -14,6 +14,7 @@ import { Betao } from './pages/Betao';
 
 import { Footer } from './components/Footer';
 import { Nav } from './components/Nav';
+import './App.css';
 
 function App() {
   const { token } = useContext(AuthContext);
