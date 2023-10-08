@@ -30,19 +30,20 @@ const isAuth = require("../middleware/isAuth");
  * #################
  */
 
-// const getNews = require("./controllers/news/getNews");
 // const editNew = require("./controllers/news/editNew");
 
-// app.get("/noticias", isAuth, getNews);
 // app.put("/noticias/:id_news", isAuth, editNew);
 
 const createUser = require("../controllers/users/createUser");
 const loginUser = require("../controllers/users/loginUser");
+const getNews = require("../controllers/news/getNews");
 const createNews = require("../controllers/news/createNews");
 const deleteNews = require("../controllers/news/deleteNews");
 
 app.post("/register", createUser);
 app.post("/login", loginUser);
+
+app.get("/news", getNews);
 app.post("/createNews", isAuth, createNews);
 app.delete("/news/:idNews", isAuth, deleteNews);
 
