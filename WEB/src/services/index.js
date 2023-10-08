@@ -41,7 +41,7 @@ export const createNewService = async (formDataNews) => {
   formData.append('introduction', formDataNews.introduction);
   formData.append('text', formDataNews.text);
 
-  const response = await fetch(`${API_URL}/createNew`, {
+  const response = await fetch(`${API_URL}/createNews`, {
     method: 'POST',
     headers: {
       Authorization: formDataNews.token,

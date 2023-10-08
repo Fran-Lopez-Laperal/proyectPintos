@@ -1,7 +1,7 @@
 const insertNewQuery = require("../../db/queries/news/insertNewQuery");
 const { generateError, saveImg } = require("../../helpers");
 
-const createNew = async (req, res, next) => {
+const createNews = async (req, res, next) => {
   try {
     const { title, introduction, text } = req.body;
     console.log(req.body);
@@ -26,4 +26,4 @@ const createNew = async (req, res, next) => {
   }
 };
 
-module.exports = createNew;
+module.exports = createNews;

@@ -40,11 +40,11 @@ const isAuth = require("../middleware/isAuth");
 
 const createUser = require("../controllers/users/createUser");
 const loginUser = require("../controllers/users/loginUser");
-const createNew = require("../controllers/news/createNew");
+const createNews = require("../controllers/news/createNews");
 
 app.post("/register", createUser);
 app.post("/login", loginUser);
-app.post("/createNew", isAuth, createNew);
+app.post("/createNews", isAuth, createNews);
 
 /**
  * #################
