@@ -1,6 +1,6 @@
 const getDB = require("../../getDB");
 
-const selectNewByIdQuery = async (id_news) => {
+const selectNewsByIdQuery = async (id_news) => {
   let connection;
 
   try {
@@ -13,4 +13,4 @@ const selectNewByIdQuery = async (id_news) => {
   }
 };
 
-module.exports = selectNewByIdQuery;
+module.exports = selectNewsByIdQuery;
