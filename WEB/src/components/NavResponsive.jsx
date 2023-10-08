@@ -64,7 +64,7 @@ export function NavResponsive() {
           } overflow-hidden bg-white font-black text-weight text-corporative-color2`}
         >
           <ul onClick={handleShowSubLink1}>
-            <p className="flex items-center h-10 pl-2 border-y">{t('nav.sobreNos')}</p>
+            <p className="flex items-center h-10 pl-2 border-y bg-gray-100">{t('nav.sobreNos')}</p>
 
             <li className={`${showSubLink1 ? 'h-30 transition-all duration-700' : 'h-0'}overflow-hidden`}>
               <section className="flex flex-col font-semibold">
@@ -72,65 +72,62 @@ export function NavResponsive() {
                   Historia
                 </Link>
                 <Link className="flex items-center h-10 pl-6 border-b" onClick={handleShowMenu}>
-                  Prémios
-                </Link>
-                <Link className="flex items-center h-10 pl-6 border-b" onClick={handleShowMenu}>
-                  Responsabilidade
+                  Planear e Contruir
                 </Link>
               </section>
             </li>
           </ul>
 
-          <ul className="" onClick={handleShowSubLink2}>
-            <p className="font-bold">Áreas de negócio</p>
+          <ul onClick={handleShowSubLink2}>
+            <p className="flex items-center h-10 pl-2 border-b bg-gray-100">Áreas de negócio</p>
 
-            <li className={`${showSubLink2 ? 'h-36 transition-all duration-700' : 'h-0'} overflow-hidden m-2`}>
-              <section className="flex flex-col m-1">
-                <Link to="/engenharia" onClick={handleShowMenu}>
+            <li className={`${showSubLink1 ? 'h-30 transition-all duration-700' : 'h-0'}overflow-hidden`}>
+              <section className="flex flex-col font-semibold">
+                <Link className="flex items-center h-10 pl-6 border-b" to="/engenharia" onClick={handleShowMenu}>
                   Engenharia e Construção
                 </Link>
-                <Link to="/betao" onClick={handleShowMenu}>
+                <Link className="flex items-center h-10 pl-6 border-b" to="/betao" onClick={handleShowMenu}>
                   Betaõ
                 </Link>
-                <Link to="/carpinteria" onClick={handleShowMenu}>
+                <Link className="flex items-center h-10 pl-6 border-b" to="/carpinteria" onClick={handleShowMenu}>
                   Carpintaria
                 </Link>
-                <Link to="/promoção" onClick={handleShowMenu}>
+                <Link className="flex items-center h-10 pl-6 border-b" to="/promoção" onClick={handleShowMenu}>
                   Promoção Imboliriária
                 </Link>
-                <Link to="/turismo" onClick={handleShowMenu}>
+                <Link className="flex items-center h-10 pl-6 border-b" to="/turismo" onClick={handleShowMenu}>
                   Turismo
                 </Link>
               </section>
             </li>
           </ul>
 
-          <ul className="m-3 font-bold" onClick={handleShowMenu}>
-            <Link to="/internacionalizacion">Internacionalización</Link>
+          <ul className="flex items-center h-10 pl-2 border-b" onClick={handleShowMenu}>
+            <Link to="/internacionalizacion">Internacional</Link>
           </ul>
 
-          <ul className="m-3 font-bold" onClick={handleShowMenu}>
+          <ul className="flex items-center h-10 pl-2 border-b" onClick={handleShowMenu}>
             <Link to="/noticias">Notícias</Link>
           </ul>
 
-          <ul className="m-3 font-bold" onClick={handleShowMenu}>
+          <ul className="flex items-center h-10 pl-2 border-b" onClick={handleShowMenu}>
             <Link to="/contacto">Contactos</Link>
           </ul>
 
-          <ul className="m-3 font-bold" onClick={handleShowMenu}>
+          <ul className="flex items-center h-10 pl-2 border-b" onClick={handleShowMenu}>
             <Link to="/areaPrivada">Área privada</Link>
           </ul>
 
-          <ul className="m-3" onClick={handleShowMenu}>
+          <ul onClick={handleShowMenu}>
             {token && (
-              <div className="flex flex-col">
-                <Link className="" to={'/crearNoticia'}>
+              <section className="flex flex-col font-semibold">
+                <Link className="flex items-center h-10 pl-6 border-b" to={'/crearNoticia'}>
                   Crear noticia
                 </Link>
-                <Link onClick={handleLogOut} className="b">
+                <Link className="flex items-center h-10 pl-6 border-b" onClick={handleLogOut}>
                   Cerrar sesión
                 </Link>
-              </div>
+              </section>
             )}
           </ul>
 
