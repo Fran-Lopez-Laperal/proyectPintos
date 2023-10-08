@@ -2,16 +2,16 @@ const insertNewQuery = require("../../db/queries/news/insertNewQuery");
 
 const createNew = async (req, res, next) => {
   try {
-    const { userId, title, introduction, text } = req.body;
+    const { title, introduction, text } = req.body;
+    console.log(req.body);
 
-    await insertNewQuery(userId, title, introduction, text);
+    const news = await insertNewQuery(title, introduction, text, req.user.id);
 
     res.send({
+      code: 201,
       status: "ok",
       data: {
-        title,
-        introduction,
-        text,
+        news,
       },
     });
   } catch (error) {
