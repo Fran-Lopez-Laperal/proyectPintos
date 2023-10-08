@@ -2,8 +2,7 @@ import { HeaderPages } from "../components/HeaderPages";
 import planearHeader from '../assets/headers/historyHeader.jpeg';
 
 export function PlanearConstruir() {
-
-
+ 
     return (
         <>
             <main>
@@ -14,7 +13,7 @@ export function PlanearConstruir() {
                 <p className="text-xl relative z-10 bg-white px-3 font-dancing lg:text-5xl">Planeamos e construímos projestos para a vida</p>
                 <p className="absolute left-1 right-1 h-[2px] bg-corporative-color2 z-0"></p>
             </section>
-
+ 
             <section className="flex justify-center mt-5">
                 <p className=" lg:px-36 text-center font-semibold text-xs p-4 lg:text-[22px] lg:leading-8">
                     HÁ MAIS DE 30 ANOS QUE INSPIRAMOS CONFIANÇA. CONHEÇA UM POUCO MAIS DA NOSSA EXPERIÊNCIA E DOS NOSSOS PROJETOS QUE SÃO
