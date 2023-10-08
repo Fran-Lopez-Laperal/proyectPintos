@@ -13,14 +13,12 @@ export function NavResponsive() {
   const [showSubLink1, setShowSubLink1] = useState(false);
   const [showSubLink2, setShowSubLink2] = useState(false);
   const { token, logOut } = useContext(AuthContext);
-  const {language, changeLanguage} = useContext(LanguageContext)
-  const {t, i18n} = useTranslation()
-
+  const { language, changeLanguage } = useContext(LanguageContext);
+  const { t, i18n } = useTranslation();
 
   const handleLanguageChange = (lang) => {
     changeLanguage(lang);
   };
-
 
   useEffect(() => {
     i18n.changeLanguage(language);
@@ -41,8 +39,8 @@ export function NavResponsive() {
     logOut();
   }
   return (
-    <main className="z-10 relative">
-      <section className="w-full bg-blue-400 drop-shadow">
+    <main className="">
+      <section className="w-full drop-shadow z-50">
         <menu className="flex">
           <button className="pl-4 w-1/4" onClick={handleShowMenu}>
             {openNav ? (
@@ -60,26 +58,34 @@ export function NavResponsive() {
           </Link>
         </menu>
 
-        <nav className={`${openNav ? 'h-screen transition-all duration-700  ' : 'h-0'} overflow-hidden bg-white text-blue-800`}>
-          <ul className="" onClick={handleShowSubLink1}>
-            <p className="font-bold">{t('nav.sobreNos')}</p>
+        <nav
+          className={`${
+            openNav ? 'h-screen transition-all duration-700  ' : 'h-0'
+          } overflow-hidden bg-white font-black text-weight text-corporative-color2`}
+        >
+          <ul onClick={handleShowSubLink1}>
+            <p className="flex items-center h-10 pl-2 border-y">{t('nav.sobreNos')}</p>
 
-            <li className={`${showSubLink1 ? 'h-24 transition-all duration-700' : 'h-0'} overflow-hidden m-2`}>
-              <section className="flex flex-col m-1 border-b border-blue-200">
-                <Link to="/historia" onClick={handleShowMenu}>
+            <li className={`${showSubLink1 ? 'h-30 transition-all duration-700' : 'h-0'}overflow-hidden`}>
+              <section className="flex flex-col font-semibold">
+                <Link className="flex items-center h-10 pl-6 border-b" to="/historia" onClick={handleShowMenu}>
                   Historia
                 </Link>
-                <Link onClick={handleShowMenu}>Prémios</Link>
-                <Link onClick={handleShowMenu}>Responsabilidade</Link>
+                <Link className="flex items-center h-10 pl-6 border-b" onClick={handleShowMenu}>
+                  Prémios
+                </Link>
+                <Link className="flex items-center h-10 pl-6 border-b" onClick={handleShowMenu}>
+                  Responsabilidade
+                </Link>
               </section>
             </li>
           </ul>
 
-          <ul className="m-3" onClick={handleShowSubLink2}>
+          <ul className="" onClick={handleShowSubLink2}>
             <p className="font-bold">Áreas de negócio</p>
 
             <li className={`${showSubLink2 ? 'h-36 transition-all duration-700' : 'h-0'} overflow-hidden m-2`}>
-              <section className="flex flex-col m-1 border-b border-blue-200">
+              <section className="flex flex-col m-1">
                 <Link to="/engenharia" onClick={handleShowMenu}>
                   Engenharia e Construção
                 </Link>
@@ -129,13 +135,9 @@ export function NavResponsive() {
           </ul>
 
           <section className="flex space-x-4 font-bold justify-center items-center">
-            <button
-            onClick={() => handleLanguageChange('pt')}
-            >PT</button>
+            <button onClick={() => handleLanguageChange('pt')}>PT</button>
             <p>|</p>
-            <button
-            onClick={() => handleLanguageChange('en')}
-            >IN</button>
+            <button onClick={() => handleLanguageChange('en')}>IN</button>
           </section>
         </nav>
       </section>

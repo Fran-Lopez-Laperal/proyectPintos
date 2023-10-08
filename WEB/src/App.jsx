@@ -1,4 +1,4 @@
-import { useEffect, useState, useContext } from 'react';
+import { useContext } from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import { AuthContext } from './context/AuthContext';
 import { Home } from './pages/Home';
@@ -10,9 +10,10 @@ import { Noticias } from './pages/Noticias';
 import { CreateNew } from './pages/CreateNew';
 import { AreaPrivada } from './pages/AreaPrivada';
 import { PlanearConstruir } from './pages/PlanearConstruir';
+import { Betao } from './pages/Betao';
+
 import { Footer } from './components/Footer';
 import { Nav } from './components/Nav';
-import { Betão } from './pages/Betão';
 
 function App() {
   const { token } = useContext(AuthContext);
@@ -31,7 +32,7 @@ function App() {
           <Route path="/areaprivada" element={<AreaPrivada />} />
           <Route path="/crearNoticia" element={token ? <CreateNew /> : <Navigate to="/areaprivada" />} />
           <Route path="/planearConstruir" element={<PlanearConstruir />} />
-          <Route path="/betão" element={<Betão/>} />
+          <Route path="/betao" element={<Betao />} />
         </Routes>
       </article>
       <Footer />
