@@ -65,67 +65,66 @@ export function NavResponsive() {
         >
           <ul onClick={handleShowSubLink1}>
             <p className="flex items-center h-10 pl-2 border-y bg-gray-100">{t('nav.sobreNos')}</p>
-
-            <li className={`${showSubLink1 ? 'h-30 transition-all duration-700' : 'h-0'}overflow-hidden`}>
+            <li className={`${showSubLink1 ? 'h-auto transition-all duration-700' : 'h-0 overflow-hidden'}`}>
               <section className="flex flex-col font-semibold">
-                <Link className="flex items-center h-10 pl-6 border-b" to="/historia" onClick={handleShowMenu}>
-                  Historia
+                <Link className="flex items-center h-10 pl-7 border-b" to="/historia" onClick={handleShowMenu}>
+                  {t('nav.historia')}
                 </Link>
-                <Link className="flex items-center h-10 pl-6 border-b" to="/planearConstruir" onClick={handleShowMenu}>
-                  Planear e Contruir
+                <Link className="flex items-center h-10 pl-7 border-b" to="/planearConstruir" onClick={handleShowMenu}>
+                  {t('nav.planearConstruir')}
                 </Link>
               </section>
             </li>
           </ul>
 
           <ul onClick={handleShowSubLink2}>
-            <p className="flex items-center h-10 pl-2 border-b bg-gray-100">Áreas de negócio</p>
+            <p className="flex items-center h-10 pl-2 border-b bg-gray-100">{t('nav.areasNegocio')}</p>
 
-            <li className={`${showSubLink1 ? 'h-30 transition-all duration-700' : 'h-0'}overflow-hidden`}>
+            <li className={`${showSubLink2 ? 'transition-all duration-700' : 'h-0'} overflow-hidden`}>
               <section className="flex flex-col font-semibold">
-                <Link className="flex items-center h-10 pl-6 border-b" to="/engenharia" onClick={handleShowMenu}>
-                  Engenharia e Construção
+                <Link className="flex items-center h-10 pl-7 border-b" to="/engenharia" onClick={handleShowMenu}>
+                  {t('nav.engharia')}
                 </Link>
-                <Link className="flex items-center h-10 pl-6 border-b" to="/betao" onClick={handleShowMenu}>
-                  Betaõ
+                <Link className="flex items-center h-10 pl-7 border-b" to="/betao" onClick={handleShowMenu}>
+                  {t('nav.betao')}
                 </Link>
-                <Link className="flex items-center h-10 pl-6 border-b" to="/carpinteria" onClick={handleShowMenu}>
-                  Carpintaria
+                <Link className="flex items-center h-10 pl-7 border-b" to="/carpinteria" onClick={handleShowMenu}>
+                  {t('nav.carpintaria')}
                 </Link>
-                <Link className="flex items-center h-10 pl-6 border-b" to="/areaNegocio" onClick={handleShowMenu}>
-                  Promoção Imboliriária
+                <Link className="flex items-center h-10 pl-7 border-b" to="/areaNegocio" onClick={handleShowMenu}>
+                  {t('nav.promocaoImobiliaria')}
                 </Link>
-                <Link className="flex items-center h-10 pl-6 border-b" to="/turismo" onClick={handleShowMenu}>
-                  Turismo
+                <Link className="flex items-center h-10 pl-7 border-b" to="/turismo" onClick={handleShowMenu}>
+                  {t('nav.turismo')}
                 </Link>
               </section>
             </li>
           </ul>
 
           <ul className="flex items-center h-10 pl-2 border-b bg-gray-100" onClick={handleShowMenu}>
-            <Link to="/internacionalizacion">Internacional</Link>
+            <Link to="/internacionalizacion">{t('nav.internacional')}</Link>
           </ul>
 
           <ul className="flex items-center h-10 pl-2 border-b bg-gray-100" onClick={handleShowMenu}>
-            <Link to="/noticias">Notícias</Link>
+            <Link to="/noticias">{t('nav.noticias')}</Link>
           </ul>
 
           <ul className="flex items-center h-10 pl-2 border-b bg-gray-100" onClick={handleShowMenu}>
-            <Link to="/contacto">Contactos</Link>
+            <Link to="/contacto">{t('nav.contacto')}</Link>
           </ul>
 
           <ul className="flex items-center h-10 pl-2 border-b bg-gray-100" onClick={handleShowMenu}>
-            <Link to="/areaPrivada">Área privada</Link>
+            <Link to="/areaPrivada">{t('nav.areaPrivada')}</Link>
           </ul>
 
           <ul onClick={handleShowMenu}>
             {token && (
               <section className="flex flex-col font-semibold">
                 <Link className="flex items-center h-10 pl-6 border-b" to={'/crearNoticia'}>
-                  Crear noticia
+                  {t('nav.criarNoticia')}
                 </Link>
                 <Link className="flex items-center h-10 pl-6 border-b" onClick={handleLogOut}>
-                  Cerrar sesión
+                  {t('nav.cerrarSessao')}
                 </Link>
               </section>
             )}
