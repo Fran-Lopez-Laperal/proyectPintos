@@ -69,3 +69,46 @@ export const getNewsService = async () => {
   }
   return json.data.news;
 };
+
+export const updateNewsService = async (data, idNews) => {
+  const formData = new FormData();
+
+  Object.entries(data).forEach(([key, value]) => {
+    if (value !== undefined) {
+      formData.append(key, value);
+    }
+  });
+
+  const response = await fetch(`${API_URL}/news/${idNews}`, {
+    method: 'PUT',
+    headers: {
+      Authorization: `${localStorage.getItem('token')}`,
+    },
+    body: formData,
+  });
+
+  const json = await response.json();
+
+  if (!response.ok) {
+    throw new Error(json.message);
+  }
+
+  return json.data;
+};
+
+export const deleteNewsService = async (idNews) => {
+  const response = await fetch(`${API_URL}/news/${idNews}`, {
+    method: 'DELETE',
+    headers: {
+      Authorization: `${localStorage.getItem('token')}`,
+    },
+  });
+
+  const json = await response.json();
+
+  if (!response.ok) {
+    throw new Error(json.message);
+  }
+
+  return json.data;
+};
