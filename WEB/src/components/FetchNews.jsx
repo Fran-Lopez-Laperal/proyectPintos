@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { getNewsService, deleteNewsService } from '../services';
+import { getNewsService, deleteNewsService, updateNewsService } from '../services';
 import { Noticia } from './Noticia';
 
 export function FetchNews() {
@@ -28,6 +28,29 @@ export function FetchNews() {
       });
   };
 
+  const handleEditNews = async (newsId, newTitle, newText) => {
+    try {
+      await updateNewsService({ title: newTitle, text: newText }, newsId);
+
+      const updatedNewsData = newsData.map((newsItem) => {
+        if (newsItem.id === newsId) {
+          return {
+            ...newsItem,
+            title: newTitle,
+            text: newText,
+          };
+        }
+        return newsItem;
+      });
+
+      setNewsData(updatedNewsData);
+
+      Swal.close();
+    } catch (error) {
+      console.error('Error al editar la noticia:', error);
+    }
+  };
+
   if (loading) {
     return <div>Loading...</div>;
   }
@@ -43,6 +66,7 @@ export function FetchNews() {
             title={newsItem.title}
             text={newsItem.text}
             onDelete={() => handleDeleteNews(newsItem.id)}
+            onEdit={(newTitle, newText) => handleEditNews(newsItem.id, newTitle, newText)}
           />
         ))}
       </main>
