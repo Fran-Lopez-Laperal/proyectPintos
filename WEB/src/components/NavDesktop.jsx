@@ -34,10 +34,10 @@ export function NavDesktop() {
         </header>
         <menu className="flex-1 flex justify-center">
           <CustomHomeLink to={'/'} text={t('nav.sobreNos')} />
-          <CustomHomeLink to={'/'} text={t('nav.areasNegocio')} />
-          <CustomHomeLink to={'/'} text={t('nav.internacional')} />
-          <CustomHomeLink to={'/'} text={t('nav.noticias')} />
-          <CustomHomeLink to={'/'} text={t('nav.contacto')} />
+          <CustomHomeLink to={'/areaNegocio'} text={t('nav.areasNegocio')} />
+          <CustomHomeLink to={'/historia'} text={t('nav.historia')} />
+          <CustomHomeLink to={'/noticias'} text={t('nav.noticias')} />
+          <CustomHomeLink to={'/contacto'} text={t('nav.contacto')} />
         </menu>
         <main className="flex">
           {token && (
