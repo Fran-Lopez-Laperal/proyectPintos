@@ -1,10 +1,20 @@
 {
   "nav": {
-    "sobreNos": "with us",
-    "internacionalización": "",
-    "noticias": "",
-    "contactos": "",
-    "areaPrivada": ""
+    "sobreNos": "About Us",
+    "historia": "History",
+    "planearConstruir": "Plan and Build",
+    "areasNegocio": "Business areas",
+    "engharia": "Engineering and Construction",
+    "betao": "Concrete",
+    "carpintaria": "Carpentry",
+    "promocaoImobiliaria": "Real Estate Development",
+    "turismo": "Tourism",
+    "internacional": "International",
+    "noticias": "News",
+    "contacto": "Contact",
+    "areaPrivada": "Private area",
+    "criarNoticia": "Create news",
+    "cerrarSessao": "Log out"
   },
 
   "home": {

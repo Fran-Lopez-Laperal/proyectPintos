@@ -1,10 +1,20 @@
 {
   "nav": {
-    "sobreNos": "sobre nós",
-    "internacionalización": "",
-    "noticias": "",
-    "contactos": "",
-    "areaPrivada": ""
+    "sobreNos": "Sobre nós",
+    "historia": "História",
+    "planearConstruir": "Planear e Construir",
+    "areasNegocio": "Áreas de negócio",
+    "engharia": "Engenharia e Construção",
+    "betao": "Betão",
+    "carpintaria": "Carpintaria",
+    "promocaoImobiliaria": "Promoção Imobiliária",
+    "turismo": "Turismo",
+    "internacional": "Internacional",
+    "noticias": "Notícias",
+    "contacto": "Contacto",
+    "areaPrivada": "Área privada",
+    "criarNoticia": "Criar notícia",
+    "cerrarSessao": "Cerrar sessão"
   },
 
   "home": {
@@ -86,25 +96,25 @@
     "text": ""
   },
 
-  "betao":{
-    "header":"",
-    "img1titleL1":"",
-    "img1titleL2":"",
-    "img1titleR3":"",
-    "img1titleR4":"",
-    "img2title1":"",
-    "img2title2":"",
-    "tite1":"",
-    "text1":"",
-    "title2":"",
-    "text2":"",
-    "title3":""
+  "betao": {
+    "header": "",
+    "img1titleL1": "",
+    "img1titleL2": "",
+    "img1titleR3": "",
+    "img1titleR4": "",
+    "img2title1": "",
+    "img2title2": "",
+    "tite1": "",
+    "text1": "",
+    "title2": "",
+    "text2": "",
+    "title3": ""
   },
 
-  "areaNegocio":{
-    "header":"",
-    "title":"",
-    "text":"",
-    "button":""
+  "areaNegocio": {
+    "header": "",
+    "title": "",
+    "text": "",
+    "button": ""
   }
 }

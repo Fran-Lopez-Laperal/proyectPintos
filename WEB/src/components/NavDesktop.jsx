@@ -1,41 +1,44 @@
+import { useEffect, useContext } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../assets/logo.png';
-import { useContext } from 'react';
 import { AuthContext } from '../context/AuthContext';
+import { LanguageContext } from '../context/LanguageContext';
+import { useTranslation } from 'react-i18next';
+import CustomHomeLink from './CustomHomeLink';
+
 export function NavDesktop() {
-  const links = [
-    { to: '/', text: 'GRUPO PINTOS' },
-    { to: '/areaNegocio', text: 'ÁREAS DE NEGOCIO' },
-    { to: '/historia', text: 'HISTORIA' },
-    { to: '/noticias', text: 'NOTÍCIAS' },
-    { to: '/contacto', text: 'CONTACTO' },
-  ];
+  const { language, changeLanguage } = useContext(LanguageContext);
+  const { t, i18n } = useTranslation();
+
+  const handleLanguageChange = (lang) => {
+    changeLanguage(lang);
+  };
+
+  useEffect(() => {
+    i18n.changeLanguage(language);
+  }, [language, i18n]);
 
   const { token, logOut } = useContext(AuthContext);
 
   function handleLogOut() {
     logOut();
   }
+
   return (
     <section>
       <section className="flex justify-between h-[100px]">
         <header className="flex">
-          <Link to="/" className=" w-1/4 h-18 flex justify-center items-center">
+          <Link to="/" className="h-18 flex justify-center items-center">
             <img className="w-48" src={logo} alt={logo} />
           </Link>
-          <menu className="flex-1 flex justify-center">
-            {links.map((link) => (
-              <div key={link.to}>
-                <Link
-                  className="flex justify-center items-center w-48 h-full hover:bg-corporative-color2 transition-all duration-500 no-underline"
-                  to={link.to}
-                >
-                  <p style={{ backgroundColor: 'none' }}>{link.text}</p>
-                </Link>
-              </div>
-            ))}
-          </menu>
         </header>
+        <menu className="flex-1 flex justify-center">
+          <CustomHomeLink to={'/'} text={t('nav.sobreNos')} />
+          <CustomHomeLink to={'/areaNegocio'} text={t('nav.areasNegocio')} />
+          <CustomHomeLink to={'/historia'} text={t('nav.historia')} />
+          <CustomHomeLink to={'/noticias'} text={t('nav.noticias')} />
+          <CustomHomeLink to={'/contacto'} text={t('nav.contacto')} />
+        </menu>
         <main className="flex">
           {token && (
             <div className="flex">
@@ -43,26 +46,35 @@ export function NavDesktop() {
                 className="flex justify-center items-center w-48 h-full hover:bg-corporative-color2 transition-all duration-500 no-underline"
                 to={'/crearNoticia'}
               >
-                Crear noticia
+                {t('nav.criarNoticia')}
               </Link>
               <Link
                 onClick={handleLogOut}
                 className="flex justify-center items-center w-48 h-full hover:bg-corporative-color2 transition-all duration-500 no-underline"
-                to={'/crearNoticia'}
+                to={'/'}
               >
-                Cerrar sesión
+                {t('nav.cerrarSessao')}
               </Link>
             </div>
           )}
-          {token ? null : (
+          {!token && (
             <Link
-              className="  flex justify-center items-center w-48 h-full hover:bg-corporative-color2 transition-all duration-500 no-underline"
+              className="flex justify-center items-center w-48 h-full hover:bg-corporative-color2 transition-all duration-500 no-underline uppercase"
               to={'/areaPrivada'}
             >
-              Área privada
+              {t('nav.areaPrivada')}
             </Link>
           )}
         </main>
+        <section className="flex items-center justify-center px-4 space-x-4">
+          <button className="hover:underline" onClick={() => handleLanguageChange('pt')}>
+            PT
+          </button>
+          <p>|</p>
+          <button className="hover:underline" onClick={() => handleLanguageChange('en')}>
+            EN
+          </button>
+        </section>
       </section>
     </section>
   );
