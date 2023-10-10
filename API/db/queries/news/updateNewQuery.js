@@ -1,6 +1,6 @@
 const getDB = require("../../getDB");
 
-const updateNewQuery = async (title, introduction, text, image, idNews) => {
+const updateNewQuery = async (title, text, image, idNews) => {
   let connection;
 
   try {
@@ -8,9 +8,6 @@ const updateNewQuery = async (title, introduction, text, image, idNews) => {
 
     if (title) {
       await connection.query(`UPDATE news SET title = ? WHERE id = ?`, [title, idNews]);
-    }
-    if (introduction) {
-      await connection.query(`UPDATE news SET introduction = ? WHERE id = ?`, [introduction, idNews]);
     }
     if (text) {
       await connection.query(`UPDATE news SET text = ? WHERE id = ?`, [text, idNews]);

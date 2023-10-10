@@ -8,15 +8,15 @@ import { Promoçao } from './pages/Promoçao';
 import { Contact } from './pages/Contact';
 import { Noticias } from './pages/Noticias';
 import { CreateNew } from './pages/CreateNew';
+import { CreateTimeline } from './pages/CreateTimeline';
 import { AreaPrivada } from './pages/AreaPrivada';
 import { PlanearConstruir } from './pages/PlanearConstruir';
 import { Betao } from './pages/Betao';
+import { Timeline } from './pages/Timeline';
 
 import { Footer } from './components/Footer';
 import { Nav } from './components/Nav';
 import './App.css';
-import { CreateTimeline } from './pages/CreateTimeline';
-import { Timeline } from './components/Timeline';
 
 function App() {
   const { token } = useContext(AuthContext);
@@ -34,10 +34,10 @@ function App() {
           <Route path="/noticias" element={<Noticias />} />
           <Route path="/areaprivada" element={<AreaPrivada />} />
           <Route path="/crearNoticia" element={token ? <CreateNew /> : <Navigate to="/areaprivada" />} />
-          <Route path="/crearTimeline" element={token ? <CreateTimeline /> : <Navigate to="/areaprivada" />}/>
+          <Route path="/crearTimeline" element={token ? <CreateTimeline /> : <Navigate to="/areaprivada" />} />
           <Route path="/planearConstruir" element={<PlanearConstruir />} />
           <Route path="/betao" element={<Betao />} />
-          <Route path="/timeline" element={<Timeline/>} />
+          <Route path="/timeline" element={<Timeline />} />
         </Routes>
       </main>
       <Footer />

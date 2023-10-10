@@ -13,7 +13,6 @@ export function CreateNew() {
   const { token } = useContext(AuthContext);
   const navigate = useNavigate();
   const [title, setTitle] = useState('');
-  const [introduction, setIntroduction] = useState('');
   const [text, setText] = useState('');
   const [image, setImage] = useState(null);
   const [error, setError] = useState('');
@@ -22,10 +21,6 @@ export function CreateNew() {
 
   const handleTitleChange = (event) => {
     setTitle(event.target.value);
-  };
-
-  const handleIntroductionChange = (event) => {
-    setIntroduction(event.target.value);
   };
 
   const handleTextChange = (event) => {
@@ -38,7 +33,6 @@ export function CreateNew() {
     try {
       const formDataNews = {
         title,
-        introduction,
         text,
         image,
         token,
@@ -77,7 +71,6 @@ export function CreateNew() {
 
             <form onSubmit={handleSubmit} className="flex flex-col gap-3 lg:w-80">
               <DataInput label="Título" value={title} onChange={handleTitleChange} />
-              <DataInput label="Introducción" value={introduction} onChange={handleIntroductionChange} />
               <DataInput label="Texto" value={text} onChange={handleTextChange} />
               <label htmlFor="image"></label>
               <div {...getRootProps()}>

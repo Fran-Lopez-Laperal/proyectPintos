@@ -102,7 +102,7 @@ export function NavResponsive() {
           </ul>
 
           <ul className="flex items-center h-10 pl-2 border-b bg-gray-100" onClick={handleShowMenu}>
-            <Link to="/internacionalizacion">{t('nav.internacional')}</Link>
+            <Link to="/">{t('nav.internacional')}</Link>
           </ul>
 
           <ul className="flex items-center h-10 pl-2 border-b bg-gray-100" onClick={handleShowMenu}>

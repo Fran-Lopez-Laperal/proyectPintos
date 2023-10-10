@@ -4,7 +4,6 @@ const { generateError, saveImg } = require("../../helpers");
 const createTimeline = async (req, res, next) => {
   try {
     const { title, text, year } = req.body;
-    console.log(req.body);
 
     if (!req.files?.image || !title || !text || !year) {
       generateError("Faltan campos", 400);

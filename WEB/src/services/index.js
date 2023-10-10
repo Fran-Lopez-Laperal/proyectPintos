@@ -33,12 +33,10 @@ export const getMyUserDataService = async ({ token }) => {
 
   return json.data;
 };
-
 export const createNewService = async (formDataNews) => {
   const formData = new FormData();
   formData.append('image', formDataNews.image);
   formData.append('title', formDataNews.title);
-  formData.append('introduction', formDataNews.introduction);
   formData.append('text', formDataNews.text);
 
   const response = await fetch(`${API_URL}/createNews`, {
@@ -64,7 +62,7 @@ export const getNewsService = async () => {
   });
 
   const json = await response.json();
-  console.log(json)
+
   if (!response.ok) {
     throw new Error(json.message);
   }
