@@ -30,7 +30,6 @@ export const getTimelineService = async () => {
   });
 
   const json = await response.json();
-  console.log(json.data.timeline);
   if (!response.ok) {
     throw new Error(json.message);
   }
