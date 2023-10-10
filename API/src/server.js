@@ -32,10 +32,21 @@ const isAuth = require("../middleware/isAuth");
 
 const createUser = require("../controllers/users/createUser");
 const loginUser = require("../controllers/users/loginUser");
-const getNews = require("../controllers/news/getNews");
-const createNews = require("../controllers/news/createNews");
-const updateNews = require("../controllers/news/updateNews");
-const deleteNews = require("../controllers/news/deleteNews");
+
+const {
+  getNews,
+  updateNews,
+  createNews,
+  deleteNews
+} = require("../controllers/news");
+
+const {
+  getTimeline,
+  updateTimeline,
+  deleteTimeline,
+  createTimeline
+} = require("../controllers/timeline");
+
 
 app.post("/register", createUser);
 app.post("/login", loginUser);
@@ -44,6 +55,11 @@ app.get("/news", getNews);
 app.put("/news/:idNews", isAuth, updateNews);
 app.post("/createNews", isAuth, createNews);
 app.delete("/news/:idNews", isAuth, deleteNews);
+
+app.get("/timeline", getTimeline);
+app.put("/timeline/:idTimeline", isAuth, updateTimeline);
+app.post("/createTimeline", isAuth, createTimeline);
+app.delete("/timeline/:idTimeline", isAuth, deleteTimeline);
 
 /**
  * #################
