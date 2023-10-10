@@ -1,6 +1,6 @@
 const getDB = require("../../getDB");
 
-const insertNewQuery = async (title, introduction, text, image, id_user) => {
+const insertNewQuery = async (title, text, image, id_user) => {
   let connection;
 
   try {
@@ -10,18 +10,11 @@ const insertNewQuery = async (title, introduction, text, image, id_user) => {
       generateError(`El usuario no existe`);
     }
 
-    const [createNew] = await connection.query(`INSERT INTO news (title, introduction, text, image, id_user ) VALUES (?, ?, ?, ?, ?)`, [
-      title,
-      introduction,
-      text,
-      image,
-      id_user,
-    ]);
+    const [createNew] = await connection.query(`INSERT INTO news (title, text, image, id_user ) VALUES (?, ?, ?, ?)`, [title, text, image, id_user]);
 
     return {
       id: createNew.insertId,
       title,
-      introduction,
       text,
       image,
       createdAt: new Date(),

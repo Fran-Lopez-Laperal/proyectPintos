@@ -5,7 +5,7 @@ const selectNewsQuery = async () => {
   try {
     connection = await getDB();
 
-    let [news] = await connection.query(`SELECT id, title, introduction, text, image FROM news`);
+    let [news] = await connection.query(`SELECT id, title, text, image FROM news`);
     return news;
   } finally {
     connection?.release();

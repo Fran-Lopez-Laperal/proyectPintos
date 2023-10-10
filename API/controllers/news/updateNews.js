@@ -6,8 +6,8 @@ const { saveImg, deleteImg } = require("../../helpers");
 const updateNews = async (req, res, next) => {
   try {
     const news = await selectNewsByIdQuery(req.params.idNews);
-    const { title, introduction, text } = req.body;
-    console.log(title, introduction, text);
+    const { title, text } = req.body;
+    console.log(title, text);
 
     let image = news.image;
 
@@ -18,7 +18,7 @@ const updateNews = async (req, res, next) => {
       image = await saveImg(image, 500);
     }
 
-    await updateNewQuery(title, introduction, text, image, req.params.idNews);
+    await updateNewQuery(title, text, image, req.params.idNews);
 
     const updatedNews = await selectNewsByIdQuery(req.params.idNews);
 
