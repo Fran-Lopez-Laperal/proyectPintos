@@ -18,103 +18,87 @@
   },
 
   "home": {
-    "link1": "",
-    "link2": "",
-    "link3": "",
-    "link4": "",
-    "link5": "",
-    "link6": "",
-    "homeHeader": "",
-    "homeTitle": "",
-    "section1Title": "",
-    "section1sub1": "",
-    "section1sub2": "",
-    "section1sub3": "",
-    "section1sub4": "",
-    "marqueeTitle": "",
+    "link1": "ENGINEERING AND CONSTRUCTION",
+    "link2": "CONCRETE",
+    "link3": "CARPENTRY",
+    "link4": "REAL ESTATE PROMOTION",
+    "link5": "TOURISM",
+    "link6": "INTERNATIONAL",
+    "homeTitle": "innovation makes us different",
+    "section1Title": "YEARS OF EXPERIENCE",
+    "section1sub1": "COLLABORATORS",
+    "section1sub2": "COMPLETED WORKS",
+    "section1sub3": "COMPANIES",
+    "section1sub4": "ONGOING PROJECTS",
+    "marqueeTitle": "GROUP COMPANIES",
     "section2Title": "",
     "section2subTitle1": "",
     "section2subTitle2": "",
-    "section2Text": ""
+    "section2Text": "News"
   },
 
   "history": {
-    "historyHeader": "",
-    "historyText": "",
-    "title1": "",
-    "text1": "",
-    "title2": "",
-    "text2": "",
-    "title3": "",
-    "text3": ""
+    "historyHeader": "HISTORY",
+    "historyText": "The SPintos group, founded in 1993, has its origins in the construction sector. Its headquarters brings together a group of companies with solid experience and knowledge in different sectors of activity. Under the leadership of the four brothers Fernando, Rui, Vasco and Berto Pinto, the SPintos group bases its values ​​on sustained development, quality, innovation and safety in the projects it develops. With a proven track record in the construction of residential, commercial, industrial buildings and public infrastructure, the group also specializes in the supply of ready-mixed concrete. The global offer of SPintos business areas covers civil construction, concrete supply, carpentry, real estate development and hotels. In addition to Portugal, it also operates on the international market, namely in Brazil and Ivory Coast. The SPintos group is committed to sustained growth and continuous improvement, qualified training for its employees, innovation and permanent investment in the acquisition of new and more modern equipment, always seeking to exceed its customers' expectations. With differentiating projects, SPintos has already seen its works distinguished by the Habitar Portugal 2008 and Secil Arquitetura 2008 awards, among other distinctions.",
+    "title1": "THE GROUP",
+    "text1": "We are a business group with 100% Portuguese capital based on a family leadership and management matrix. The SPintos group is made up of several companies, with activities in different business areas that include engineering and construction, concrete supply, real estate development and management, carpentry, hospitality and tourism and international with a presence in Brazil and Ivory Coast. The group brings together a base of experienced and multidisciplinary professionals capable of responding effectively to the most demanding challenges of sustainability and competitiveness in the global economy.",
+    "title2": "WHAT WE DO",
+    "text2": "We develop our main activity in the areas of Civil Construction, in Portugal, Brazil and Ivory Coast. We work in the production of Carpentry for our projects and external customers. Our experience in producing and supplying ready-mixed concrete is certified. We also stand out in real estate management and development. Within the Hospitality sector, we build and explore projects in the areas of Tourism, Accommodation and Leisure",
+    "title3": "FUNDAÇÃO DA S. PINTOS - ENGENHARIA E CONSTRUÇÃO, S.A.",
+    "text3": "FERNANDO DA SILVA NOGUEIRA PINTO STARTED HIS BUSINESS CAREER AS A CIVIL CONSTRUCTOR. HE CREATED HIS FIRST COMPANY, IN XXX, NAMED CONSTRUÇÕES PINTOS & PINHO, LDA. MOVED BY AN ENTREPRENEURIAL SPIRIT, BY LONG PROVEN EXPERIENCE, BY LEADERSHIP CAPACITY AND SUCCESS, HE FOUNDED S. PINTOS – ENGENHARIA E CONSTRUAÇÃO, S.A., THE FIRST OF THE GROUP, WITH HIS FOUR CHILDREN."
   },
 
   "planear": {
-    "header": "",
-    "phrase": "",
-    "text": "",
-    "title1": "",
-    "text1": "",
-    "text2": "",
-    "title2": "",
-    "text3": "",
-    "title3": "",
-    "title4": "",
-    "award1": "",
-    "award2": "",
-    "award3": "",
-    "award4": "",
-    "missaoTitle": "",
-    "missaoText": "",
-    "visaoTitle": "",
-    "visaoText": "",
-    "valoresTitle": "",
-    "valoresText": ""
+    "header": "PLAN AND BUILD",
+    "phrase": "WE PLAN AND BUILD PROJECTS FOR LIFE.",
+    "text": "E’VE INSPIRED TRUST FOR OVER 30 YEARS. FIND OUT A LITTLE MORE ABOUT OUR EXPERIENCE AND OUR PROJECTS THAT ARE THE FRUITS OF THE INNOVATIVE CAPACITY, SUSTAINABILITY AND EXCELLENCE OF OUR COMPANIES.",
+    "title1": "SOCIAL RESPONSABILITY",
+    "text1": "At the service of society, we seek to create a better world. Within the scope of social responsibility, we establish several partnerships with national and local institutions",
+    "title2": "SUSTAINABILITY",
+    "text2": "Environmental, social and economic sustainability is part of our strategy and commitment, it is part of our management practices, principles and values ​​that define the SPintos community.",
+    "title3": "CERTIFICATIONS",
+    "text3": "“Production Control Certification” according to European Standard NP EN 206:2013 + A2:2021 – Concrete Production. Recarei and Vila Nova de Gaia Concrete Plants",
+    "title4": "PRIZES",
+    "award1": "Habitar Portugal Award 2008",
+    "award2": "Edifício Sede do Grupo SPintos",
+    "award3": "Prémio SECIL Arquitetura 2008",
+    "award4": "Edifício Administrativo Móveis Viriato",
+    "missaoTitle": "MISSION",
+    "missaoText": "In our projects and businesses we aim to guarantee quality, innovation and excellence, respecting customers, employees and the environment. Our mission aims to create value and sustainability.",
+    "visaoTitle": "VISION",
+    "visaoText": "To be a reference in the engineering and construction and real estate development sector through experience, excellence, quality, solidity and innovation.",
+    "valoresTitle": "VALUES",
+    "valoresText": "We base our values ​​on Experience and Knowledge, Ethics and Integrity, Ambition, Responsibility, Rigor, Cooperation, Flexibility, Resilience and Humanism."
   },
 
   "promoçao": {
     "logo1": "",
     "logo2": "",
-    "vendido": "",
-    "verMais": "",
+    "vendido": "sold",
+    "verMais": "View more",
     "text": "",
-    "projetos": ""
+    "projetos": "MORE PROJECTS"
   },
 
   "contacto": {
-    "header": "",
-    "text1": "",
-    "text2": "",
-    "text3": "",
-    "text4": "",
-    "text5": ""
+   "textPhone":"Call to the national landline network"
   },
 
-  "notica": {
-    "title": "",
-    "introduction": "",
-    "text": ""
-  },
 
   "betao": {
-    "header": "",
-    "img1titleL1": "",
-    "img1titleL2": "",
-    "img1titleR3": "",
-    "img1titleR4": "",
-    "img2title1": "",
-    "img2title2": "",
-    "tite1": "",
-    "text1": "",
-    "title2": "",
+    "header": "CONCRETE",
+    "direção": "DIRECTION",
+    "title1": "CENTRAL",
+    "text1": "The company operates in the production, marketing and transport of ready-mixed concrete with 2 plants in Portugal and one in Ivory Coast. With high installed production capacity and a fleet of concrete mixers and pump trucks, it allows a quick and effective response to the customer. The two concrete production units obtained the “Production Control Certification” (NP EN 206:2013 +A2:2021) awarded by APCER. The installed concrete production capacity of the two plants is more than 10,000 m3/month.    ",
+    "title2": "LABORATORY",
     "text2": "",
-    "title3": ""
+    "title3": "PRODUCTS"
   },
 
   "areaNegocio": {
-    "header": "",
-    "title": "",
-    "text": "",
-    "button": ""
+    "header": "REAL ESTATE",
+    "title": "REAL ESTATE PROMOTION",
+    "text": "The dynamics of the SPintos group in the real estate market has grown over the last 30 years. The evolution is notable. The business group's position has been consolidated with a diversified portfolio of projects. The geographical scope should be highlighted: Paredes, Valongo, Vila Nova de Gaia, Porto, Almada (Capuchos - Setúbal) and more recently in the Algarve, in Armação de Pera. The company soon identified the opportunity to combine construction with the management and real estate development of projects. Thus, having the opportunity for short-term appreciation of investments. Through Propiso, S.A., the main real estate agency, a strong portfolio of purchase and sale of land and properties is managed. We also work with the main real estate agencies who are trusted partners.",
+    "button": "Real estate exchange"
   }
 }
