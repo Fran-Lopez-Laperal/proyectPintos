@@ -5,8 +5,6 @@ import logo2 from '../assets/logo2.png';
 import imgHome from '../assets/img-home.jpeg';
 
 import companyHeader from '../assets/headers/companyHeader.jpeg';
-import { Noticia } from '../components/Noticia';
-import { Timeline } from '../components/Timeline';
 import { FetchNews } from '../components/FetchNews';
 
 const StatCard = ({ number, text }) => {
