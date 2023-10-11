@@ -9,10 +9,11 @@ import { Contact } from './pages/Contact';
 import { Noticias } from './pages/Noticias';
 import { CreateNew } from './pages/CreateNew';
 import { CreateTimeline } from './pages/CreateTimeline';
-import { AreaPrivada } from './pages/AreaPrivada';
-import { PlanearConstruir } from './pages/PlanearConstruir';
+import { Login } from './pages/Login';
+import { PlanAndbuild } from './pages/PlanAndbuild';
 import { Betao } from './pages/Betao';
 import { Timeline } from './pages/Timeline';
+import { PrivateArea } from './pages/PrivateArea';
 
 import { Footer } from './components/Footer';
 import { Nav } from './components/Nav';
@@ -28,16 +29,18 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/historia" element={<History />} />
+          //Ruta premios???
+          <Route path="/planejar-e-construir" element={<PlanAndbuild />} />
           <Route path="/areaNegocio" element={<AreaNegocio />} />
           <Route path="/promoçao" element={<Promoçao />} />
           <Route path="/contacto" element={<Contact />} />
           <Route path="/noticias" element={<Noticias />} />
-          <Route path="/areaprivada" element={<AreaPrivada />} />
-          <Route path="/crearNoticia" element={token ? <CreateNew /> : <Navigate to="/areaprivada" />} />
-          <Route path="/crearTimeline" element={token ? <CreateTimeline /> : <Navigate to="/areaprivada" />} />
-          <Route path="/planearConstruir" element={<PlanearConstruir />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/crearNoticia" element={token ? <CreateNew /> : <Navigate to="/login" />} />
+          <Route path="/crearTimeline" element={token ? <CreateTimeline /> : <Navigate to="/login" />} />
           <Route path="/betao" element={<Betao />} />
           <Route path="/timeline" element={<Timeline />} />
+          <Route path="/privateArea" element={<PrivateArea />} />
         </Routes>
       </main>
       <Footer />
