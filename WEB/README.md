@@ -33,8 +33,7 @@ mediante diferentes vistas en las que se muestran caracteristicas e información
 
 [x][Ruta home]: http://localhost:3000/
 [x][Ruta historia]: http://localhost:3000/historia
-[Ruta premios]: http://localhost:3000/premios
-[x][Ruta responsabilidad]: http://localhost:3000/planejar-e-construir
+[x][Ruta planejar e construir]: http://localhost:3000/planejar-e-construir
 [Ruta engenharia]: http://localhost:3000/engenharia
 [Ruta betão]: http://localhost:3000/betão
 [Ruta carpintaria]: http://localhost:3000/carpintaria
