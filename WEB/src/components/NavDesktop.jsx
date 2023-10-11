@@ -60,9 +60,9 @@ export function NavDesktop() {
           {!token && (
             <Link
               className="flex justify-center items-center w-48 h-full hover:bg-corporative-color2 transition-all duration-500 no-underline uppercase"
-              to={'/areaPrivada'}
+              to={'/login'}
             >
-              {t('nav.areaPrivada')}
+              {t('nav.iniciarSessao')}
             </Link>
           )}
         </main>

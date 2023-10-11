@@ -12,6 +12,7 @@
     "internacional": "International",
     "noticias": "News",
     "contacto": "Contact",
+    "iniciarSessao": "Log in",
     "areaPrivada": "Private area",
     "criarNoticia": "Create news",
     "cerrarSessao": "Log out"
@@ -81,9 +82,8 @@
   },
 
   "contacto": {
-   "textPhone":"Call to the national landline network"
+    "textPhone": "Call to the national landline network"
   },
-
 
   "betao": {
     "header": "CONCRETE",

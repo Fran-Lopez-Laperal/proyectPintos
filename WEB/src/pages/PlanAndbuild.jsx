@@ -1,20 +1,18 @@
 import { HeaderPages } from '../components/HeaderPages';
 import planearHeader from '../assets/headers/historyHeader.jpeg';
 
-export function PlanearConstruir() {
+export function PlanAndbuild() {
   return (
-    <>
-      <main>
-        <HeaderPages text={'planear e construir'} textSize="text-xl lg:text-4xl" image={planearHeader} />
-      </main>
+    <main>
+      <HeaderPages text={'planear e construir'} textSize="text-xl lg:text-4xl" image={planearHeader} />
 
-      <section className="flex justify-center items-center relative lg:flex lg:justify-center lg:mt-10 lg:mb-28 lg:mx-36 mt-5">
-        <p className="text-xl relative z-10 bg-white px-3 font-dancing lg:text-5xl">Planeamos e construímos projestos para a vida</p>
-        <p className="absolute left-1 right-1 h-[2px] bg-corporative-color2 z-0"></p>
+      <section className="flex justify-center items-center relative lg:flex lg:justify-center mt-10 lg:mt-12 lg:mx-36">
+        <p className="font-dancing text-xl pb-[6px] px-1 relative z-10 bg-white lg:text-5xl lg:px-4">Planeamos e construímos projestos para a vida</p>
+        <p className="absolute left-0 right-0 h-0.5 lg:h-1 bg-corporative-color2 z-0"></p>
       </section>
 
-      <section className="flex justify-center mt-5">
-        <p className=" lg:px-36 text-center font-semibold text-xs p-4 lg:text-[22px] lg:leading-8">
+      <section className="flex justify-center">
+        <p className="text-center font-extrabold text-xs p-4 lg:text-2xl ">
           HÁ MAIS DE 30 ANOS QUE INSPIRAMOS CONFIANÇA. CONHEÇA UM POUCO MAIS DA NOSSA EXPERIÊNCIA E DOS NOSSOS PROJETOS QUE SÃO FRUTO DA CAPACIDADE
           INOVADORA, SUSTENTABILIDADE E EXCELÊNCIA DAS NOSSAS EMPRESAS.
         </p>
@@ -24,7 +22,7 @@ export function PlanearConstruir() {
         <article className="">
           <section className=" text-center lg:h-[87px]">
             <p className="text-xl font-bold lg:text-[64px] border-b-[1px]  border-corporative-color2 pb-2 text-corporative-color2 mt-7">
-              RESPONSABILIDADES SOCIAL
+              RESPONSABILIDADE SOCIAL
             </p>
           </section>
           <section className="lg:h-[126px]">
@@ -142,6 +140,6 @@ export function PlanearConstruir() {
           </article>
         </article>
       </section>
-    </>
+    </main>
   );
 }

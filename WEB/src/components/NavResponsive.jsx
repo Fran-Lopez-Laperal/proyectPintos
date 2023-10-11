@@ -70,7 +70,7 @@ export function NavResponsive() {
                 <Link className="flex items-center h-10 pl-7 border-b" to="/historia" onClick={handleShowMenu}>
                   {t('nav.historia')}
                 </Link>
-                <Link className="flex items-center h-10 pl-7 border-b" to="/planearConstruir" onClick={handleShowMenu}>
+                <Link className="flex items-center h-10 pl-7 border-b" to="/planejar-e-construir" onClick={handleShowMenu}>
                   {t('nav.planearConstruir')}
                 </Link>
               </section>
@@ -114,7 +114,7 @@ export function NavResponsive() {
           </ul>
 
           <ul className="flex items-center h-10 pl-2 border-b bg-gray-100" onClick={handleShowMenu}>
-            <Link to="/areaPrivada">{t('nav.areaPrivada')}</Link>
+            <Link to="/login">{t('nav.iniciarSessao')}</Link>
           </ul>
 
           <ul onClick={handleShowMenu}>
