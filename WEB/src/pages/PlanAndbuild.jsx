@@ -1,7 +1,7 @@
 import { HeaderPages } from '../components/HeaderPages';
 import planearHeader from '../assets/headers/historyHeader.jpeg';
 
-export function PlanearConstruir() {
+export function PlanAndbuild() {
   return (
     <>
       <main>
