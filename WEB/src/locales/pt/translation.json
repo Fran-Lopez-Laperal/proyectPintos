@@ -47,68 +47,19 @@
     "history-text-part5": "O grupo SPintos aposta no crescimento sustentado e na melhoria contínua, na formação qualificada dos seus colaboradores, na inovação e no investimento permanente na aquisição de novos e mais modernos equipamentos, procurando sempre superar as expectativas dos seus clientes.",
     "history-text-part6": "Com projetos diferenciadores, a SPintos viu já distinguidas as suas obras pelos prémios Habitar Portugal 2008 e Secil Arquitetura 2008, entre outras distinções.",
 
-    "oGrupo-title": "O grupo",
-    "oGrupo-text": "Somos um grupo empresarial de capital 100% português assente numa matriz de liderança e gestão familiar. O grupo SPintos é constituído por várias empresas, com atividades em diversas áreas de negócio que incluem engenharia e construção, fornecimento de betão, promoção e gestão imobiliária, carpintaria, hotelaria e turismo e internacional com presença no Brasil e Costa do Marfim. O grupo reúne uma base de profissionais experientes e multidisciplinares capazes de responder de forma eficaz aos desafios mais exigentes da sustentabilidade e competitividade da economia global.",
-
-    "oFazemos-title": "O que fazemos",
-    "oFazemos-text": "Desenvolvemos a nossa principal atividade nas áreas da Construção Civil, em Portugal, no Brasil e Costa do Marfim. Atuamos na produção de Carpintaria para os nossos projetos e clientes externos. A nossa experiência de produção e fornecimento de Betão pronto é certificada. Destacamo-nos, ainda, na gestão e promoção imobiliária. No âmbito da Hotelaria construímos e exploramos projetos na área do Turismo, Alojamento e Lazer.",
-
-    "fundaçao-title": "fundação",
-    "fundaçao-text-part1": "fernando da silva nogueira pinto iniciou a sua carreira de empresário como construtor civil.",
-    "fundaçao-text-part2": "criou a sua primeira empresa, em xxx, denominada construções pintos & pinho, lda. ",
-    "fundaçao-text-part3": "movido pelo espírito empreendedor, pela longa experiência comprovada, pela capacidade de liderança e sucesso, fundou com os seus quatro filhos a s. pintos – engenharia e construção, s.a., a primeira do grupo."
-  },
-
-  "planear": {
-    "header": "PLANEAR E CONSTRUIR",
-    "phrase": "PLANEAMOS E CONSTRUÍMOS PROJETOS PARA A VIDA.",
-    "text": "HÁ MAIS DE 30 ANOS QUE INSPIRAMOS CONFIANÇA. CONHEÇA UM POUCO MAIS DA NOSSA EXPERIÊNCIA E DOS NOSSOS PROJETOS QUE SÃO FRUTO DA CAPACIDADE INOVADORA, SUSTENTABILIDADE E EXCELÊNCIA DAS NOSSAS EMPRESAS.",
-    "title1": "RESPONSABILIDADE SOCIAL",
-    "text1": "Ao serviço da sociedade procuramos criar um mundo melhor. No âmbito da responsabilidade social estabelecemos diversas parcerias com instituições nacionais e locais",
-    "title2": "SUSTENTABILIDADE",
-    "text2": "A sustentabilidade ambiental, social e económica faz parte da nossa estratégia e compromisso, integram as nossas práticas de gestão, princípios e valores que definem a comunidade SPintos.",
-    "title3": "CERTIFICAÇÕES",
-    "text3": "“Certificação do Controlo de Produção” segundo a Norma Europeia NP EN 206:2013 + A2:2021 – Produção de Betão. Centrais de Betão de Recarei e de Vila Nova de Gaia",
-    "title4": "PRÉMIOS",
-    "award1": "Prémio Habitar Portugal 2008",
-    "award2": "Edifício Sede do Grupo SPintos",
-    "award3": "Prémio SECIL Arquitetura 2008",
-    "award4": "Edifício Administrativo Móveis Viriato",
-    "missaoTitle": "MISSÃO",
-    "missaoText": "Nos nossos projetos e negócios propomo-nos garantir qualidade, inovação e excelência,respeitando os clientes, os colaboradores e o meio ambiente.A nossa missão visa criar valor e sustentabilidade.",
-    "visaoTitle": "VISÃO",
-    "visaoText": "Ser uma referência no setor da engenharia e construção e promoção imobiliária pela experiência, excelência, qualidade, solidez e inovação.",
-    "valoresTitle": "VALORES",
-    "valoresText": "Pautamos os nossos valores pela Experiência e Conhecimento, Ética e Integridade, Ambição, Responsabilidade, Rigor, Cooperação, Flexibilidade, Resiliência e Humanismo."
-  },
-
-  "promoçao": {
-    "logo1": "",
-    "logo2": "",
-    "vendido": "vendido",
-    "verMais": "ver mais",
-    "text": "",
-    "projetos": "MAIS PROJETOS"
-  },
-
-  "contacto": {
-    "textphone": "Chamada para a rede fixa nacional"
-  },
-
-  "betao": {
-    "header": "BETÃO",
-    "direção": "DIREÇÃO",
-    "title1": "CENTRAIS",
-    "text1": "A empresa atua na produção e comercialização e transporte de betão pronto com 2 centrais em Portugal e uma na Costa do Marfim. Com elevada capacidade instalada de produção e com uma frota de autobetoneiras e camiões-bomba, permite resposta rápida e eficaz ao cliente. As duas unidades de produção de betão obtiveram a “Certificação do Controlo de Produção” (NP EN 206:2013 +A2:2021) atribuída pela APCER. A capacidade instalada de produção de betão das duas centrais é superior a 10.000 m3/mês.",
-    "title2": "LABORATÓRIO",
-    "text2": "",
-    "title3": "PRODUTOS"
-  },
-
-  "areaNegocio": {
-    "header": "IMOBILIÁRIA",
-    "title": "PROMOÇÃO IMOBILIÁRIA",
-    "text": "A dinâmica do grupo SPintos no mercado imobiliário tem crescido ao longo dos últimos 30 anos. A evolução é notória. A posição do grupo empresarial consolidou-se com uma carteira diversificada de empreendimentos. De sublinhar a abrangência geográfica: Paredes, Valongo, Vila Nova de Gaia, Porto, Almada (Capuchos - Setúbal) e mais recentemente no Algarve, em Armação de Pera. Cedo a empresa identificou a oportunidade de aliar à construção a gestão e a promoção imobiliária dos empreendimentos. Tendo, assim, a oportunidade de valorização no curto prazo dos investimentos. Através da Propiso, S.A., a principal imobiliária, é gerida uma forte carteira de compra e venda de terrenos e imóveis. Trabalhando, ainda, com as principais imobiliárias que são os parceiros de confiança.",
-    "button": "Bolsa imobiliária"
+    "oGrupo": {
+      "title": "O grupo",
+      "text": "Somos um grupo empresarial de capital 100% português assente numa matriz de liderança e gestão familiar. O grupo SPintos é constituído por várias empresas, com atividades em diversas áreas de negócio que incluem engenharia e construção, fornecimento de betão, promoção e gestão imobiliária, carpintaria, hotelaria e turismo e internacional com presença no Brasil e Costa do Marfim. O grupo reúne uma base de profissionais experientes e multidisciplinares capazes de responder de forma eficaz aos desafios mais exigentes da sustentabilidade e competitividade da economia global."
+    },
+    "oFazemos": {
+      "title": "O que fazemos",
+      "text": "Desenvolvemos a nossa principal atividade nas áreas da Construção Civil, em Portugal, no Brasil e Costa do Marfim. Atuamos na produção de Carpintaria para os nossos projetos e clientes externos. A nossa experiência de produção e fornecimento de Betão pronto é certificada. Destacamo-nos, ainda, na gestão e promoção imobiliária. No âmbito da Hotelaria construímos e exploramos projetos na área do Turismo, Alojamento e Lazer."
+    },
+    "fundaçao": {
+      "title": "fundação",
+      "text-part1": "fernando da silva nogueira pinto iniciou a sua carreira de empresário como construtor civil.",
+      "text-part2": "criou a sua primeira empresa, em xxx, denominada construções pintos & pinho, lda. ",
+      "text-part3": "movido pelo espírito empreendedor, pela longa experiência comprovada, pela capacidade de liderança e sucesso, fundou com os seus quatro filhos a s. pintos – engenharia e construção, s.a., a primeira do grupo."
+    }
   }
 }

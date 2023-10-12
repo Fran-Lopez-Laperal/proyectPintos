@@ -31,7 +31,7 @@ mediante diferentes vistas en las que se muestran caracteristicas e información
 
 ## RUTAS DISPONIBLES
 
-[][Ruta home]: http://localhost:3000/
+[x][Ruta home]: http://localhost:3000/
 [x][Ruta historia]: http://localhost:3000/historia
 [][Ruta planejar e construir]: http://localhost:3000/planejar-e-construir
 [][Ruta betão]: http://localhost:3000/betão
