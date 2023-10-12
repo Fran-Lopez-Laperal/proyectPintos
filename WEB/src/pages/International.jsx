@@ -8,7 +8,7 @@ import home4 from '../assets/home/home4.jpeg';
 import home5 from '../assets/home/home5.jpeg';
 
 import { Sections } from '../components/Sections';
-export function Internacional() {
+export function International() {
   return (
     <section className="flex flex-col gap-12">
       <header>

@@ -11,17 +11,17 @@ import { History } from './pages/History';
 import { PlanAndbuild } from './pages/PlanAndbuild';
 
 //Areas de negocio
-import { Engenharia } from './pages/Engenharia';
-import { Betao } from './pages/Betao';
-import { Carpinteria } from './pages/Carpinteria';
+import { Engineering } from './pages/Engineering';
+import { Concrete } from './pages/Concrete';
+import { Carpentry } from './pages/Carpentry';
 import { PromoçaoImobiliaria } from './pages/PromoçaoImobiliaria';
-import { Turismo } from './pages/Turismo';
+import { Tourism } from './pages/Tourism';
 
 //Internacional
-import { Internacional } from './pages/Internacional';
+import { International } from './pages/International';
 
 //Noticias
-import { Noticias } from './pages/Noticias';
+import { News } from './pages/News';
 
 //Contacto
 import { Contact } from './pages/Contact';
@@ -39,15 +39,15 @@ function App() {
           <Route path="/historia" element={<History />} />
           <Route path="/planejar-e-construir" element={<PlanAndbuild />} />
 
-          <Route path="/engenharia" element={<Engenharia />} />
-          <Route path="/betão" element={<Betao />} />
-          <Route path="/carpintaria" element={<Carpinteria />} />
+          <Route path="/engenharia" element={<Engineering />} />
+          <Route path="/betão" element={<Concrete />} />
+          <Route path="/carpintaria" element={<Carpentry />} />
           <Route path="/promoção-inmobiliaria" element={<PromoçaoImobiliaria />} />
-          <Route path="/turismo" element={<Turismo />} />
+          <Route path="/turismo" element={<Tourism />} />
 
-          <Route path="/internacional" element={<Internacional />} />
+          <Route path="/internacional" element={<International />} />
 
-          <Route path="/noticias" element={<Noticias />} />
+          <Route path="/noticias" element={<News />} />
 
           <Route path="/contacto" element={<Contact />} />
 

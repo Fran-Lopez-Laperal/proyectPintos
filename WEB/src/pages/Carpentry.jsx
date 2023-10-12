@@ -8,12 +8,12 @@ import home4 from '../assets/home/home4.jpeg';
 import home5 from '../assets/home/home5.jpeg';
 
 import { Sections } from '../components/Sections';
-export function Betao() {
+export function Carpentry() {
   return (
     <section className="flex flex-col gap-12">
       <header>
         <article>
-          <HeaderPages image={betao} text={'Betão'} textSize="text-2xl lg:text-6xl" />
+          <HeaderPages image={betao} text={'Carpinteria'} textSize="text-2xl lg:text-6xl" />
         </article>
 
         <article className="h-[90px] lg:h-[139px]">

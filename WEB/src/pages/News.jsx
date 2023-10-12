@@ -1,7 +1,7 @@
 import imgCompany from '../assets/headers/historyHeader.jpeg';
 import { FetchNews } from '../components/FetchNews';
 
-export function Noticias() {
+export function News() {
   return (
     <section className="flex flex-col m-6 mt-12">
       <article className="flex flex-col justify-center items-center shadow-lg rounded-lg font-extrabold lg:mx-52">
