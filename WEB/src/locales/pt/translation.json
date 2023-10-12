@@ -46,20 +46,57 @@
     "history-text-part4": "A oferta global das áreas de negócio SPintos abrange a construção civil, fornecimento de betão, carpintaria, promoção imobiliária e hotelaria. Além de Portugal, opera também no mercado internacional, nomeadamente, no Brasil e na Costa do Marfim.",
     "history-text-part5": "O grupo SPintos aposta no crescimento sustentado e na melhoria contínua, na formação qualificada dos seus colaboradores, na inovação e no investimento permanente na aquisição de novos e mais modernos equipamentos, procurando sempre superar as expectativas dos seus clientes.",
     "history-text-part6": "Com projetos diferenciadores, a SPintos viu já distinguidas as suas obras pelos prémios Habitar Portugal 2008 e Secil Arquitetura 2008, entre outras distinções.",
-
-    "oGrupo": {
+    "group": {
       "title": "O grupo",
       "text": "Somos um grupo empresarial de capital 100% português assente numa matriz de liderança e gestão familiar. O grupo SPintos é constituído por várias empresas, com atividades em diversas áreas de negócio que incluem engenharia e construção, fornecimento de betão, promoção e gestão imobiliária, carpintaria, hotelaria e turismo e internacional com presença no Brasil e Costa do Marfim. O grupo reúne uma base de profissionais experientes e multidisciplinares capazes de responder de forma eficaz aos desafios mais exigentes da sustentabilidade e competitividade da economia global."
     },
-    "oFazemos": {
+    "weDo": {
       "title": "O que fazemos",
       "text": "Desenvolvemos a nossa principal atividade nas áreas da Construção Civil, em Portugal, no Brasil e Costa do Marfim. Atuamos na produção de Carpintaria para os nossos projetos e clientes externos. A nossa experiência de produção e fornecimento de Betão pronto é certificada. Destacamo-nos, ainda, na gestão e promoção imobiliária. No âmbito da Hotelaria construímos e exploramos projetos na área do Turismo, Alojamento e Lazer."
     },
-    "fundaçao": {
+    "foundation": {
       "title": "fundação",
       "text-part1": "fernando da silva nogueira pinto iniciou a sua carreira de empresário como construtor civil.",
       "text-part2": "criou a sua primeira empresa, em xxx, denominada construções pintos & pinho, lda. ",
       "text-part3": "movido pelo espírito empreendedor, pela longa experiência comprovada, pela capacidade de liderança e sucesso, fundou com os seus quatro filhos a s. pintos – engenharia e construção, s.a., a primeira do grupo."
+    }
+  },
+
+  "planAndBuild": {
+    "planAndBuildHeader": "Planear e construir",
+    "planAndBuild-title": "Planeamos e construímos projestos para a vida",
+    "planAndBuild-text": "há mais de 30 anos que inspiramos confiança. conheça um pouco mais da nossa experiência e dos nossos projetos que são fruto da capacidade inovadora, sustentabilidade e excelência das nossas empresas",
+    "responsabilities": {
+      "title": "responsabilidade social",
+      "text": "Ao serviço da sociedade procuramos criar um mundo melhor. No âmbito da responsabilidade social estabelecemos diversas parcerias com instituições nacionais e locais"
+    },
+    "sustainability": {
+      "title": "sustentabilidade",
+      "text": "A sustentabilidade ambiental, social e económica faz parte da nossa estratégia e compromisso, integram as nossas práticas de gestão, princípios e valores que definem a comunidade SPintos."
+    },
+    "certifications": {
+      "title": "certificações",
+      "text-part1": "'Certificação do Controlo de Produção' segundo a Norma Europeia NP EN 206:2013 + A2:2021 – Produção de Betão.",
+      "text-part2": "Centrais de Betão de Recarei e de Vila Nova de Gaia"
+    },
+    "awards": {
+      "title": "prémios",
+      "award-title1": "Prémio Habitar Portugal 2008",
+      "award-title2": "Edifício Sede do Grupo SPintos",
+      "award-title3": "Prémio SECIL Arquitetura 2008",
+      "award-title4": "Edifício Administrativo Móveis Viriato"
+    },
+    "mission": {
+      "title": "missão",
+      "text": "Nos nossos projetos e negócios propomo-nos garantir qualidade, inovação e excelência, respeitando os clientes, os colaboradores e o meio ambiente. A nossa missão visa criar valor e sustentabilidade."
+    },
+    "vision": {
+      "title": "visão",
+      "text": "Ser uma referência no setor da engenharia e construção e promoção imobiliária pela experiência, excelência, qualidade, solidez e inovação."
+    },
+    "values": {
+      "title": "valores",
+      "text": "Pautamos os nossos valores pela Experiência e Conhecimento, Ética e Integridade, Ambição, Responsabilidade, Rigor, Cooperação, Flexibilidade, Resiliência e Humanismo."
     }
   }
 }

@@ -47,19 +47,57 @@
     "history-text-part5": "The SPintos group focuses on sustainable growth and continuous improvement, qualified training for its employees, innovation, and ongoing investment in acquiring new and more modern equipment, always seeking to exceed its customers' expectations.",
     "history-text-part6": "With distinctive projects, SPintos has already had its works recognized with awards such as Habitar Portugal 2008 and Secil Architecture 2008, among other distinctions.",
 
-    "oGrupo": {
+    "group": {
       "title": "The Group",
       "text": "We are a Portuguese 100% family-owned business group. The SPintos group consists of several companies with activities in various business areas, including engineering and construction, concrete supply, real estate promotion and management, carpentry, hospitality and tourism, and international presence in Brazil and the Ivory Coast. The group brings together a base of experienced and multidisciplinary professionals capable of effectively responding to the most demanding challenges of sustainability and competitiveness in the global economy."
     },
-    "oFazemos": {
+    "weDo": {
       "title": "What We Do",
       "text": "We carry out our main activities in the areas of Civil Construction, in Portugal, Brazil, and the Ivory Coast. We engage in Carpentry production for our projects and external clients. Our experience in the production and supply of ready-mix concrete is certified. We also excel in real estate management and promotion. In the field of Hospitality, we build and operate projects in Tourism, Accommodation, and Leisure."
     },
-    "fundaçao": {
+    "foundation": {
       "title": "Foundation",
       "text-part1": "Fernando da Silva Nogueira Pinto began his entrepreneurial career as a civil builder.",
       "text-part2": "He created his first company in XXX, named Construções Pintos & Pinho, Lda.",
       "text-part3": "Driven by entrepreneurial spirit, proven long experience, leadership ability, and success, he founded S. Pintos - Engineering and Construction, S.A., the first in the group with his four children."
+    }
+  },
+
+  "planAndBuild": {
+    "planAndBuildHeader": "Plan and Build",
+    "planAndBuild-title": "We plan and build projects for life",
+    "planAndBuild-text": "For over 30 years, we have inspired confidence. Learn more about our experience and our projects, which are the result of innovative capability, sustainability, and excellence of our companies.",
+    "responsibilities": {
+      "title": "Social Responsibility",
+      "text": "In service to society, we seek to create a better world. In the field of social responsibility, we have established various partnerships with national and local institutions."
+    },
+    "sustainability": {
+      "title": "Sustainability",
+      "text": "Environmental, social, and economic sustainability is an integral part of our strategy and commitment. They are embedded in our management practices, principles, and values that define the SPintos community."
+    },
+    "certifications": {
+      "title": "Certifications",
+      "text-part1": "'Control of Production Certification' according to the European Standard NP EN 206:2013 + A2:2021 – Concrete Production.",
+      "text-part2": "Concrete Plants in Recarei and Vila Nova de Gaia"
+    },
+    "awards": {
+      "title": "Awards",
+      "award-title1": "Habitar Portugal Award 2008",
+      "award-title2": "SPintos Group Headquarters Building",
+      "award-title3": "SECIL Architecture Award 2008",
+      "award-title4": "Móveis Viriato Administrative Building"
+    },
+    "mission": {
+      "title": "Mission",
+      "text": "In our projects and businesses, we aim to ensure quality, innovation, and excellence while respecting customers, employees, and the environment. Our mission is to create value and sustainability."
+    },
+    "vision": {
+      "title": "Vision",
+      "text": "To be a reference in the fields of engineering, construction, and real estate promotion due to our experience, excellence, quality, stability, and innovation."
+    },
+    "values": {
+      "title": "Values",
+      "text": "Our values are guided by Experience and Knowledge, Ethics and Integrity, Ambition, Responsibility, Precision, Cooperation, Flexibility, Resilience, and Humanism."
     }
   }
 }
