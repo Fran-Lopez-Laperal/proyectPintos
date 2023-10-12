@@ -6,7 +6,7 @@ import { Sections } from '../components/Sections';
 const PlanAndbuildSections = ({ title, text, styles }) => {
   return (
     <section className={`flex flex-col font-extrabold ${styles}`}>
-      <h2 className="p-3 text-center text-3xl uppercase text-corporative-color2 bg-corporative-color3 lg:text-6xl lg:py-6">{title}</h2>
+      <h2 className="p-3 text-center text-3xl uppercase text-corporative-color2 bg-corporative-color3 lg:bg-white lg:text-6xl lg:py-6">{title}</h2>
       <p className="text-justify p-3 text-sm lg:text-xl lg:font-semibold lg:px-20 lg:py-8">{text}</p>
     </section>
   );
@@ -68,7 +68,7 @@ export function PlanAndbuild() {
           </section>
         </section>
 
-        <section className="lg:grid lg:grid-cols-3 lg:px-48 lg:pb-24">
+        <section className="flex flex-col gap-8 pb-12 lg:grid lg:grid-cols-3 lg:px-48 lg:pb-24">
           <PlanAndbuildSections
             title="missão"
             text="Nos nossos projetos e negócios propomo-nos garantir qualidade, inovação e excelência, respeitando os clientes, os colaboradores e o meio
