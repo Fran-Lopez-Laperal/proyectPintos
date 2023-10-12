@@ -49,7 +49,7 @@ function App() {
 
           <Route path="/noticias" element={<News />} />
 
-          <Route path="/contacto" element={<Contact />} />
+          <Route path="/contactos" element={<Contact />} />
 
           <Route path="/admin" element={<Admin />} />
         </Routes>
