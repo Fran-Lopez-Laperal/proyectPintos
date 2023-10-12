@@ -10,7 +10,7 @@ import home6 from '../assets/home/home6.jpeg';
 
 const links = [
   { to: '/contruçao', text: 'ENGENHARIA E CONSTRUÇÃO', bgImg: home1 },
-  { to: '/betao', text: 'BETÃO', bgImg: home2 },
+  { to: '/betão', text: 'BETÃO', bgImg: home2 },
   { to: '/carpinteria', text: 'CARPINTARIA', bgImg: home3 },
   { to: '/promoção', text: 'PROMOÇÃO IMOBILIÁRIA', bgImg: home4 },
   { to: '/turismo', text: 'TURISMO', bgImg: home5 },

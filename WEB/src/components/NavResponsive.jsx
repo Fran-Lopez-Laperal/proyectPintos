@@ -81,7 +81,7 @@ export function NavResponsive() {
                 <Link className="flex items-center h-10 pl-7 border-b" to="/engenharia" onClick={handleShowMenu}>
                   {t('nav.engharia')}
                 </Link>
-                <Link className="flex items-center h-10 pl-7 border-b" to="/betao" onClick={handleShowMenu}>
+                <Link className="flex items-center h-10 pl-7 border-b" to="/betão" onClick={handleShowMenu}>
                   {t('nav.betao')}
                 </Link>
                 <Link className="flex items-center h-10 pl-7 border-b" to="/carpinteria" onClick={handleShowMenu}>
