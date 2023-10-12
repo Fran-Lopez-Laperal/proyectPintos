@@ -26,15 +26,9 @@ export default {
       rotate: {
         '--45': '-45deg',
       },
-<<<<<<< Updated upstream
       dropShadow: {
         'shadow-img': 'drop-shadow(4px 4px 4px rgba(19, 103, 159, 0.25))',
       },
-=======
-      dropShadow:{
-        'shadow-img': 'drop-shadow(4px 4px 4px rgba(19, 103, 159, 0.9))'
-      }
->>>>>>> Stashed changes
     },
   },
   plugins: [],
