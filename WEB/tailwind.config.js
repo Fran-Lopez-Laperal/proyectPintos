@@ -10,7 +10,6 @@ export default {
         dancing: 'Dancing Script',
       },
       colors: {
-        // 'corporative-color': '#13679F',
         'corporative-color': '#092172',
         'corporative-color2': '#1272AB',
         'corporative-color3': '#C9E5FD',
@@ -18,22 +17,18 @@ export default {
         'contactHeader-color': '#113c9280',
         'graycorporative-color': '#F3F3F3',
         'graycorporative-color2': '#F2F2F2',
-
         'sustentabilidade-color': 'rgba(98,203,49,0.03)',
       },
       backgroundImage: {
         'corporative-gradient': 'linear-gradient(135deg, #1272AB, #FFFFFF)',
-        facebook: 'url("../assets/facebook-bg.jpg")',
-        instagram: 'url("../assets/instagram-bg.jpg")',
-        linkedin: 'url("../assets/linkedin-bg.jpg")',
-        whatsapp: 'url("../assets/whatsapp-bg.jpg")',
+        'corporative-gradient-footer': 'linear-gradient(90deg, #1267A0, #243877)',
       },
       rotate: {
         '--45': '-45deg',
       },
-      dropShadow:{
-        'shadow-img': 'drop-shadow(4px 4px 4px rgba(19, 103, 159, 0.25))'
-      }
+      dropShadow: {
+        'shadow-img': 'drop-shadow(4px 4px 4px rgba(19, 103, 159, 0.25))',
+      },
     },
   },
   plugins: [],

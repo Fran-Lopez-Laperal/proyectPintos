@@ -1,12 +1,12 @@
 import { HeaderPages } from '../components/HeaderPages';
-import planearHeader from '../assets/headers/historyHeader.jpeg';
 import { Award } from '../components/Award';
 import { Sections } from '../components/Sections';
+import planearHeader from '../assets/headers/historyHeader.jpeg';
 
 const PlanAndbuildSections = ({ title, text, styles }) => {
   return (
     <section className={`flex flex-col font-extrabold ${styles}`}>
-      <h2 className="p-3 text-center text-3xl uppercase text-corporative-color2 bg-corporative-color3 lg:text-6xl lg:py-6">{title}</h2>
+      <h2 className="p-3 text-center text-3xl uppercase text-corporative-color2 bg-corporative-color3 lg:bg-white lg:text-6xl lg:py-6">{title}</h2>
       <p className="text-justify p-3 text-sm lg:text-xl lg:font-semibold lg:px-20 lg:py-8">{text}</p>
     </section>
   );
@@ -51,13 +51,17 @@ export function PlanAndbuild() {
 
         <Sections
           title="certificações"
-          text="“Certificação do Controlo de Produção” segundo a Norma Europeia NP EN 206:2013 + A2:2021 – Produção de Betão. Centrais de Betão
-          de Recarei e de Vila Nova de Gaia"
-          textStyles="lg:px-80"
+          text={
+            <>
+              "Certificação do Controlo de Produção" segundo a Norma Europeia NP EN 206:2013 + A2:2021 – Produção de Betão.
+              <br />
+              Centrais de Betão de Recarei e de Vila Nova de Gaia
+            </>
+          }
         />
 
         <section className="flex flex-col gap-4 font-extrabold bg-corporative-color3">
-          <h2 className="mx-3 pt-3 text-center text-3xl uppercase text-corporative-color2 border-b-2 border-corporative-color2 lg:text-6xl lg:py-4 lg:mx-[800px]">
+          <h2 className="mx-3 pt-3 text-center text-3xl uppercase text-corporative-color2 border-b-2 border-corporative-color2 lg:border-none lg:text-6xl">
             prémios
           </h2>
           <section className="flex flex-col gap-12 pt-4 bg-white lg:grid lg:grid-cols-4 lg:gap-2 lg:px-80 lg:pt-12">
@@ -68,7 +72,7 @@ export function PlanAndbuild() {
           </section>
         </section>
 
-        <section className="lg:grid lg:grid-cols-3 lg:px-48 lg:pb-24">
+        <section className="flex flex-col gap-8 pb-12 lg:grid lg:grid-cols-3 lg:px-48 lg:pb-24">
           <PlanAndbuildSections
             title="missão"
             text="Nos nossos projetos e negócios propomo-nos garantir qualidade, inovação e excelência, respeitando os clientes, os colaboradores e o meio
