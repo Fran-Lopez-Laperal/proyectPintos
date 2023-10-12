@@ -2,6 +2,7 @@ import { HeaderPages } from '../components/HeaderPages';
 import { FetchNews } from '../components/FetchNews';
 import historyHeader from '../assets/headers/historyHeader.jpeg';
 import { useI18n } from '../hooks/useI18n';
+import { FetchTimeline } from '../components/FetchTimeline';
 
 export function History() {
   const { t, i18n } = useI18n();
@@ -42,9 +43,9 @@ export function History() {
       </section>
 
       <section className="flex flex-col items-center font-extrabold text-justify lg:px-80">
-        <h2 className="text-center text-3xl uppercase text-corporative-color2 lg:text-6xl">timeline</h2>
+        {/* <h2 className="text-center text-3xl uppercase text-corporative-color2 lg:text-6xl">timeline</h2> */}
       </section>
-
+      <FetchTimeline/>
       <FetchNews />
     </main>
   );
