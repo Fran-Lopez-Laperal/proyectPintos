@@ -1,22 +1,18 @@
-import { useEffect, useContext } from 'react';
+import { useContext } from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../assets/logo.png';
+
 import { AuthContext } from '../context/AuthContext';
 import { LanguageContext } from '../context/LanguageContext';
-import { useTranslation } from 'react-i18next';
+
+import { useI18n } from '../hooks/useI18n';
+
 import CustomHomeLink from './CustomHomeLink';
+
+import logo from '../assets/logo.png';
 
 export function NavDesktop() {
   const { language, changeLanguage } = useContext(LanguageContext);
-  const { t, i18n } = useTranslation();
-
-  const handleLanguageChange = (lang) => {
-    changeLanguage(lang);
-  };
-
-  useEffect(() => {
-    i18n.changeLanguage(language);
-  }, [language, i18n]);
+  const { t, i18n } = useI18n();
 
   const { token, logOut } = useContext(AuthContext);
 
@@ -67,11 +63,11 @@ export function NavDesktop() {
           )}
         </main>
         <section className="flex items-center justify-center px-4 space-x-4">
-          <button className="hover:underline" onClick={() => handleLanguageChange('pt')}>
+          <button className="hover:underline" onClick={() => changeLanguage('pt')}>
             PT
           </button>
           <p>|</p>
-          <button className="hover:underline" onClick={() => handleLanguageChange('en')}>
+          <button className="hover:underline" onClick={() => changeLanguage('en')}>
             EN
           </button>
         </section>

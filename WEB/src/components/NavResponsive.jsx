@@ -1,28 +1,24 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useContext } from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../assets/logo.png';
-import { useContext } from 'react';
+
 import { AuthContext } from '../context/AuthContext';
-import menu from '../assets/svg/menu.svg';
-import closeMenu from '../assets/svg/close.svg';
 import { LanguageContext } from '../context/LanguageContext';
-import { useTranslation } from 'react-i18next';
+
+import { useI18n } from '../hooks/useI18n';
+
+import closeMenu from '../assets/svg/close.svg';
+import menu from '../assets/svg/menu.svg';
+import logo from '../assets/logo.png';
 
 export function NavResponsive() {
+  const { language, changeLanguage } = useContext(LanguageContext);
+  const { t, i18n } = useI18n();
+
   const [openNav, setOpenNav] = useState(false);
   const [showSubLink1, setShowSubLink1] = useState(false);
   const [showSubLink2, setShowSubLink2] = useState(false);
+
   const { token, logOut } = useContext(AuthContext);
-  const { language, changeLanguage } = useContext(LanguageContext);
-  const { t, i18n } = useTranslation();
-
-  const handleLanguageChange = (lang) => {
-    changeLanguage(lang);
-  };
-
-  useEffect(() => {
-    i18n.changeLanguage(language);
-  }, [language, i18n]);
 
   function handleShowMenu() {
     setOpenNav(!openNav);
@@ -131,9 +127,9 @@ export function NavResponsive() {
           </ul>
 
           <section className="flex items-center justify-center h-10 space-x-4">
-            <button onClick={() => handleLanguageChange('pt')}>PT</button>
+            <button onClick={() => changeLanguage('pt')}>PT</button>
             <p>|</p>
-            <button onClick={() => handleLanguageChange('en')}>EN</button>
+            <button onClick={() => changeLanguage('en')}>EN</button>
           </section>
         </nav>
       </section>
