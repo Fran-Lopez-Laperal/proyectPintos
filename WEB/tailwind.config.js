@@ -14,9 +14,9 @@ export default {
         'corporative-color2': '#1272AB',
         'corporative-color3': '#C9E5FD',
         'corporative-color4': '#7D7773',
-        'contactHeader-color': '#113c9280',
-        'graycorporative-color': '#F3F3F3',
+        'graycorporative-color': '#F1F6F9',
         'graycorporative-color2': '#F2F2F2',
+        'contactHeader-color': '#113c9280',
         'sustentabilidade-color': 'rgba(98,203,49,0.03)',
       },
       backgroundImage: {
