@@ -2,7 +2,7 @@ import { HeaderPages } from '../components/HeaderPages';
 import areaNegocioHeader from '../assets/headers/areaNegocioHeader.jpeg';
 import { PromoçaoImages } from '../components/PromoçaoImages';
 
-export function AreaNegocio() {
+export function PromoçaoImobiliaria() {
   return (
     <main className="flex flex-col gap-12 lg:gap-14">
       <HeaderPages text={'Imobiliária'} textSize="text-xl lg:text-5xl" image={areaNegocioHeader} />

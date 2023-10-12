@@ -1,4 +1,4 @@
-import { useEffect, useState, useContext } from 'react';
+import { useState, useContext } from 'react';
 import { Link } from 'react-router-dom';
 
 import { AuthContext } from '../context/AuthContext';
@@ -35,7 +35,7 @@ export function NavResponsive() {
     logOut();
   }
   return (
-    <main className="">
+    <main>
       <section className="w-full drop-shadow z-50">
         <menu className="flex">
           <button className="pl-4 w-1/4" onClick={handleShowMenu}>
@@ -81,13 +81,13 @@ export function NavResponsive() {
                 <Link className="flex items-center h-10 pl-7 border-b" to="/engenharia" onClick={handleShowMenu}>
                   {t('nav.engharia')}
                 </Link>
-                <Link className="flex items-center h-10 pl-7 border-b" to="/betao" onClick={handleShowMenu}>
+                <Link className="flex items-center h-10 pl-7 border-b" to="/betão" onClick={handleShowMenu}>
                   {t('nav.betao')}
                 </Link>
-                <Link className="flex items-center h-10 pl-7 border-b" to="/carpinteria" onClick={handleShowMenu}>
+                <Link className="flex items-center h-10 pl-7 border-b" to="/carpintaria" onClick={handleShowMenu}>
                   {t('nav.carpintaria')}
                 </Link>
-                <Link className="flex items-center h-10 pl-7 border-b" to="/areaNegocio" onClick={handleShowMenu}>
+                <Link className="flex items-center h-10 pl-7 border-b" to="/promoção-inmobiliaria" onClick={handleShowMenu}>
                   {t('nav.promocaoImobiliaria')}
                 </Link>
                 <Link className="flex items-center h-10 pl-7 border-b" to="/turismo" onClick={handleShowMenu}>
@@ -98,7 +98,7 @@ export function NavResponsive() {
           </ul>
 
           <ul className="flex items-center h-10 pl-2 border-b bg-gray-100" onClick={handleShowMenu}>
-            <Link to="/">{t('nav.internacional')}</Link>
+            <Link to="/internacional">{t('nav.internacional')}</Link>
           </ul>
 
           <ul className="flex items-center h-10 pl-2 border-b bg-gray-100" onClick={handleShowMenu}>
@@ -110,7 +110,7 @@ export function NavResponsive() {
           </ul>
 
           <ul className="flex items-center h-10 pl-2 border-b bg-gray-100" onClick={handleShowMenu}>
-            <Link to="/login">{t('nav.iniciarSessao')}</Link>
+            <Link to="/admin">{t('nav.iniciarSessao')}</Link>
           </ul>
 
           <ul onClick={handleShowMenu}>

@@ -31,19 +31,23 @@ mediante diferentes vistas en las que se muestran caracteristicas e información
 
 ## RUTAS DISPONIBLES
 
-[][Ruta home]: http://localhost:3000/
-[x][Ruta historia]: http://localhost:3000/historia
-[][Ruta planejar e construir]: http://localhost:3000/planejar-e-construir
-[][Ruta betão]: http://localhost:3000/betão
-[][Ruta promoção-inmobiliaria]: http://localhost:3000/promoção-inmobiliaria
-[][Ruta noticias]: http://localhost:3000/noticias
-[][Ruta contactos]: http://localhost:3000/contactos
-[][Ruta admin]: http://localhost:3000/admin
+[x][Ruta home]: http://localhost:3000/
+[xx][Ruta historia]: http://localhost:3000/historia
+[xx][Ruta planejar e construir]: http://localhost:3000/planejar-e-construir
 
-[??] [Ruta engenharia]: http://localhost:3000/engenharia
-[??] [Ruta carpintaria]: http://localhost:3000/carpintaria
-[??] [Ruta turismo]: http://localhost:3000/turismo
-[??] [Ruta internacional]: http://localhost:3000/internacional
+[][Ruta engenharia]: http://localhost:3000/engenharia (area de negocio)
+[][Ruta betão]: http://localhost:3000/betão (area de negocio)
+[][Ruta carpintaria]: http://localhost:3000/carpintaria (area de negocio)
+[][Ruta promoção-inmobiliaria]: http://localhost:3000/promoção-inmobiliaria (area de negocio)
+[][Ruta turismo]: http://localhost:3000/turismo (area de negocio)
+
+[][Ruta internacional]: http://localhost:3000/internacional
+
+[][Ruta noticias]: http://localhost:3000/noticias
+
+[][Ruta contactos]: http://localhost:3000/contactos
+
+[][Ruta admin]: http://localhost:3000/admin
 
 El proyecto sigue una estructura de archivos estándar para una aplicación React creada con [Create React App](https://create-react-app.dev).
 
