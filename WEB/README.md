@@ -34,15 +34,16 @@ mediante diferentes vistas en las que se muestran caracteristicas e información
 [x][Ruta home]: http://localhost:3000/
 [x][Ruta historia]: http://localhost:3000/historia
 [x][Ruta planejar e construir]: http://localhost:3000/planejar-e-construir
-[Ruta engenharia]: http://localhost:3000/engenharia
-[Ruta betão]: http://localhost:3000/betão
-[Ruta carpintaria]: http://localhost:3000/carpintaria
-[Ruta promoção-inmobiliaria]: http://localhost:3000/promoção-inmobiliaria
-[Ruta turismo]: http://localhost:3000/turismo
-[Ruta internacional]: http://localhost:3000/internacional
-[Ruta noticias]: http://localhost:3000/noticias
-[Ruta contactos]: http://localhost:3000/contactos
-[Ruta admin]: http://localhost:3000/admin
+[][Ruta betão]: http://localhost:3000/betão
+[][Ruta promoção-inmobiliaria]: http://localhost:3000/promoção-inmobiliaria
+[][Ruta noticias]: http://localhost:3000/noticias
+[][Ruta contactos]: http://localhost:3000/contactos
+[][Ruta admin]: http://localhost:3000/admin
+
+[??] [Ruta engenharia]: http://localhost:3000/engenharia
+[??] [Ruta carpintaria]: http://localhost:3000/carpintaria
+[??] [Ruta turismo]: http://localhost:3000/turismo
+[??] [Ruta internacional]: http://localhost:3000/internacional
 
 El proyecto sigue una estructura de archivos estándar para una aplicación React creada con [Create React App](https://create-react-app.dev).
 

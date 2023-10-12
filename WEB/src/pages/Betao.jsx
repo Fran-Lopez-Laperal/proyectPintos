@@ -1,16 +1,17 @@
 import { HeaderPages } from '../components/HeaderPages';
+import { GalleryImages } from '../components/GalleryImages';
 import betao from '../assets/headers/betaoHeader.jpeg';
-import { GalleryImages } from '../components/GaleryImages';
 import home1 from '../assets/home/home1.jpeg';
 import home2 from '../assets/home/home2.jpeg';
 import home3 from '../assets/home/home3.jpeg';
 import home4 from '../assets/home/home4.jpeg';
 import home5 from '../assets/home/home5.jpeg';
 
+import { Sections } from '../components/Sections';
 export function Betao() {
   return (
-    <>
-      <section>
+    <section className="flex flex-col gap-12">
+      <header>
         <article>
           <HeaderPages image={betao} text={'Betão'} textSize="text-2xl lg:text-6xl" />
         </article>
@@ -39,37 +40,21 @@ export function Betao() {
             </article>
           </section>
         </article>
-      </section>
+      </header>
 
-      <section className="h-auto lg:border-none border-t-2 border-corporative-color2 lg:w-full p-5 bg-corporative-color3 mt-40 mb-10 lg:bg-graycorporative-color lg:flex lg:flex-col lg:items-center">
-        <section className="lg:px-40 lg:flex lg:flex-col lg:justify-center">
-          <article className="flex justify-center mb-5">
-            <p className="font-bold text-3xl text-center border-b-2 lg:border-b-[4px] border-corporative-color2 pb-1 px-4 lg:w-full lg:text-6xl text-corporative-color2">
-              CENTRAIS
-            </p>
-          </article>
+      <main className="flex flex-col gap-8 border-t-2 border-corporative-color2">
+        <Sections
+          title="centrais"
+          text="Korem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum tellus."
+          bg="bg-corporative-color3"
+          underline="underline"
+          textStyles="text-justify"
+        />
 
-          <p className="text-justify font-extrabold text-[12px] lg:text-[22px] ">
-            A empresa atua na produção e comercialização e transporte de betão pronto com 2 centrais em
-            Portugal e uma na Costa do Marfim. Com elevada capacidade instalada de produção e com uma
-            frota de autobetoneiras e camiões-bomba, permite resposta rápida e eficaz ao cliente.
-            As duas unidades de produção de betão obtiveram a “Certificação do Controlo de Produção” (NP
-            EN 206:2013 +A2:2021) atribuída pela APCER. A capacidade instalada de produção de betão das
-            duas centrais é superior a 10.000 m3/mês.
-          </p>
-        </section>
-        <div className=" lg:h-1 lg:w-1/4 lg:bg-corporative-color2"></div>
-      </section>
-
-      <section className="mb-20 lg:flex lg:mb-40 lg:mt-20  lg:justify-center">
-        <section className=" lg:flex lg:flex-col lg:justify-center items-center">
-          <article className="flex justify-center mb-5">
-            <p className="font-extrabold text-2xl text-center border-b-2 border-corporative-color2 w-2/4 lg:w-full lg:text-6xl text-corporative-color2">
-              LABORATÓRIO
-            </p>
-          </article>
-          <img className="h-[82px] lg:h-[374px] w-full object-cover" src={betao} alt="" />
-          <p className="lg:w-3/4 text-justify text-[12px] lg:text-[22px] m-10 h-[95px] font-extrabold lg:mt-16">
+        <section className="flex flex-col py-4 gap-4 font-extrabold">
+          <h2 className="text-center text-3xl uppercase text-corporative-color2 underline lg:text-6xl">laboratório</h2>
+          <img className="h-24 w-full object-cover" src={betao} alt="" />
+          <p className="text-sm px-5 text-justify lg:text-xl lg:pt-6">
             Korem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec
             fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat
             lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim
@@ -77,11 +62,11 @@ export function Betao() {
             Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum tellus.
           </p>
         </section>
-      </section>
 
-      <section className="">
-        <GalleryImages image1={home1} image2={home2} image3={home3} image4={home4} image5={home5} />
-      </section>
+        <section className="">
+          <GalleryImages image1={home1} image2={home2} image3={home3} image4={home4} image5={home5} />
+        </section>
+      </main>
 
       <section className="flex flex-col items-center mt-16">
         <p className="font-bold text-3xl text-center border-b-2 lg:border-b-[4px] border-corporative-color2  px-4 lg:mb-16 lg:text-6xl text-corporative-color2">
@@ -96,6 +81,6 @@ export function Betao() {
           <p className="w-[187px] h-[187px] lg:w-[711px] lg:h-[711px] bg-corporative-color4 m-1"></p>
         </article>
       </section>
-    </>
+    </section>
   );
 }

@@ -39,14 +39,22 @@
   },
 
   "history": {
-    "historyHeader": "HISTORIA",
-    "historyText": "O grupo SPintos, fundado em 1993, tem a sua origem na área da construção civil. A sua matriz agrega um conjunto de empresas com sólida experiência e conhecimento em diferentes setores de atividade. Sob a liderança dos quatro irmãos Fernando, Rui, Vasco e Berto Pinto, o grupo SPintos alicerça os seus valores no desenvolvimento sustentado, na qualidade, na inovação e na segurança dos projetos que desenvolve. Com um histórico comprovado na construção de edifícios residenciais, comerciais, industriais e infraestruturas públicas, o grupo especializou-se, ainda, no fornecimento de betão pronto. A oferta global das áreas de negócio SPintos abrange a construção civil, fornecimento de betão, carpintaria, promoção imobiliária e hotelaria. Além de Portugal, opera também no mercado internacional, nomeadamente, no Brasil e na Costa do Marfim. O grupo SPintos aposta no crescimento sustentado e na melhoria contínua, na formação qualificada dos seus colaboradores, na inovação e no investimento permanente na aquisição de novos e mais modernos equipamentos, procurando sempre superar as expectativas dos seus clientes. Com projetos diferenciadores, a SPintos viu já distinguidas as suas obras pelos prémios Habitar Portugal 2008 e Secil Arquitetura 2008, entre outras distinções.",
-    "title1": "O GRUPO",
-    "text1": "Somos um grupo empresarial de capital 100% português assente numa matriz de liderança e gestão familiar. O grupo SPintos é constituído por várias empresas, com atividades em diversas áreas de negócio que incluem engenharia e construção, fornecimento de betão, promoção e gestão imobiliária, carpintaria, hotelaria e turismo e internacional com presença no Brasil e Costa do Marfim. O grupo reúne uma base de profissionais experientes e multidisciplinares capazes de responder de forma eficaz aos desafios mais exigentes da sustentabilidade e competitividade da economia global.",
-    "title2": "O QUE FAZEMOS",
-    "text2": "Desenvolvemos a nossa principal atividade nas áreas da Construção Civil, em Portugal, no Brasil e Costa do Marfim. Atuamos na produção de Carpintaria para os nossos projetos e clientes externos. A nossa experiência de produção e fornecimento de Betão pronto é certificada. Destacamo-nos, ainda, na gestão e promoção imobiliária. No âmbito da Hotelaria construímos e exploramos projetos na área do Turismo, Alojamento e Laz ",
-    "title3": "FUNDAÇÃO DA S. PINTOS - ENGENHARIA E CONSTRUÇÃO, S.A.",
-    "text3": "FERNANDO DA SILVA NOGUEIRA PINTO INICIOU A SUA CARREIRA DE EMPRESÁRIO COMO CONSTRUTOR CIVIL. CRIOU A SUA PRIMEIRA EMPRESA, EM XXX, DENOMINADA CONSTRUÇÕES PINTOS & PINHO, LDA. MOVIDO PELO ESPÍRITO EMPREENDEDOR, PELA LONGA EXPERIÊNCIA COMPROVADA, PELA CAPACIDADE DE LIDERANÇA E SUCESSO, FUNDOU COM OS SEUS QUATRO FILHOS A S. PINTOS – ENGENHARIA E CONSTRUÇÃO, S.A., A PRIMEIRA DO GRUPO."
+    "historyHeader-title": "História",
+    "history-text-part1": "O grupo SPintos, fundado em 1993, tem a sua origem na área da construção civil. A sua matriz agrega um conjunto de empresas com sólida experiência e conhecimento em diferentes setores de atividade. ",
+    "history-text-part2": "Sob a liderança dos quatro irmãos Fernando, Rui, Vasco e Berto Pinto, o grupo SPintos alicerça os seus valores no desenvolvimento sustentado, na qualidade, na inovação e na segurança dos projetos que desenvolve.",
+    "history-text-part3": "Com um histórico comprovado na construção de edifícios residenciais, comerciais, industriais e infraestruturas públicas, o grupo especializou-se, ainda, no fornecimento de betão pronto.",
+    "history-text-part4": "A oferta global das áreas de negócio SPintos abrange a construção civil, fornecimento de betão, carpintaria, promoção imobiliária e hotelaria. Além de Portugal, opera também no mercado internacional, nomeadamente, no Brasil e na Costa do Marfim.",
+    "history-text-part5": "O grupo SPintos aposta no crescimento sustentado e na melhoria contínua, na formação qualificada dos seus colaboradores, na inovação e no investimento permanente na aquisição de novos e mais modernos equipamentos, procurando sempre superar as expectativas dos seus clientes.",
+    "history-text-part6": "Com projetos diferenciadores, a SPintos viu já distinguidas as suas obras pelos prémios Habitar Portugal 2008 e Secil Arquitetura 2008, entre outras distinções.",
+
+    "oGrupo-title": "O grupo",
+    "oGrupo-text": "Somos um grupo empresarial de capital 100% português assente numa matriz de liderança e gestão familiar. O grupo SPintos é constituído por várias empresas, com atividades em diversas áreas de negócio que incluem engenharia e construção, fornecimento de betão, promoção e gestão imobiliária, carpintaria, hotelaria e turismo e internacional com presença no Brasil e Costa do Marfim. O grupo reúne uma base de profissionais experientes e multidisciplinares capazes de responder de forma eficaz aos desafios mais exigentes da sustentabilidade e competitividade da economia global.",
+
+    "oFazemos-title": "O que fazemos",
+    "oFazemos-text": "Desenvolvemos a nossa principal atividade nas áreas da Construção Civil, em Portugal, no Brasil e Costa do Marfim. Atuamos na produção de Carpintaria para os nossos projetos e clientes externos. A nossa experiência de produção e fornecimento de Betão pronto é certificada. Destacamo-nos, ainda, na gestão e promoção imobiliária. No âmbito da Hotelaria construímos e exploramos projetos na área do Turismo, Alojamento e Lazer.",
+
+    "fundaçao-title": "fundação da s. pintos - engenharia e construção, s.a.",
+    "fundaçao-text": "fernando da silva nogueira pinto iniciou a sua carreira de empresário como construtor civil. criou a sua primeira empresa, em xxx, denominada construções pintos & pinho, lda. movido pelo espírito empreendedor, pela longa experiência comprovada, pela capacidade de liderança e sucesso, fundou com os seus quatro filhos a s. pintos – engenharia e construção, s.a., a primeira do grupo."
   },
 
   "planear": {
