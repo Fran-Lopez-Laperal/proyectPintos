@@ -39,6 +39,7 @@ export function PlanAndbuild() {
           bg="bg-corporative-color3"
           styles="lg:p-12"
           underline="border-b-2 border-corporative-color2 lg:border-b-4 lg:pt-4"
+          textStyles="text-center"
         />
 
         <Sections
@@ -47,6 +48,7 @@ export function PlanAndbuild() {
           princípios e valores que definem a comunidade SPintos."
           bg="lg:bg-[#62CB311A]"
           styles="lg:p-12"
+          textStyles="text-center"
         />
 
         <Sections
@@ -58,6 +60,7 @@ export function PlanAndbuild() {
               Centrais de Betão de Recarei e de Vila Nova de Gaia
             </>
           }
+          textStyles="text-center"
         />
 
         <section className="flex flex-col gap-4 font-extrabold bg-corporative-color3">
