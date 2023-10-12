@@ -3,6 +3,7 @@ import { FetchTimeline } from '../components/FetchTimeline';
 import { FetchNews } from '../components/FetchNews';
 import historyHeader from '../assets/headers/historyHeader.jpeg';
 import { useI18n } from '../hooks/useI18n';
+import { FetchTimeline } from '../components/FetchTimeline';
 
 export function History() {
   const { t, i18n } = useI18n();
