@@ -13,7 +13,7 @@ export function Carpentry() {
     <section className="flex flex-col gap-12">
       <header>
         <article>
-          <HeaderPages image={betao} text={'Carpinteria'} textSize="text-2xl lg:text-6xl" />
+          <HeaderPages image={betao} text={'Carpinteria'} textSize="text-2xl lg:text-4xl" />
         </article>
 
         <article className="h-[90px] lg:h-[139px]">
