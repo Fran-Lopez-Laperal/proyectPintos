@@ -1,6 +1,5 @@
 import { HeaderPages } from '../components/HeaderPages';
 import { GalleryImages } from '../components/GalleryImages';
-// import { BetaoImages } from '../components/BetaoImages';
 import betao from '../assets/headers/betaoHeader.jpeg';
 import home1 from '../assets/home/home1.jpeg';
 import home2 from '../assets/home/home2.jpeg';
@@ -43,7 +42,7 @@ export function Betao() {
         </article>
       </header>
 
-      <main className="flex flex-col gap-8">
+      <main className="flex flex-col gap-8 border-t-2 border-corporative-color2">
         <Sections
           title="centrais"
           text="Korem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum tellus."
@@ -66,7 +65,6 @@ export function Betao() {
 
         <section className="">
           <GalleryImages image1={home1} image2={home2} image3={home3} image4={home4} image5={home5} />
-          {/* <BetaoImages /> */}
         </section>
       </main>
 
