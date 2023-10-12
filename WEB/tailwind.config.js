@@ -31,6 +31,9 @@ export default {
       rotate: {
         '--45': '-45deg',
       },
+      dropShadow:{
+        'shadow-img': 'drop-shadow(4px 4px 4px rgba(19, 103, 159, 0.25))'
+      }
     },
   },
   plugins: [],

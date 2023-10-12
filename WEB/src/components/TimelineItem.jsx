@@ -1,10 +1,13 @@
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import Swal from 'sweetalert2';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrashCan, faPenToSquare } from '@fortawesome/free-solid-svg-icons';
+import { AuthContext } from '../context/AuthContext';
+import './item.css';
 
-export function Timeline({ image, title, text, year, onDelete, onEdit }) {
+export function TimelineItem({ image, title, text, year, onDelete, onEdit }) {
   const [isDeleting, setIsDeleting] = useState(false);
+  const { token } = useContext(AuthContext);
 
   const handleDeleteClick = () => {
     Swal.fire({
@@ -46,34 +49,46 @@ export function Timeline({ image, title, text, year, onDelete, onEdit }) {
   };
 
   return (
-    <article className="flex flex-col justify-center rounded-lg border">
-      <figure className="flex justify-center">
-        <img className="rounded-t-lg h-auto w-full" src={`http://localhost:3000/public/${image}`} alt="" />
-      </figure>
-      <main className="flex flex-col items-center px-2 py-2 bg-green-600">
-        <div className="flex flex-col justify-center items-center w-60">
+    <article className="flex flex-col justify-center">
+      <section className='flex justify-center items-center h-[148px] w-auto '>
+        <figure className="   ">
+          <img className="img max-w-[130px] max-h-[100px] object-cover" src={`http://localhost:3000/public/${image}`} alt="" />
+        </figure>
+      </section>
+
+      <main className="flex flex-col items-center px-2 py-2 ">
+        <div className="flex flex-col justify-center items-center px-1">
           <p className="text-sm text-center max-w-full truncate font-extrabold text-sky-600 lg:text-2xl" style={{ textOverflow: 'ellipsis' }}>
             {title}
           </p>
-          <p className="text-container truncate max-w-full text-justify font-normal lg:text-lg bg-red-400">{text}</p>
-          <p className="text-container truncate max-w-full text-justify font-normal lg:text-lg bg-red-400">{year}</p>
+          <div className=' min-h-[100px]'>
+            <p className="  w-auto text-justify font-normal lg:text-lg">{text}</p> 
+          </div>
+
+          <p className="relative bottom-[-100px] text-container text-corporative-color2   max-w-full text-justify font-bold text-4xl">{year}</p>
         </div>
-        <div className="mt-2 flex space-x-2">
-          <button
-            onClick={handleEditClick}
-            className={`text-blue-500 hover:text-blue-700 ${isDeleting ? 'opacity-50 cursor-not-allowed' : ''}`}
-            disabled={isDeleting}
-          >
-            <FontAwesomeIcon icon={faPenToSquare} />
-          </button>
-          <button
-            onClick={handleDeleteClick}
-            className={`text-red-500 hover:text-red-700 ${isDeleting ? 'opacity-50 cursor-not-allowed' : ''}`}
-            disabled={isDeleting}
-          >
-            <FontAwesomeIcon icon={faTrashCan} style={{ color: '#d33333' }} />
-          </button>
-        </div>
+
+        {token
+          &&
+          <div className="mt-2 flex space-x-2">
+            <button
+              onClick={handleEditClick}
+              className={`text-blue-500 hover:text-blue-700 ${isDeleting ? 'opacity-50 cursor-not-allowed' : ''}`}
+              disabled={isDeleting}
+            >
+              <FontAwesomeIcon icon={faPenToSquare} />
+            </button>
+            <button
+              onClick={handleDeleteClick}
+              className={`text-red-500 hover:text-red-700 ${isDeleting ? 'opacity-50 cursor-not-allowed' : ''}`}
+              disabled={isDeleting}
+            >
+              <FontAwesomeIcon icon={faTrashCan} style={{ color: '#d33333' }} />
+            </button>
+          </div>
+
+        }
+
       </main>
     </article>
   );
