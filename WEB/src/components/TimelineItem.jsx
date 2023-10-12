@@ -58,14 +58,16 @@ export function TimelineItem({ image, title, text, year, onDelete, onEdit }) {
 
       <main className="flex flex-col items-center px-2 py-2 ">
         <div className="flex flex-col justify-center items-center px-1">
-          <p className="text-sm text-center max-w-full truncate font-extrabold text-sky-600 lg:text-2xl" style={{ textOverflow: 'ellipsis' }}>
+          <p className="uppercase text-sm text-center max-w-full truncate font-extrabold text-corporative-color2 lg:text-2xl" style={{ textOverflow: 'ellipsis' }}>
             {title}
           </p>
-          <div className=' min-h-[100px]'>
-            <p className="  w-auto text-justify font-normal lg:text-lg">{text}</p> 
+          <div className=' min-h-[120px]'>
+          <p className="text-container  max-w-auto text-justify font-normal lg:text-lg">{text}</p>
+          </div>
+          <div className='min-h-[35px]'>
+            <p className="relative bottom-[-100px] text-container text-corporative-color2   max-w-full text-justify font-bold text-3xl">{year}</p>
           </div>
 
-          <p className="relative bottom-[-100px] text-container text-corporative-color2   max-w-full text-justify font-bold text-4xl">{year}</p>
         </div>
 
         {token

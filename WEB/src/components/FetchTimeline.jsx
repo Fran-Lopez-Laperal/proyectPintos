@@ -52,7 +52,7 @@ export function FetchTimeline() {
         }
         return timelineItem;
       });
-
+      updatedTimelineData.sort((a,b) => a.year - b.year)
       setTimelineData(updatedTimelineData);
 
       Swal.close();
@@ -67,8 +67,8 @@ export function FetchTimeline() {
 
   return (
     <div className="flex items-center flex-col font-extrabold py-8 ">
-      <h2 className="text-corporative-color2 text-center text-3xl lg:text-6xl lg:pb-6">Timeline</h2>
-      <main className="  w-[320px] h-[437px] ">
+      {/* <h2 className="text-corporative-color2 text-center text-3xl lg:text-6xl lg:pb-6">Timeline</h2> */}
+      <main className="  w-full h-[437px] bg-corporative-color3">
         <TimelineItem
           key={timelineData[currentIndex].id}
           image={timelineData[currentIndex].image}
@@ -78,7 +78,7 @@ export function FetchTimeline() {
           onDelete={() => handleDeleteTimeline(timelineData[currentIndex].id)}
           onEdit={(newTitle, newText, newYear) => handleEditTimeline(timelineData[currentIndex].id, newTitle, newText, newYear)}
         />
-        <div className="flex justify-between px-2">
+    <div className="flex justify-between px-2">
           {
             currentIndex > 0 && (
               <div>
@@ -96,13 +96,11 @@ export function FetchTimeline() {
 
                 </Link>
               </div> // Renderizar el primer enlace solo si currentIndex no está en la primera posición
-
             )
           }
           {
-
             currentIndex < timelineData.length - 1 && (
-              <div className="fixed right-44">
+              <div className="absolute right-12 lg:right-64">
                 <Link
                   disabled={currentIndex === timelineData.length - 1} // Desactivar el segundo enlace cuando estás en la última posición
                   onClick={() => setCurrentIndex(currentIndex + 1)}
@@ -117,12 +115,8 @@ export function FetchTimeline() {
 
                 </Link>
               </div>
-
             )
           }
-
-
-
         </div>
 
       </main>
