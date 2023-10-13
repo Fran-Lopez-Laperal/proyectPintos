@@ -5,6 +5,7 @@ const { generateError, deleteImg } = require("../../helpers");
 const deleteTimeline = async (req, res, next) => {
   try {
     const { idTimeline } = req.params;
+    console.log(idTimeline)
     const timeLine = await selectTimelineByIdQuery(req.user.id, idTimeline);
 
     if (!timeLine) {

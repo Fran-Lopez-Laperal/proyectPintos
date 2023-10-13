@@ -46,6 +46,10 @@ const {
   deleteTimeline,
   createTimeline
 } = require("../controllers/timeline");
+const createPromo = require("../controllers/promotions/createPromo");
+const getPromo = require("../controllers/promotions/getPromo");
+const deletePromo = require("../controllers/promotions/deletePromo");
+const detailPromo = require("../controllers/promotions/detailPromo");
 
 
 app.post("/register", createUser);
@@ -60,6 +64,11 @@ app.get("/timeline", getTimeline);
 app.put("/timeline/:idTimeline", isAuth, updateTimeline);
 app.post("/createTimeline", isAuth, createTimeline);
 app.delete("/timeline/:idTimeline", isAuth, deleteTimeline);
+
+app.post("/promo",isAuth, createPromo);
+app.get("/promo", getPromo)
+app.delete("/promo/:idPromo", isAuth, deletePromo)
+app.get("/promo/:idPromo", isAuth, detailPromo)
 
 /**
  * #################
