@@ -11,6 +11,7 @@ app.use(morgan("dev"));
 app.use(express.json());
 app.use(fileUpload());
 app.use("/public", express.static("public"));
+
 app.use((req, res, next) => {
   res.header("Access-Control-Allow-Origin", "*");
   res.header(
@@ -33,26 +34,14 @@ const isAuth = require("../middleware/isAuth");
 const createUser = require("../controllers/users/createUser");
 const loginUser = require("../controllers/users/loginUser");
 
-const {
-  getNews,
-  updateNews,
-  createNews,
-  deleteNews
-} = require("../controllers/news");
+const { getNews, updateNews, createNews, deleteNews } = require("../controllers/news");
 
-const {
-  getTimeline,
-  updateTimeline,
-  deleteTimeline,
-  createTimeline
-} = require("../controllers/timeline");
-
+const { getTimeline, updateTimeline, deleteTimeline, createTimeline } = require("../controllers/timeline");
 
 const createPromo = require("../controllers/promotions/createPromo");
 const getPromo = require("../controllers/promotions/getPromo");
 const deletePromo = require("../controllers/promotions/deletePromo");
 const detailPromo = require("../controllers/promotions/detailPromo");
-
 
 app.post("/register", createUser);
 app.post("/login", loginUser);
@@ -67,10 +56,11 @@ app.put("/timeline/:idTimeline", isAuth, updateTimeline);
 app.post("/createTimeline", isAuth, createTimeline);
 app.delete("/timeline/:idTimeline", isAuth, deleteTimeline);
 
-app.post("/promo",isAuth, createPromo);
-app.get("/promo", getPromo)
-app.delete("/promo/:idPromo", isAuth, deletePromo)
-app.get("/promo/:idPromo", isAuth, detailPromo)
+app.get("/promo", getPromo);
+app.get("/promo/:idPromo", detailPromo);
+//falta updatePromo app.put("/promo/:idPromo", isAuth, updatePromo);
+app.post("/promo", isAuth, createPromo);
+app.delete("/promo/:idPromo", isAuth, deletePromo);
 
 /**
  * #################
