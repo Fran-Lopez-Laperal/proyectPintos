@@ -46,6 +46,8 @@ const {
   deleteTimeline,
   createTimeline
 } = require("../controllers/timeline");
+
+
 const createPromo = require("../controllers/promotions/createPromo");
 const getPromo = require("../controllers/promotions/getPromo");
 const deletePromo = require("../controllers/promotions/deletePromo");

@@ -1,13 +1,13 @@
-const selectPromoQuery = require("../../db/queries/promotions/selectPromoQuery");
+const selectPromoQuery = require("../../db/queries/timeline/selectPromoQuery");
 
 const getPromo = async (req, res, next) => {
   try {
-    const timeline = await selectPromoQuery();
+    const promo = await selectPromoQuery();
 
     res.send({
       status: "ok",
       data: {
-        timeline,
+        promo,
       },
     });
   } catch (error) {

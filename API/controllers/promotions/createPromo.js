@@ -4,6 +4,7 @@ const { generateError, saveImg } = require("../../helpers");
 const createPromo = async (req, res, next) => {
   try {
     const { title, text } = req.body;
+    console.log('NO VIENE EL ID POR AQUI', req.user.id)
     if (!req.files?.image || !title || !text) {
       generateError("Faltan campos", 400);
     }
