@@ -69,9 +69,9 @@ export function Footer() {
         </section>
       </div>
 
-      <div className="w-full flex justify-center font-extrabold py-3 text-sm md:text-2xl lg:justify-around">
+      <div className="w-[95%] flex justify-between font-extrabold py-2 text-sm lg:text-lg m-auto">
         <p className="mr-2 lg:mr-0">Grupo Spintos 2023©</p>
-        <p>Desenvolvido por Forte Solutions</p>
+        <a href="https://www.fortesolutions.pt">Desenvolvido por Forte Solutions</a>
       </div>
     </footer>
   );
