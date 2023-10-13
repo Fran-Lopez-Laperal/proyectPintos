@@ -79,7 +79,7 @@ export function CreateTimeline() {
             <form onSubmit={handleSubmit} className="flex flex-col gap-3 lg:w-80">
               <DataInput label="Título" value={title} onChange={handleTitleChange} />
               <NumberInput type="number" label="Ano" value={year} onChange={handleYearChange} />
-              <DataInput label="Texto" value={text} onChange={handleTextChange} />
+              <DataInput label="Texto" type="text" value={text} onChange={handleTextChange} />
               <label htmlFor="image"></label>
               <div {...getRootProps()}>
                 <input {...getInputProps()} />
