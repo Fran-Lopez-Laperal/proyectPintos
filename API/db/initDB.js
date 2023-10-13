@@ -50,7 +50,7 @@ const createTables = async () => {
     )
   `);
 
-  await connection.query(`
+    await connection.query(`
     CREATE TABLE IF NOT EXISTS promotions (
       id INT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
       title VARCHAR(30) NOT NULL,
