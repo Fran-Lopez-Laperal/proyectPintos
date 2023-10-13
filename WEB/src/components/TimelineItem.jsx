@@ -1,11 +1,11 @@
-import { useContext, useState } from 'react';
-import Swal from 'sweetalert2';
+import React, { useContext, useState } from "react";
+import Swal from "sweetalert2";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrashCan, faPenToSquare } from '@fortawesome/free-solid-svg-icons';
 import { AuthContext } from '../context/AuthContext';
-import './item.css';
+import ArrowNextSVG from '../assets/svg/button_arrow.svg'
 
-export function TimelineItem({ image, title, text, year, onDelete, onEdit }) {
+export function TimelineItem({ image, title, text, year, onDelete, onEdit, currentIndex, setCurrentIndex, timelineData }) {
   const [isDeleting, setIsDeleting] = useState(false);
   const { token } = useContext(AuthContext);
 
@@ -48,48 +48,106 @@ export function TimelineItem({ image, title, text, year, onDelete, onEdit }) {
     });
   };
 
+  const handleNextClick = () => {
+    if (currentIndex < timelineData.length - 1) {
+      setCurrentIndex(currentIndex + 1);
+    }
+  };
+
+  const handlePreviousClick = () => {
+    if (currentIndex > 0) {
+      setCurrentIndex(currentIndex - 1);
+    }
+  };
+
   return (
-    <article className="flex flex-col justify-center">
-      <section className='flex justify-center items-center h-[148px] w-auto '>
-        <figure className="   ">
-          <img className="img max-w-[130px] max-h-[100px] object-cover" src={`http://localhost:3000/public/${image}`} alt="" />
-        </figure>
-      </section>
+    <article className="flex flex-col items-center">
+      <main className="">
+        <div className="flex flex-col items-center lg:flex lg:flex-row lg:items-center" >
+          <section className='w-auto mt-10 lg:w-96'>
+            <figure className="mb-10">
+              <img className="shadow-img w-[230px] h-[150px] lg:max-w-md lg:h-[350px] object-cover" src={`http://localhost:3000/public/${image}`} alt="" />
+            </figure>
+          </section>
 
-      <main className="flex flex-col items-center px-2 py-2 ">
-        <div className="flex flex-col justify-center items-center px-1">
-          <p className="uppercase text-sm text-center max-w-full truncate font-extrabold text-corporative-color2 lg:text-2xl" style={{ textOverflow: 'ellipsis' }}>
-            {title}
-          </p>
-          <div className=' min-h-[120px]'>
-          <p className="text-container  max-w-auto text-justify font-normal lg:text-lg">{text}</p>
+          <div className="flex flex-col justify-center items-center px-1  ">
+            <p className="uppercase text-sm text-center mb-5 font-extrabold text-corporative-color2 lg:text-2xl" >
+              {title}
+            </p>
+            <div className='w-96 h-72 '>
+              <p className='text-justify text-container'>{text}</p>
+            </div>
           </div>
-          <div className='min-h-[35px]'>
-            <p className="relative bottom-[-100px] text-container text-corporative-color2   max-w-full text-justify font-bold text-3xl">{year}</p>
-          </div>
-
         </div>
 
-        {token
-          &&
-          <div className="mt-2 flex space-x-2">
-            <button
-              onClick={handleEditClick}
-              className={`text-blue-500 hover:text-blue-700 ${isDeleting ? 'opacity-50 cursor-not-allowed' : ''}`}
-              disabled={isDeleting}
-            >
-              <FontAwesomeIcon icon={faPenToSquare} />
-            </button>
-            <button
-              onClick={handleDeleteClick}
-              className={`text-red-500 hover:text-red-700 ${isDeleting ? 'opacity-50 cursor-not-allowed' : ''}`}
-              disabled={isDeleting}
-            >
-              <FontAwesomeIcon icon={faTrashCan} style={{ color: '#d33333' }} />
-            </button>
+
+
+        <div className="w-full">
+
+
+          <div className="w-full flex items-center justify-between px-2">
+            <div>
+              {currentIndex > 0 && (
+                <>
+                  <div className="absolute -mt-3 left-3 fill-black text-white text-2xl ">{timelineData[currentIndex - 1].year}</div>
+                  <button onClick={handlePreviousClick}>
+
+                    <div>
+
+                      <div className="flex rotate-180 items-center">
+                        <img className="absolute w-20 h-14 -left-14" src={ArrowNextSVG} alt="" />
+                        <div className="relative border border-none  bg-corporative-color2 w-[100px] h-[3px]"></div>
+                      </div>
+                    </div>
+                  </button>
+                </>
+
+              )}
+            </div>
+
+            <div className='min-h-[35px]'>
+              <p className="absolute text-container text-corporative-color2 left-[138px] -mt-1 text-justify font-bold text-5xl">{year}</p>
+            </div>
+
+            <div>
+              {currentIndex < timelineData.length - 1 && (
+                <>
+                  <div className="absolute -mt-3 text-white right-3 text-2xl">{timelineData[currentIndex + 1].year}</div>
+                  <button onClick={handleNextClick}>
+                    <div>
+
+                      <div className="flex items-center">
+                        <img className="absolute w-20 h-14 right-20" src={ArrowNextSVG} alt="" />
+                        <div className="relative border border-none bg-corporative-color2 w-[100px] h-[3px]"></div>
+                      </div>
+                    </div>
+                  </button>
+                </>
+
+              )}
+            </div>
           </div>
 
-        }
+
+          {token && (
+            <div className="">
+              <button
+                onClick={handleEditClick}
+                className={`text-blue-500 hover-text-blue-700 ${isDeleting ? 'opacity-50 cursor-not-allowed' : ''}`}
+                disabled={isDeleting}
+              >
+                <FontAwesomeIcon icon={faPenToSquare} />
+              </button>
+              <button
+                onClick={handleDeleteClick}
+                className={`text-red-500 hover-text-red-700 ${isDeleting ? 'opacity-50 cursor-not-allowed' : ''}`}
+                disabled={isDeleting}
+              >
+                <FontAwesomeIcon icon={faTrashCan} style={{ color: '#d33333' }} />
+              </button>
+            </div>
+          )}
+        </div>
 
       </main>
     </article>

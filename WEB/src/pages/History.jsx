@@ -2,7 +2,7 @@ import { HeaderPages } from '../components/HeaderPages';
 import { FetchNews } from '../components/FetchNews';
 import historyHeader from '../assets/headers/historyHeader.jpeg';
 import { useI18n } from '../hooks/useI18n';
-// import { FetchTimeline } from '../components/FetchTimeline';
+import { FetchTimeline } from '../components/FetchTimeline';
 
 export function History() {
   const { t, i18n } = useI18n();
@@ -38,8 +38,11 @@ export function History() {
           <p>{t('history.foundation.text-part3')}</p>
         </div>
       </section>
+      <section className='bg-corporative-color3 h-[700px] lg:bg-gray-100'>
+        <FetchTimeline />
+      </section>
 
-      {/* <FetchTimeline /> */}
+
       <FetchNews />
     </main>
   );
