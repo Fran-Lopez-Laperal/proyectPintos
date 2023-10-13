@@ -9,6 +9,7 @@ const createTables = async () => {
     connection = await getDB();
 
     console.log("Borrando tablas...");
+    await connection.query("DROP TABLE IF EXISTS promotions");
     await connection.query("DROP TABLE IF EXISTS timeline");
     await connection.query("DROP TABLE IF EXISTS news");
     await connection.query("DROP TABLE IF EXISTS users");
