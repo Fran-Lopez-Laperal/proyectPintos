@@ -71,6 +71,34 @@
       "title": "Social Responsibility",
       "text": "In service to society, we seek to create a better world. In the field of social responsibility, we have established various partnerships with national and local institutions."
     },
+
+    "engenharia":{
+      "header": "engineering",
+      "title1":"construction",
+      "text1":"Experience of more than 30 years in the civil construction and public works sector positions the company S. Pintos – Engenharia e Construção, S.A. in the market for engineering and construction excellence and provides guarantees of quality in the execution of works, meeting deadlines and monitoring the after sales.",
+      "text2":"The portfolio of works is extensive and covers residential areas, schools, football stadiums, padel courts, warehouses, factories, healthcare units, churches and hotels."
+    },
+    "betão":{
+      "header": "concrete",
+      "title1":"centrals",
+      "text1":"Experience of more than 30 years in the civil construction and public works sector positions the company S. Pintos – Engenharia e Construção, S.A. in the market for engineering and construction excellence and provides guarantees of quality in the execution of works, meeting deadlines and monitoring the after sales.",
+      "text2":"The two concrete production units obtained the “Production Control Certification” (NP EN 206:2013 +A2:2021) awarded by APCER. The installed concrete production capacity of the two plants is more than 10,000 m3/month."
+    },
+    "carpintaria":{
+      "header": "carpintaria",
+      "title1":"",
+      "text1":"",
+      "text2":""
+    },
+
+    "turismo":{
+      "header": "tourism",
+      "title1":"",
+      "text1":"The SPintos group is committed to business diversification and, in addition to construction and real estate development, has been operating since 2020 in the area of ​​hospitality and tourism, local accommodation and university residence, with the launch and management of the brands: MEU HOTEL Porto Gandra and MEU STUDIO – Student Residence.",
+      "text2":"Through the implementation and consolidation of the MEU brand, which aims to act as a player in the exploration and management of assets in the area of ​​accommodation and tourism, where it plans to continue with the investments it has planned, this being an economic sector marked by strong growth in the coming years . With multidisciplinary and qualified teams, it focuses on quality, differentiation and rigor of services."
+    },
+
+
     "sustainability": {
       "title": "Sustainability",
       "text": "Environmental, social, and economic sustainability is an integral part of our strategy and commitment. They are embedded in our management practices, principles, and values that define the SPintos community."
