@@ -70,6 +70,33 @@
       "title": "responsabilidade social",
       "text": "Ao serviço da sociedade procuramos criar um mundo melhor. No âmbito da responsabilidade social estabelecemos diversas parcerias com instituições nacionais e locais"
     },
+
+    "engenharia":{
+      "header": "engeharia",
+      "title1":"construáo",
+      "text1":"Experiência de mais de 30 anos no sector da construção civil e obras públicas posiciona a empresa S. Pintos – Engenharia e Construção, S.A. no mercado da excelência da engenharia e construção e dá garantias de qualidade na execução das obras, cumprimento de prazos e acompanhamento no pós-venda.",
+      "text2":"O portefólio de obras é extenso e abrange a área residencial, escolas, estádios de futebol, campos de padel, armazéns, fábricas, unidades de saúde, igrejas e hotéis."
+    },
+    "betão":{
+      "header": "betão",
+      "title1":"centrais",
+      "text1":"Experiência de mais de 30 anos no sector da construção civil e obras públicas posiciona a empresa S. Pintos – Engenharia e Construção, S.A. no mercado da excelência da engenharia e construção e dá garantias de qualidade na execução das obras, cumprimento de prazos e acompanhamento no pós-venda.",
+      "text2":"As duas unidades de produção de betão obtiveram a “Certificação do Controlo de Produção” (NP EN 206:2013 +A2:2021) atribuída pela APCER. A capacidade instalada de produção de betão das duas centrais é superior a 10.000 m3/mês.."
+    },
+    "carpintaria":{
+      "header": "carpintaria",
+      "title1":"",
+      "text1":"",
+      "text2":""
+    },
+
+    "turismo":{
+      "header": "turismo",
+      "title1":"",
+      "text1":"O grupo SPintos aposta na diversificação dos negócios e além da construção e da promoção imobiliária, opera desde 2020 na área da hotelaria e turismo, alojamento local e residência universitária, com o lançamento e a gestão das marcas: MEU HOTEL Porto Gandra e MEU STUDIO – Student Residence.",
+      "text2":"Através da implantação e da consolidação da marca MEU que se pretende atuar como player na exploração e gestão dos ativos na área do alojamento e turismo, onde prevê continuar com os investimentos que tem planificados, sendo este um setor económico sinalizado de forte crescimento nos próximos anos. Com equipas multidisciplinares e qualificadas, aposta na qualidade, na diferenciação e no rigor dos serviços."
+    },
+
     "sustainability": {
       "title": "sustentabilidade",
       "text": "A sustentabilidade ambiental, social e económica faz parte da nossa estratégia e compromisso, integram as nossas práticas de gestão, princípios e valores que definem a comunidade SPintos."
