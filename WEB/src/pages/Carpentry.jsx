@@ -1,11 +1,11 @@
 import { HeaderPages } from '../components/HeaderPages';
 import { GalleryImages } from '../components/GalleryImages';
-import betao from '../assets/images/carpintaria/4carpintaria.jpg';
-import home1 from '../assets/images/carpintaria/IMG_5366.jpg';
-import home2 from '../assets/images/carpintaria/a (14).jpg';
-import home3 from '../assets/images/carpintaria/IMG_3608.jpg';
-import home4 from '../assets/images/carpintaria/IMG_3611.jpg';
-import home5 from '../assets/images/carpintaria/IMG_5339.jpg';
+import betao from '../assets/images/carpintaria/4carpintaria.webp';
+import home1 from '../assets/images/carpintaria/IMG_5366.webp';
+import home2 from '../assets/images/carpintaria/a (14).webp';
+import home3 from '../assets/images/carpintaria/IMG_3608.webp';
+import home4 from '../assets/images/carpintaria/IMG_3611.webp';
+import home5 from '../assets/images/carpintaria/IMG_5339.webp';
 
 import { Sections } from '../components/Sections';
 export function Carpentry() {
