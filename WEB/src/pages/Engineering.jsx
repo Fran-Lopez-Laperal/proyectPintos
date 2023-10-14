@@ -1,11 +1,11 @@
 import { HeaderPages } from '../components/HeaderPages';
 import { GalleryImages } from '../components/GalleryImages';
-import betao from '../assets/headers/betaoHeader.jpeg';
-import home1 from '../assets/home/home1.jpeg';
-import home2 from '../assets/home/home2.jpeg';
-import home3 from '../assets/home/home3.jpeg';
-import home4 from '../assets/home/home4.jpeg';
-import home5 from '../assets/home/home5.jpeg';
+import construçao from '../assets/images/engineering/edificio sede.webp';
+import image1 from '../assets/images/engineering/campo-futebol-sobrosa (3).jpeg';
+import image2 from '../assets/images/engineering/campo-futebol-vandoma (3).png';
+import image3 from '../assets/images/engineering/Edificio sede spintos banner.jpg';
+import image4 from '../assets/images/engineering/IMG_6992.jpg';
+import image5 from '../assets/images/engineering/IMG_7133.jpg';
 
 import { Sections } from '../components/Sections';
 export function Engineering() {
@@ -13,58 +13,35 @@ export function Engineering() {
     <section className="flex flex-col gap-12">
       <header>
         <article>
-          <HeaderPages image={betao} text={'Engenharia'} textSize="text-2xl lg:text-4xl" />
+          <HeaderPages image={construçao} text={'Engenharia'} textSize="text-2xl lg:text-4xl" />
         </article>
 
-        <article className="h-[90px] lg:h-[139px]">
-          <img className="h-full w-full -mt-[70px] lg:-mt-[90px] object-cover" src={betao} alt="" />
-          <section className="w-full absolute -mt-[60px] flex justify-between lg:justify-around p-1">
-            <article className="lg:-mt-10">
-              <p className="text-[10px] lg:text-2xl font-extrabold text-white">COSTA DE MARFIM</p>
-              <p className="text-[10px] lg:text-2xl font-extrabold text-white">DIREÇAO</p>
-            </article>
 
-            <article className="lg:-mt-10 flex flex-col justify-center items-center">
-              <p className="text-[10px] lg:text-2xl font-extrabold text-white">COSTA DE MARFIM</p>
-              <p className="text-[10px] lg:text-2xl font-extrabold text-white">DIREÇAO</p>
-            </article>
-          </section>
-        </article>
-
-        <article className="h-[90px] lg:h-[139px] mt-28 ">
-          <img className="h-full w-full -mt-[80px] object-cover" src={betao} alt="" />
-          <section className="w-full h-full absolute -mt-[60px] flex justify-center p-1">
-            <article className="flex flex-col items-center lg:-mt-10">
-              <p className="text-[10px] lg:text-2xl font-extrabold text-white mb-2">RECAREI</p>
-              <p className="text-[10px] lg:text-2xl font-extrabold text-white">DIREÇAO</p>
-            </article>
-          </section>
-        </article>
       </header>
 
-      <main className="flex flex-col gap-8 border-t-2 border-corporative-color2">
+      <main className="flex flex-col gap-8 border-t-2 border-corporative-color2 sm:mt-10 lg:mt-10">
         <Sections
-          title="centrais"
-          text="Korem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum tellus."
-          bg="bg-corporative-color3"
+          title="CONSTRUÇÃO"
+          text="Experiência de mais de 30 anos no sector da construção civil e obras públicas posiciona a
+          empresa S. Pintos – Engenharia e Construção, S.A. no mercado da excelência da engenharia e
+          construção e dá garantias de qualidade na execução das obras, cumprimento de prazos e
+          acompanhamento no pós-venda."
+          bg="bg-graycorporative-color"
           underline="underline"
           textStyles="text-justify"
         />
 
-        <section className="flex flex-col py-4 gap-4 font-extrabold">
-          <h2 className="text-center text-3xl uppercase text-corporative-color2 underline lg:text-6xl">laboratório</h2>
-          <img className="h-24 w-full object-cover" src={betao} alt="" />
-          <p className="text-sm px-5 text-justify lg:text-xl lg:pt-6">
-            Korem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec
-            fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat
-            lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim
-            egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem.
-            Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum tellus.
-          </p>
-        </section>
+        <Sections
+          title=""
+          text="O portefólio de obras é extenso e abrange a área residencial, escolas, estádios de futebol,
+          campos de padel, armazéns, fábricas, unidades de saúde, igrejas e hotéis."
+          underline="underline"
+          textStyles="text-justify"
+        />
+
 
         <section className="">
-          <GalleryImages image1={home1} image2={home2} image3={home3} image4={home4} image5={home5} />
+          <GalleryImages image1={image1} image2={image2} image3={image3} image4={image4} image5={image5} />
         </section>
       </main>
 
