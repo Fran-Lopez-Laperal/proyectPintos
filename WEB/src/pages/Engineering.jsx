@@ -1,11 +1,11 @@
 import { HeaderPages } from '../components/HeaderPages';
 import { GalleryImages } from '../components/GalleryImages';
 import construçao from '../assets/images/engineering/edificio sede.webp';
-import image1 from '../assets/images/engineering/campo-futebol-sobrosa (3).jpeg';
-import image2 from '../assets/images/engineering/campo-futebol-vandoma (3).png';
-import image3 from '../assets/images/engineering/Edificio sede spintos banner.jpg';
-import image4 from '../assets/images/engineering/IMG_6992.jpg';
-import image5 from '../assets/images/engineering/IMG_7133.jpg';
+import image1 from '../assets/images/engineering/campo-futebol-sobrosa (3).webp';
+import image2 from '../assets/images/engineering/campo-futebol-vandoma (3).webp';
+import image3 from '../assets/images/engineering/Edificio sede spintos banner.webp';
+import image4 from '../assets/images/engineering/IMG_6992.webp';
+import image5 from '../assets/images/engineering/IMG_7133.webp';
 
 import { Sections } from '../components/Sections';
 export function Engineering() {

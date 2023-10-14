@@ -1,12 +1,12 @@
 import { HeaderPages } from '../components/HeaderPages';
 import { GalleryImages } from '../components/GalleryImages';
-import betao from '../assets/images/turismo/pvstudio Meu Studio 001.jpg';
-import home1 from '../assets/images/turismo/pvstudio 008.jpg';
-import home2 from '../assets/images/turismo/pvstudio 012.jpg';
-import home3 from '../assets/images/turismo/pvstudio 031.jpg';
-import home4 from '../assets/images/turismo/pvstudio Meu Studio 007.jpg';
-import home5 from '../assets/images/turismo/pvstudio Meu Studio 017.jpg';
-import home6 from '../assets/images/turismo/pvstudio Meu Studio 020.jpg';
+import betao from '../assets/images/turismo/pvstudio Meu Studio 001.webp';
+import home1 from '../assets/images/turismo/pvstudio 008.webp';
+import home2 from '../assets/images/turismo/pvstudio 012.webp';
+import home3 from '../assets/images/turismo/pvstudio 031.webp';
+import home4 from '../assets/images/turismo/pvstudio Meu Studio 007.webp';
+import home5 from '../assets/images/turismo/pvstudio Meu Studio 017.webp';
+import home6 from '../assets/images/turismo/pvstudio Meu Studio 020.webp';
 
 import { Sections } from '../components/Sections';
 export function Tourism() {

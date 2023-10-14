@@ -1,11 +1,11 @@
 import { HeaderPages } from '../components/HeaderPages';
 import { GalleryImages } from '../components/GalleryImages';
 import betao from '../assets/headers/betaoHeader.jpeg';
-import home1 from '../assets/images/betao/20200819_100228.jpg';
-import home2 from '../assets/images/betao/20200819_100311.jpg';
-import home3 from '../assets/images/betao/20200819_100803.jpg';
-import home4 from '../assets/images/betao/20221027_142548.jpg';
-import home5 from '../assets/images/betao/IMG_20200701_162413.jpg';
+import home1 from '../assets/images/betao/20200819_100228.webp';
+import home2 from '../assets/images/betao/20200819_100311.webp';
+import home3 from '../assets/images/betao/20200819_100803.webp';
+import home4 from '../assets/images/betao/20221027_142548.webp';
+import home5 from '../assets/images/betao/IMG_20200701_162413.webp';
 
 import { Sections } from '../components/Sections';
 export function Concrete() {
