@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-import { dropdown_wrapper, dropdown_activator, dropdown_item_list, active, item_list } from './dropdown.module.css';
+import './dropdown.css';
 
 function Dropdown({ items = [], dropdownTitle }) {
   const activatorRef = useRef(null);
@@ -36,8 +36,8 @@ function Dropdown({ items = [], dropdownTitle }) {
   }, [isOpen]);
 
   return (
-    <div className={dropdown_wrapper} onKeyUp={keyHandler}>
-      <button className={dropdown_activator} aria-haspopup="true" aria-controls={dropdownTitle} onClick={clickHandler} ref={activatorRef}>
+    <div className="dropdown_wrapper w-[20%]" onKeyUp={keyHandler}>
+      <button className="dropdown_activator" aria-haspopup="true" aria-controls={dropdownTitle} onClick={clickHandler} ref={activatorRef}>
         {dropdownTitle}
         {isOpen ? (
           <svg height="24" fill="rgb(70,70,70)" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
@@ -51,10 +51,10 @@ function Dropdown({ items = [], dropdownTitle }) {
           </svg>
         )}
       </button>
-      <ul ref={dropdownListRef} className={`${dropdown_item_list} ${isOpen ? active : ''} `}>
+      <ul ref={dropdownListRef} className={`dropdown_item_list ${isOpen ? 'active' : ''} `}>
         {items.map((item, index) => {
           return (
-            <li className={item_list} key={index}>
+            <li className="item_list" key={index}>
               <a href={item.slug}>{item.anchor}</a>
             </li>
           );
