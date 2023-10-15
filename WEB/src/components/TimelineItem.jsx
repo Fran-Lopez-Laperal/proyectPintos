@@ -64,39 +64,37 @@ export function TimelineItem({ image, title, text, year, onDelete, onEdit, curre
     <article className="flex flex-col items-center">
       <main className="">
         <div className="flex flex-col items-center lg:flex lg:flex-row lg:items-center" >
-          <section className='w-auto mt-10 lg:w-96'>
+          <section className='w-auto mt-10 sm:mt-5 lg:w-96'>
             <figure className="mb-10">
-              <img className="shadow-img w-[230px] h-[150px] lg:max-w-md lg:h-[350px] object-cover" src={`http://localhost:3000/public/${image}`} alt="" />
+              <img className="shadow-img w-[230px] sm:w-[400px] h-[150px] sm:h-[250px] lg:max-w-md lg:h-[350px] object-cover" src={`http://localhost:3000/public/${image}`} alt="" />
             </figure>
           </section>
 
           <div className="flex flex-col justify-center items-center px-1  ">
-            <p className="uppercase text-sm text-center mb-5 font-extrabold text-corporative-color2 lg:text-2xl" >
+            <p className="uppercase text-sm text-center mb-5 font-extrabold text-corporative-color2 lg:text-2xl sm:text-4xl" >
               {title}
             </p>
             <div className='w-96 h-72 '>
-              <p className='text-justify text-container'>{text}</p>
+              <p className='text-justify text-container sm:text-2xl'>{text}</p>
             </div>
           </div>
         </div>
 
 
 
-        <div className="w-full">
-
-
+        <div className="w-full sm:-mt-16 ">
           <div className="w-full flex items-center justify-between px-2">
             <div>
               {currentIndex > 0 && (
                 <>
-                  <div className="absolute -mt-3 left-3 fill-black text-white text-2xl ">{timelineData[currentIndex - 1].year}</div>
+                  <div className="absolute -mt-3  fill-black text-white text-2xl sm:-mt-10 sm:left-6 sm:text-5xl ">{timelineData[currentIndex - 1].year}</div>
                   <button onClick={handlePreviousClick}>
 
                     <div>
 
                       <div className="flex rotate-180 items-center">
-                        <img className="absolute w-20 h-14 -left-14" src={ArrowNextSVG} alt="" />
-                        <div className="relative border border-none  bg-corporative-color2 w-[100px] h-[3px]"></div>
+                        <img className="absolute w-20 h-14 sm:h-28 sm:left-32 -left-14" src={ArrowNextSVG} alt="" />
+                        <div className="relative border border-none  bg-corporative-color2 w-[100px] sm:w-[200px] sm:left-48 h-[3px] sm:h-[6px]"></div>
                       </div>
                     </div>
                   </button>
@@ -106,19 +104,19 @@ export function TimelineItem({ image, title, text, year, onDelete, onEdit, curre
             </div>
 
             <div className='min-h-[35px]'>
-              <p className="absolute text-container text-corporative-color2 left-[138px] -mt-1 text-justify font-bold text-5xl">{year}</p>
+              <p className="absolute text-container text-corporative-color2 left-[160px] sm:left-[300px] -mt-1 sm:-mt-5 text-justify font-bold text-5xl sm:text-[80px]">{year}</p>
             </div>
 
             <div>
               {currentIndex < timelineData.length - 1 && (
                 <>
-                  <div className="absolute -mt-3 text-white right-3 text-2xl">{timelineData[currentIndex + 1].year}</div>
+                  <div className="absolute -mt-3 text-white right-7 sm:right-14 sm:-mt-10 text-2xl sm:text-5xl">{timelineData[currentIndex + 1].year}</div>
                   <button onClick={handleNextClick}>
                     <div>
 
                       <div className="flex items-center">
-                        <img className="absolute w-20 h-14 right-20" src={ArrowNextSVG} alt="" />
-                        <div className="relative border border-none bg-corporative-color2 w-[100px] h-[3px]"></div>
+                        <img className="absolute w-20 sm:h-32 h-14 right-24 sm:right-60" src={ArrowNextSVG} alt="" />
+                        <div className="relative border border-none bg-corporative-color2 sm:left-40 w-[100px] sm:w-[200px] h-[3px] sm:h-[6px] "></div>
                       </div>
                     </div>
                   </button>

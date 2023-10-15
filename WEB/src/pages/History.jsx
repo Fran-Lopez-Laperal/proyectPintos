@@ -38,7 +38,7 @@ export function History() {
           <p>{t('history.foundation.text-part3')}</p>
         </div>
       </section>
-      <section className='bg-corporative-color3 h-[700px] lg:bg-gray-100'>
+      <section className='bg-corporative-color3 h-[700px] sm:h-[800px] lg:bg-gray-100'>
         <FetchTimeline />
       </section>
 
