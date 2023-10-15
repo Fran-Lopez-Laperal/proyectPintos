@@ -45,17 +45,17 @@ export function Engineering() {
         </section>
       </main>
 
-      <section className="flex flex-col items-center mt-16">
+      <section className="flex flex-col items-center">
         <p className="font-bold text-3xl text-center border-b-2 lg:border-b-[4px] border-corporative-color2  px-4 lg:mb-16 lg:text-6xl text-corporative-color2">
-          PRODUTOS
+          PRODUTO
         </p>
-        <article className="flex">
-          <p className="w-[187px] h-[187px] lg:w-[711px] lg:h-[711px] bg-corporative-color4 m-1"></p>
-          <p className="w-[187px] h-[187px] lg:w-[711px] lg:h-[711px] bg-corporative-color4 m-1"></p>
+        <article className="flex gap-1">
+          <p className="w-[187px] h-[187px] sm:h-[400px] sm:w-[400px] lg:w-[711px] lg:h-[711px] bg-corporative-color4 m-1"></p>
+          <p className="w-[187px] h-[187px] sm:h-[400px] sm:w-[400px] lg:w-[711px] lg:h-[711px] bg-corporative-color4 m-1"></p>
         </article>
-        <article className="flex">
-          <p className="w-[187px] h-[187px] lg:w-[711px] lg:h-[711px] bg-corporative-color4 m-1"></p>
-          <p className="w-[187px] h-[187px] lg:w-[711px] lg:h-[711px] bg-corporative-color4 m-1"></p>
+        <article className="flex gap-1">
+          <p className="w-[187px] h-[187px] sm:h-[400px] sm:w-[400px] lg:w-[711px] lg:h-[711px] bg-corporative-color4 m-1"></p>
+          <p className="w-[187px] h-[187px] sm:h-[400px] sm:w-[400px] lg:w-[711px] lg:h-[711px] bg-corporative-color4 m-1"></p>
         </article>
       </section>
     </section>
