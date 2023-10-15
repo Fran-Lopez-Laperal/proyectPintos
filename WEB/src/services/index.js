@@ -1,3 +1,5 @@
+import { Await } from "react-router-dom";
+
 const API_URL = 'http://localhost:3000';
 
 export const loginUserService = async ({ username, password }) => {
@@ -68,6 +70,21 @@ export const getNewsService = async () => {
   }
   return json.data.news;
 };
+
+export const getNewDetailService = async (idNew) => {
+  const response = await fetch(`${API_URL}/news/${idNew}`, {
+    method: "GET"
+  });
+
+  const json = await response.json();
+
+
+  if (!response.ok) {
+    throw new Error(json.message);
+  }
+
+  return json.data
+}
 
 export const updateNewsService = async (data, idNews) => {
   const formData = new FormData();

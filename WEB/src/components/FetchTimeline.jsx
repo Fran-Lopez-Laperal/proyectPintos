@@ -66,20 +66,22 @@ export function FetchTimeline() {
   return (
     <div className="flex items-center flex-col font-extrabold py-8">
       <main className="w-full h-[437px]">
-        <TimelineItem
-          key={timelineData[currentIndex].id}
-          image={timelineData[currentIndex].image}
-          title={timelineData[currentIndex].title}
-          text={timelineData[currentIndex].text}
-          year={timelineData[currentIndex].year}
-          onDelete={() => handleDeleteTimeline(timelineData[currentIndex].id)}
-          onEdit={(newTitle, newText, newYear) =>
-            handleEditTimeline(timelineData[currentIndex].id, newTitle, newText, newYear)
-          }
-          currentIndex={currentIndex}
-          setCurrentIndex={setCurrentIndex}
-          timelineData={timelineData}
-        />
+     
+          <TimelineItem
+            key={timelineData[currentIndex].id}
+            image={timelineData[currentIndex].image}
+            title={timelineData[currentIndex].title}
+            text={timelineData[currentIndex].text}
+            year={timelineData[currentIndex].year}
+            onDelete={() => handleDeleteTimeline(timelineData[currentIndex].id)}
+            onEdit={(newTitle, newText, newYear) =>
+              handleEditTimeline(timelineData[currentIndex].id, newTitle, newText, newYear)
+            }
+            currentIndex={currentIndex}
+            setCurrentIndex={setCurrentIndex}
+            timelineData={timelineData}
+          />
+
       </main>
     </div>
   );
