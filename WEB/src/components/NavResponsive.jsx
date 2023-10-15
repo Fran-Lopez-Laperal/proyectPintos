@@ -60,7 +60,7 @@ export function NavResponsive() {
           } overflow-hidden bg-white font-black text-weight text-corporative-color2`}
         >
           <ul onClick={handleShowSubLink1}>
-            <p className="flex items-center h-10 pl-2 border-y bg-gray-100">{t('nav.sobreNos')}</p>
+            <p className="flex  items-center h-10 pl-2 border-y bg-gray-100">{t('nav.sobreNos')}</p>
             <li className={`${showSubLink1 ? 'h-auto transition-all duration-700' : 'h-0 overflow-hidden'}`}>
               <section className="flex flex-col font-semibold">
                 <Link className="flex items-center h-10 pl-7 border-b" to="/historia" onClick={handleShowMenu}>

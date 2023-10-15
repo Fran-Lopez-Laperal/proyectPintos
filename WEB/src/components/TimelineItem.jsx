@@ -1,13 +1,29 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import Swal from "sweetalert2";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrashCan, faPenToSquare } from '@fortawesome/free-solid-svg-icons';
 import { AuthContext } from '../context/AuthContext';
 import ArrowNextSVG from '../assets/svg/button_arrow.svg'
+import ArrowDeskSVG from '../assets/svg/arrow_large_stick.svg'
+import './TimeLineItem.css'
+
+
 
 export function TimelineItem({ image, title, text, year, onDelete, onEdit, currentIndex, setCurrentIndex, timelineData }) {
   const [isDeleting, setIsDeleting] = useState(false);
   const { token } = useContext(AuthContext);
+
+
+
+  const [arrow, setArrowWidth] = useState(false)
+  useEffect(() => {
+
+    const responsiveMovil = () => window.innerWidth < 459 ? setArrowWidth(true) : setArrowWidth(false)
+    responsiveMovil()
+    window.addEventListener('resize', () => responsiveMovil())
+
+  }, [])
+
 
   const handleDeleteClick = () => {
     Swal.fire({
@@ -61,92 +77,79 @@ export function TimelineItem({ image, title, text, year, onDelete, onEdit, curre
   };
 
   return (
-    <article className="flex flex-col items-center">
-      <main className="">
-        <div className="flex flex-col items-center lg:flex lg:flex-row lg:items-center" >
-          <section className='w-auto mt-10 sm:mt-5 lg:w-96'>
-            <figure className="mb-10">
-              <img className="shadow-img w-[230px] sm:w-[400px] h-[150px] sm:h-[250px] lg:max-w-md lg:h-[350px] object-cover" src={`http://localhost:3000/public/${image}`} alt="" />
+    <article className="flex flex-col items-center lg:w-full">
+      <main className="lg:w-full">
+        <div className="flex flex-col items-center lg:flex lg:flex-row lg:items-center lg:justify- lg:px-24" >
+          <section className='w-auto mt-10 lg:w-96'>
+            <figure className="mb-10 shadow-img w-full">
+              <img className=" w-[230px] h-[200px] sm:h-[380px] sm:w-[380px] lg:max-w-md lg:h-[350px] object-cover" src={`http://localhost:3000/public/${image}`} alt="" />
             </figure>
           </section>
 
-          <div className="flex flex-col justify-center items-center px-1  ">
-            <p className="uppercase text-sm text-center mb-5 font-extrabold text-corporative-color2 lg:text-2xl sm:text-4xl" >
+          <div className="flex flex-col justify-center items-center px-1">
+            <p className="uppercase text-sm text-center mb-5 font-extrabold text-corporative-color2 sm:text-2xl lg:text-2xl" >
               {title}
             </p>
-            <div className='w-96 h-72 '>
-              <p className='text-justify text-container sm:text-2xl'>{text}</p>
+            <div className=' h-56 px-10 sm:px-20 sm:h-40 lg:px-32'>
+              <p className='uppercase sm:text-xl text-justify text-container'>{text}</p>
             </div>
           </div>
         </div>
 
+        <div className="w-full">
 
+            <div className="w-full h-full flex items-center justify-center lg:flex lg:justify-around lg:items-center lg:mt-14">
 
-        <div className="w-full sm:-mt-16 ">
-          <div className="w-full flex items-center justify-between px-2">
-            <div>
-              {currentIndex > 0 && (
-                <>
-                  <div className="absolute -mt-3  fill-black text-white text-2xl sm:-mt-10 sm:left-6 sm:text-5xl ">{timelineData[currentIndex - 1].year}</div>
-                  <button onClick={handlePreviousClick}>
-
-                    <div>
-
-                      <div className="flex rotate-180 items-center">
-                        <img className="absolute w-20 h-14 sm:h-28 sm:left-32 -left-14" src={ArrowNextSVG} alt="" />
-                        <div className="relative border border-none  bg-corporative-color2 w-[100px] sm:w-[200px] sm:left-48 h-[3px] sm:h-[6px]"></div>
-                      </div>
-                    </div>
+              <div className="flex flex-col h-full justify-center">
+                <div className="h-5 flex justify-start lg:px-16 text-4xl">
+                  <p className="year text-white  text-xl sm:text-3xl px-5">{timelineData[currentIndex - 1] && timelineData[currentIndex - 1].year}</p>
+                </div>
+                <div className="h-16">
+                  <button onClick={handlePreviousClick} disabled={currentIndex === 0}>
+                    <img className="w-40 sm:w-[500px] lg:w-[600px] rotate-180" src={ArrowDeskSVG} alt="" />
                   </button>
-                </>
+                </div>
+              </div>
 
-              )}
-            </div>
+              <div className="text-2xl m-1 sm:m-3 sm:mt-0 -mt-5 h-full lg:mt-4 sm:text-5xl lg:text-5xl  text-corporative-color2">
+                {year}
+              </div>
 
-            <div className='min-h-[35px]'>
-              <p className="absolute text-container text-corporative-color2 left-[160px] sm:left-[300px] -mt-1 sm:-mt-5 text-justify font-bold text-5xl sm:text-[80px]">{year}</p>
-            </div>
-
-            <div>
-              {currentIndex < timelineData.length - 1 && (
-                <>
-                  <div className="absolute -mt-3 text-white right-7 sm:right-14 sm:-mt-10 text-2xl sm:text-5xl">{timelineData[currentIndex + 1].year}</div>
-                  <button onClick={handleNextClick}>
-                    <div>
-
-                      <div className="flex items-center">
-                        <img className="absolute w-20 sm:h-32 h-14 right-24 sm:right-60" src={ArrowNextSVG} alt="" />
-                        <div className="relative border border-none bg-corporative-color2 sm:left-40 w-[100px] sm:w-[200px] h-[3px] sm:h-[6px] "></div>
-                      </div>
-                    </div>
+              <div className="flex flex-col h-full">
+                <div className="h-5 flex justify-end lg:px-16 text-4xl">
+                  <p className="year text-white text-xl sm:text-3xl px-5">{timelineData[currentIndex + 1] && timelineData[currentIndex + 1].year}</p>
+                </div>
+                <div className="h-16">
+                  <button onClick={handleNextClick} disabled={currentIndex === timelineData.length - 1}>
+                    <img className="w-40 sm:w-[500px] lg:w-[600px]" src={ArrowDeskSVG} alt="" />
                   </button>
-                </>
+                </div>
+              </div>
 
-              )}
             </div>
-          </div>
 
 
-          {token && (
-            <div className="">
-              <button
-                onClick={handleEditClick}
-                className={`text-blue-500 hover-text-blue-700 ${isDeleting ? 'opacity-50 cursor-not-allowed' : ''}`}
-                disabled={isDeleting}
-              >
-                <FontAwesomeIcon icon={faPenToSquare} />
-              </button>
-              <button
-                onClick={handleDeleteClick}
-                className={`text-red-500 hover-text-red-700 ${isDeleting ? 'opacity-50 cursor-not-allowed' : ''}`}
-                disabled={isDeleting}
-              >
-                <FontAwesomeIcon icon={faTrashCan} style={{ color: '#d33333' }} />
-              </button>
-            </div>
-          )}
+
+
         </div>
-
+        {token && (
+          <div className="">
+            <button
+              onClick={handleEditClick}
+              className={`text-blue-500 hover-text-blue-700 ${isDeleting ? 'opacity-50 cursor-not-allowed' : ''}`}
+              disabled={isDeleting}
+            >
+              <FontAwesomeIcon icon={faPenToSquare} />
+            </button>
+            <button
+              onClick={handleDeleteClick}
+              className={`text-red-500 hover-text-red-700 ${isDeleting ? 'opacity-50 cursor-not-allowed' : ''}`}
+              disabled={isDeleting}
+            >
+              <FontAwesomeIcon icon={faTrashCan} style={{ color: '#d33333' }} />
+            </button>
+          </div>
+        )}
       </main>
     </article>
   );
