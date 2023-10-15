@@ -47,7 +47,7 @@ export function NavDesktop() {
   ];
 
   return (
-    <section className="flex w-full h-24 md:bg-red-300 ">
+    <section className="flex w-full h-24">
       <header className="flex">
         <Link to="/" className="flex justify-center items-center">
           <figure>
