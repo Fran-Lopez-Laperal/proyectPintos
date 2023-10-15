@@ -79,19 +79,19 @@ export function TimelineItem({ image, title, text, year, onDelete, onEdit, curre
   return (
     <article className="flex flex-col items-center lg:w-full">
       <main className="lg:w-full">
-        <div className="flex flex-col items-center lg:flex lg:flex-row lg:items-center lg:justify- lg:px-24" >
-          <section className='w-auto mt-10 lg:w-96'>
+        <div className="flex flex-col items-center lg:flex lg:flex-row lg:items-start lg:justify- lg:px-24 mt-10" >
+          <section className='w-auto  lg:w-96 '>
             <figure className="mb-10 shadow-img w-full">
               <img className=" w-[230px] h-[200px] sm:h-[380px] sm:w-[380px] lg:max-w-md lg:h-[350px] object-cover" src={`http://localhost:3000/public/${image}`} alt="" />
             </figure>
           </section>
 
-          <div className="flex flex-col justify-center items-center px-1">
+          <div className="flex  flex-col justify-center items-center ">
             <p className="uppercase text-sm text-center mb-5 font-extrabold text-corporative-color2 sm:text-2xl lg:text-2xl" >
               {title}
             </p>
-            <div className=' h-56 px-10 sm:px-20 sm:h-40 lg:px-32'>
-              <p className='uppercase text-sm sm:text-xl text-justify text-container'>{text}</p>
+            <div className='h-56 px-10 sm:px-20 sm:h-40 '>
+              <p className='uppercase font-normal sm:text-xl text-justify text-container'>{text}</p>
             </div>
           </div>
         </div>
