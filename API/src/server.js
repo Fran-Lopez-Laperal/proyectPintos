@@ -51,7 +51,7 @@ app.get("/news", getNews);
 app.put("/news/:idNews", isAuth, updateNews);
 app.post("/createNews", isAuth, createNews);
 app.delete("/news/:idNews", isAuth, deleteNews);
-app.get("/news/:idNews", isAuth, detailNew);
+app.get("/news/:idNews", detailNew);
 
 app.get("/timeline", getTimeline);
 app.put("/timeline/:idTimeline", isAuth, updateTimeline);
