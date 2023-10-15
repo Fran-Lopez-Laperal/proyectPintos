@@ -91,14 +91,14 @@ export function TimelineItem({ image, title, text, year, onDelete, onEdit, curre
               {title}
             </p>
             <div className=' h-56 px-10 sm:px-20 sm:h-40 lg:px-32'>
-              <p className='uppercase sm:text-xl text-justify text-container'>{text}</p>
+              <p className='uppercase text-sm sm:text-xl text-justify text-container'>{text}</p>
             </div>
           </div>
         </div>
 
         <div className="w-full">
 
-            <div className="w-full h-full flex items-center justify-center lg:flex lg:justify-around lg:items-center lg:mt-14">
+            <div className="w-full h-full flex items-center justify-center lg:flex lg:justify-around lg:items-center mt-10 lg:mt-14">
 
               <div className="flex flex-col h-full justify-center">
                 <div className="h-5 flex justify-start lg:px-16 text-4xl">
