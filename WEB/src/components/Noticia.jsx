@@ -76,6 +76,5 @@ export function Noticia({ image, title, text, onDelete, onEdit, id }) {
         </main>
       </article>
     </Link>
-
   );
 }

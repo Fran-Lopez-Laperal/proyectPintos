@@ -3,8 +3,8 @@ import { FetchNews } from '../components/FetchNews';
 
 export function News() {
   return (
-    <section className="flex flex-col m-6 mt-12 px-1 sm:px-10 lg:px-16">
-      <article className="flex flex-col justify-center items-center shadow-lg rounded-lg font-extrabold">
+    <section className="flex flex-col m-6">
+      <article className="flex flex-col justify-center items-center shadow-lg rounded-lg font-extrabold lg:mx-52">
         <figure className="flex justify-center w-3/4">
           <img className="rounded-lg" src={imgCompany} alt="" />
         </figure>

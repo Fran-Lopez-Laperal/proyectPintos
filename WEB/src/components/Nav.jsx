@@ -17,5 +17,5 @@ export function Nav() {
     };
   }, []);
 
-  return <section>{windowWidth < 769 ? <NavResponsive /> : <NavDesktop />}</section>;
+  return <section>{windowWidth < 1024 ? <NavResponsive /> : <NavDesktop />}</section>;
 }
