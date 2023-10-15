@@ -64,15 +64,14 @@ export const getNewsService = async () => {
   });
 
   const json = await response.json();
-
   if (!response.ok) {
     throw new Error(json.message);
   }
   return json.data.news;
 };
 
-export const getNewDetailService = async (idNew) => {
-  const response = await fetch(`${API_URL}/news/${idNew}`, {
+export const getNewDetailService = async (id) => {
+  const response = await fetch(`${API_URL}/news/${id}`, {
     method: "GET"
   });
 
@@ -82,9 +81,11 @@ export const getNewDetailService = async (idNew) => {
   if (!response.ok) {
     throw new Error(json.message);
   }
-
-  return json.data
+  console.log(json.data.ownNew)
+  return json.data.ownNew
 }
+
+getNewDetailService(1)
 
 export const updateNewsService = async (data, idNews) => {
   const formData = new FormData();

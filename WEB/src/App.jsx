@@ -15,6 +15,7 @@ import { International } from './pages/International';
 import { News } from './pages/News';
 import { Contact } from './pages/Contact';
 import { Admin } from './pages/Admin';
+import { NewDetail } from './components/NewDetail';
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
           <Route path="/noticias" element={<News />} />
           <Route path="/contactos" element={<Contact />} />
           <Route path="/admin" element={<Admin />} />
+          <Route path="/noticias/:id" element={<NewDetail />} />
         </Routes>
       </main>
       <Footer />
