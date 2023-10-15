@@ -62,6 +62,7 @@ export function FetchNews() {
       <main className="grid grid-cols-2 gap-6 py-4 lg:grid-cols-4 lg:gap-12 lg:px-36 ">
         {newsData.map((newsItem) => (
           <Noticia
+            id={newsItem.id}
             key={newsItem.id}
             image={newsItem.image}
             title={newsItem.title}

@@ -110,7 +110,6 @@ export function TimelineItem({ image, title, text, year, onDelete, onEdit, curre
                   </button>
                 </div>
               </div>
-
               <div className="text-2xl m-1 sm:m-3 sm:mt-0 -mt-5 h-full lg:mt-4 sm:text-5xl lg:text-5xl  text-corporative-color2">
                 {year}
               </div>

@@ -42,6 +42,7 @@ const createPromo = require("../controllers/promotions/createPromo");
 const getPromo = require("../controllers/promotions/getPromo");
 const deletePromo = require("../controllers/promotions/deletePromo");
 const detailPromo = require("../controllers/promotions/detailPromo");
+const detailNew = require("../controllers/news/detailNew");
 
 app.post("/register", createUser);
 app.post("/login", loginUser);
@@ -50,6 +51,7 @@ app.get("/news", getNews);
 app.put("/news/:idNews", isAuth, updateNews);
 app.post("/createNews", isAuth, createNews);
 app.delete("/news/:idNews", isAuth, deleteNews);
+app.get("/news/:idNews", isAuth, detailNew);
 
 app.get("/timeline", getTimeline);
 app.put("/timeline/:idTimeline", isAuth, updateTimeline);
