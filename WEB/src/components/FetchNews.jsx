@@ -59,7 +59,7 @@ export function FetchNews() {
   return (
     <div className="flex flex-col font-extrabold py-8 lg:flex">
       <h2 className="text-corporative-color2 text-center text-3xl lg:text-6xl lg:pb-6">Noticias</h2>
-      <main className="grid grid-cols-2 gap-6 py-4 lg:grid-cols-4 lg:gap-12 lg:px-36 ">
+      <main className="grid grid-cols-2 gap-6 py-4 md:px-6 lg:grid-cols-4 lg:gap-12 lg:px-10 xl:px-36 ">
         {newsData.map((newsItem) => (
           <Noticia
             id={newsItem.id}

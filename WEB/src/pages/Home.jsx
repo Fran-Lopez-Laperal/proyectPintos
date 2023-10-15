@@ -22,7 +22,7 @@ export function Home() {
       <HeaderPages image={companyHeader} logo={logo2} />
       <HomeLinks />
 
-      <section className="h-28 flex justify-center items-center relative -mt-[68px] lg:flex lg:justify-center lg:mt-10 lg:mb-28 lg:mx-36">
+      <section className="h-28 flex justify-center items-center relative -mt-[68px] lg:flex lg:justify-center lg:mt-10 lg:mb-28 lg:mx-10 xl:mx-36">
         <p className="font-dancing text-2xl pb-2 px-3 relative z-10 bg-white lg:text-5xl lg:px-8">A inovação nos torna diferenes</p>
         <p className="absolute left-0 right-0 h-0.5 lg:h-1 bg-corporative-color2 z-0"></p>
       </section>
@@ -36,7 +36,7 @@ export function Home() {
             </p>
           </header>
 
-          <section className="grid grid-cols-2 text-xs text-center pt-5 gap-y-8 md:text-xl lg:flex lg:m-auto lg:justify-between lg:max-w-full lg:mx-36">
+          <section className="grid grid-cols-2 text-xs text-center pt-5 gap-y-8 md:text-xl lg:flex lg:m-auto lg:justify-between lg:max-w-full lg:mx-10 xl:mx-36">
             <StatCard number="120" text="COLABORADORES" />
             <StatCard number="+500" text="OBRAS CONCLUÍDAS" />
             <StatCard number="12" text="EMPRESAS" />
@@ -45,14 +45,14 @@ export function Home() {
         </section>
       </section>
 
-      <section className="lg:pt-24 lg:px-36">
+      <section className="lg:pt-24 lg:px-10 xl:px-36">
         <header>
           <h2 className="text-corporative-color2 font-extrabold text-3xl flex justify-center pt-6 lg:text-6xl lg:pb-6">EMPRESAS DO GRUPO</h2>
         </header>
         <Logos />
       </section>
 
-      <section className="flex flex-col font-extrabold bg-corporative-color3 lg:bg-graycorporative-color p-6 py-8 lg:flex-row lg:px-36">
+      <section className="flex flex-col font-extrabold bg-corporative-color3 lg:bg-graycorporative-color p-6 py-8 lg:flex-row lg:px-10 xl:px-36">
         <article className="hidden lg:block lg:w-1/2 lg:pr-8 lg:border-r-[3px] lg:border-corporative-color2 lg:mt-24">
           <img src={imgHome} alt="" className="h-auto" />
         </article>
